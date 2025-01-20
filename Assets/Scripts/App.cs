@@ -1,36 +1,53 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class App : MonoBehaviour
 {
+    [Header("Window Parameters")]
+    [SerializeField] private Sprite _icon;
+    [SerializeField] private string _title;
+    [Header("Window Elements")]
     [SerializeField] private GameObject _appWindow;
-    private bool _isFullScreen = false;
+    [SerializeField] private Image _appIcon;
+    [SerializeField] private TextMeshProUGUI _appTitle;
+
+    public Sprite Icon { get { return _icon; } }
+    public string Title { get { return _title; } }
 
     private void Awake()
+    {
+        _appIcon.sprite = _icon;
+        _appTitle.text = _title;
+    }
+
+    private void Start()
     {
         // protection
         if (_appWindow == null)
             _appWindow = gameObject.GetComponent<GameObject>();
     }
 
-    public void HideApp()
+    public void CloseApp()
     {
+        if (!_appWindow.activeSelf) return;
+
+        GlobalEventManager.SendAppClose(this);
         _appWindow.SetActive(false);
     }
 
     public void OpenApp()
     {
+        if (_appWindow.activeSelf) return;
+
+        GlobalEventManager.SendAppToTaskBarIcon(this);
         _appWindow.SetActive(true);
     }
 
-    public void FullScreenApp()
+    public void HideApp()
     {
-        _isFullScreen = !_isFullScreen;
+        if (!_appWindow.activeSelf) return;
 
-    }
-
-    public void NormalScreenApp()
-    {
-        _isFullScreen = !_isFullScreen;
-
+        _appWindow.SetActive(false);
     }
 }
