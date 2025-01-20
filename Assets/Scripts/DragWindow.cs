@@ -6,19 +6,21 @@ using UnityEngine.EventSystems;
 
 public class DragWindow : MonoBehaviour, IDragHandler, IPointerDownHandler {
 
-    [SerializeField] private RectTransform dragRectTransform;
-    [SerializeField] private Canvas canvas;
+    [SerializeField] private RectTransform _dragRectTransform;
+    [SerializeField] private Canvas _canvas;
 
     private void Awake() {
-        if (dragRectTransform == null) {
-            dragRectTransform = transform.parent.GetComponent<RectTransform>();
+        // protection
+        if (_dragRectTransform == null) {
+            _dragRectTransform = transform.parent.GetComponent<RectTransform>();
         }
 
-        if (canvas == null) {
+        // protection
+        if (_canvas == null) {
             Transform testCanvasTransform = transform.parent;
             while (testCanvasTransform != null) {
-                canvas = testCanvasTransform.GetComponent<Canvas>();
-                if (canvas != null) {
+                _canvas = testCanvasTransform.GetComponent<Canvas>();
+                if (_canvas != null) {
                     break;
                 }
                 testCanvasTransform = testCanvasTransform.parent;
@@ -27,10 +29,10 @@ public class DragWindow : MonoBehaviour, IDragHandler, IPointerDownHandler {
     }
 
     public void OnDrag(PointerEventData eventData) {
-        dragRectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+        _dragRectTransform.anchoredPosition += eventData.delta / _canvas.scaleFactor;
     }
 
     public void OnPointerDown(PointerEventData eventData) {
-        dragRectTransform.SetAsLastSibling();
+        _dragRectTransform.SetAsLastSibling();
     }
 }
