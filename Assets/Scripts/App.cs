@@ -14,6 +14,7 @@ public class App : MonoBehaviour
 
     public Sprite Icon { get { return _icon; } }
     public string Title { get { return _title; } }
+    public bool IsActive { get {  return _appWindow.activeSelf; } }
 
     private void Awake()
     {
@@ -49,5 +50,12 @@ public class App : MonoBehaviour
         if (!_appWindow.activeSelf) return;
 
         _appWindow.SetActive(false);
+    }
+
+    public void ShowApp()
+    {
+        if (_appWindow.activeSelf) return;
+
+        _appWindow.SetActive(true);
     }
 }

@@ -6,6 +6,7 @@ public class TaskBarIcon : MonoBehaviour
 {
     [SerializeField] private Image _icon;
     [SerializeField] private TextMeshProUGUI _title;
+    [SerializeField] private RectTransform _clickZone;
     private App _app;
     public bool IsActive { get; private set; }
 
@@ -17,6 +18,23 @@ public class TaskBarIcon : MonoBehaviour
     private void OnDestroy()
     {
         GlobalEventManager.OnAppClose -= Hide;
+    }
+
+    private void Update()
+    {
+        // Clicking
+        if (Input.GetMouseButtonDown(0))
+        {
+            Vector2 mousePosition = Input.mousePosition;
+
+            if (RectTransformUtility.RectangleContainsScreenPoint(_clickZone, mousePosition))
+            {
+                if (_app.IsActive)
+                    _app.HideApp();
+                else 
+                    _app.ShowApp();
+            }
+        }
     }
 
     public void SetApp(App app)
