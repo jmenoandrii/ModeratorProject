@@ -3,6 +3,7 @@ using UnityEngine;
 public class App : MonoBehaviour
 {
     [SerializeField] private GameObject _appWindow;
+    private bool _isFullScreen = false;
 
     private void Awake()
     {
@@ -11,7 +12,7 @@ public class App : MonoBehaviour
             _appWindow = gameObject.GetComponent<GameObject>();
     }
 
-    public void ExitApp()
+    public void HideApp()
     {
         _appWindow.SetActive(false);
     }
@@ -19,5 +20,17 @@ public class App : MonoBehaviour
     public void OpenApp()
     {
         _appWindow.SetActive(true);
+    }
+
+    public void FullScreenApp()
+    {
+        _isFullScreen = !_isFullScreen;
+
+    }
+
+    public void NormalScreenApp()
+    {
+        _isFullScreen = !_isFullScreen;
+
     }
 }
