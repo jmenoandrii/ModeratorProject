@@ -8,54 +8,78 @@ public class App : MonoBehaviour
     [SerializeField] private Sprite _icon;
     [SerializeField] private string _title;
     [Header("Window Elements")]
-    [SerializeField] private GameObject _appWindow;
     [SerializeField] private Image _appIcon;
     [SerializeField] private TextMeshProUGUI _appTitle;
+    [SerializeField] private GameObject _appContainer;
+    [SerializeField] private GameObject _appWindow;
+
+    private Vector3 _initialPosition;
+    private Quaternion _initialRotation;
+
+    private bool _isInitialized;
 
     public Sprite Icon { get { return _icon; } }
     public string Title { get { return _title; } }
-    public bool IsActive { get {  return _appWindow.activeSelf; } }
+    public bool IsActive { get {  return _appContainer.activeSelf; } }
 
     private void Awake()
     {
-        _appIcon.sprite = _icon;
-        _appTitle.text = _title;
-    }
+        if (_appIcon == null)
+            _appIcon.sprite = _icon;
+        if (_appTitle == null)
+            _appTitle.text = _title;
 
-    private void Start()
-    {
         // protection
         if (_appWindow == null)
-            _appWindow = gameObject.GetComponent<GameObject>();
+            _appWindow = gameObject;
     }
 
+    private void OnEnable()
+    {
+        if (!_isInitialized) 
+        {
+            _initialPosition = _appWindow.transform.localPosition;
+            _initialRotation = _appWindow.transform.localRotation;
+
+            _isInitialized = true;
+        }
+    }
+
+    //When we fully close app
     public void CloseApp()
     {
-        if (!_appWindow.activeSelf) return;
+        GlobalEventManager.CallOnAppClose(this);
 
-        GlobalEventManager.SendAppClose(this);
+        HideApp();
+
         _appWindow.SetActive(false);
     }
 
+    //When we first open app
     public void OpenApp()
     {
         if (_appWindow.activeSelf) return;
 
-        GlobalEventManager.SendAppToTaskBarIcon(this);
         _appWindow.SetActive(true);
+
+        _appWindow.transform.SetLocalPositionAndRotation(_initialPosition, _initialRotation);
+
+        GlobalEventManager.CallOnAppOpen(this);
+        ShowApp();
     }
 
     public void HideApp()
     {
-        if (!_appWindow.activeSelf) return;
+        if (!IsActive) return;
 
-        _appWindow.SetActive(false);
+        _appContainer.SetActive(false);
     }
 
     public void ShowApp()
     {
-        if (_appWindow.activeSelf) return;
+        if (IsActive) return;
 
-        _appWindow.SetActive(true);
+        _appWindow.transform.SetAsLastSibling();
+        _appContainer.SetActive(true);
     }
 }

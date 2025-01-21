@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class TaskBar : MonoBehaviour
 {
-    [SerializeField] private TaskBarIcon[] _iconList;
+    [SerializeField] private TaskBarElement[] _iconList;
     //private int _iconCount = 0;
 
     private void Awake()
     {
-        GlobalEventManager.OnAppOpen += AddTaskBarIcon;
-        GlobalEventManager.OnSortTaskBar += CloseTaskBarIcon;
+        GlobalEventManager.OnAppOpen += AddTaskBarElement;
+        GlobalEventManager.OnSortTaskBar += RemoveTaskBarElement;
     }
 
     private void OnDestroy()
     {
-        GlobalEventManager.OnAppOpen -= AddTaskBarIcon;
-        GlobalEventManager.OnSortTaskBar -= CloseTaskBarIcon;
+        GlobalEventManager.OnAppOpen -= AddTaskBarElement;
+        GlobalEventManager.OnSortTaskBar -= RemoveTaskBarElement;
     }
 
-    private void AddTaskBarIcon(App app)
+    private void AddTaskBarElement(App app)
     {
         //Debug.Log($"[+]: {_iconCount}->{_iconCount+1} | {app.name}");
         /*if (_iconCount == _iconList.Length) return;
@@ -28,7 +28,7 @@ public class TaskBar : MonoBehaviour
         _iconList[_iconCount].Show();
 
         _iconCount++;*/
-        foreach (TaskBarIcon icon in _iconList)
+        foreach (TaskBarElement icon in _iconList)
         {
             if (!icon.IsActive)
             {
@@ -39,7 +39,7 @@ public class TaskBar : MonoBehaviour
         }
     }
 
-    private void CloseTaskBarIcon()
+    private void RemoveTaskBarElement()
     {
         //_iconCount--;
         //Debug.Log($"[-]: {_iconCount+1}->{_iconCount} | {app.name}");

@@ -2,39 +2,21 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TaskBarIcon : MonoBehaviour
+public class TaskBarElement : MonoBehaviour
 {
     [SerializeField] private Image _icon;
     [SerializeField] private TextMeshProUGUI _title;
-    [SerializeField] private RectTransform _clickZone;
-    private App _app;
+    [SerializeField] private App _app;
     public bool IsActive { get; private set; }
 
     private void Awake()
     {
-        GlobalEventManager.OnAppClose += Hide;
+        GlobalEventManager.OnAppClose += HandleAppClose;
     }
 
     private void OnDestroy()
     {
-        GlobalEventManager.OnAppClose -= Hide;
-    }
-
-    private void Update()
-    {
-        // Clicking
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector2 mousePosition = Input.mousePosition;
-
-            if (RectTransformUtility.RectangleContainsScreenPoint(_clickZone, mousePosition))
-            {
-                if (_app.IsActive)
-                    _app.HideApp();
-                else 
-                    _app.ShowApp();
-            }
-        }
+        GlobalEventManager.OnAppClose -= HandleAppClose;
     }
 
     public void SetApp(App app)
@@ -61,7 +43,18 @@ public class TaskBarIcon : MonoBehaviour
         IsActive = false;
     }
 
-    private void Hide(App app)
+    public void Click()
+    {
+        if (_app == null)
+        {
+            Debug.LogError("Error: _app is not assigned!", this);
+            return;
+        }
+
+        _app.ShowApp();
+    }
+
+    private void HandleAppClose(App app)
     {
         if (_app != null && _app == app)
         {

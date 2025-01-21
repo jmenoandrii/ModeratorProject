@@ -7,21 +7,18 @@ public class GlobalEventManager : MonoBehaviour
     public static event Action<App> OnAppClose;
     public static event Action OnSortTaskBar;
 
-    public static void SendAppToTaskBarIcon(App app)
+    public static void CallOnAppOpen(App app)
     {
-        if (OnAppOpen != null) 
-            OnAppOpen.Invoke(app);
+        OnAppOpen?.Invoke(app);
     }
 
-    public static void SendAppClose(App app)
+    public static void CallOnAppClose(App app)
     {
-        if (OnAppClose != null)
-            OnAppClose.Invoke(app);
+        OnAppClose?.Invoke(app);
     }
 
     public static void SendSortTaskBar()
     {
-        if (OnSortTaskBar != null)
-            OnSortTaskBar.Invoke();
+        OnSortTaskBar?.Invoke();
     }
 }
