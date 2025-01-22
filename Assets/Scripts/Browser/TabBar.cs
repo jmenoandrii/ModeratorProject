@@ -82,6 +82,7 @@ public class TabBar : MonoBehaviour
                 element.Show();
                 ChangeCurrentTab(element);
                 ConfigureCurrentTab(defaultPageParameter);
+                element.transform.SetAsLastSibling();
                 break;
             }
         }
