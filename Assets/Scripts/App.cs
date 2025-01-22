@@ -9,7 +9,7 @@ public class App : MonoBehaviour
     [SerializeField] private string _title;
     [Header("Window Elements")]
     [SerializeField] private Image _appIcon;
-    [SerializeField] private TextMeshProUGUI _appTitle;
+    [SerializeField] private TMP_Text _appTitle;
     [SerializeField] private GameObject _appContainer;
     [SerializeField] private GameObject _appWindow;
 
@@ -20,24 +20,22 @@ public class App : MonoBehaviour
 
     public Sprite Icon { get { return _icon; } }
     public string Title { get { return _title; } }
-    public bool IsActive { get {  return _appContainer.activeSelf; } }
-
-    private void Awake()
-    {
-        if (_appIcon == null)
-            _appIcon.sprite = _icon;
-        if (_appTitle == null)
-            _appTitle.text = _title;
-
-        // protection
-        if (_appWindow == null)
-            _appWindow = gameObject;
-    }
+    public bool IsContainerActive { get {  return _appContainer.activeSelf; } }
+    public bool IsAppActive { get {  return _appWindow.activeSelf; } }
 
     private void OnEnable()
     {
         if (!_isInitialized) 
         {
+            if (_appIcon != null)
+                _appIcon.sprite = _icon;
+            if (_appTitle != null)
+                _appTitle.SetText(_title);
+
+            // protection
+            if (_appWindow == null)
+                _appWindow = gameObject;
+
             _initialPosition = _appWindow.transform.localPosition;
             _initialRotation = _appWindow.transform.localRotation;
 
@@ -58,7 +56,15 @@ public class App : MonoBehaviour
     //When we first open app
     public void OpenApp()
     {
-        if (_appWindow.activeSelf) return;
+        _appWindow.transform.SetAsLastSibling();
+        
+        if (IsAppActive) 
+        {
+            if (!IsContainerActive) 
+                ShowApp();
+
+            return;
+        }
 
         _appWindow.SetActive(true);
 
@@ -70,16 +76,15 @@ public class App : MonoBehaviour
 
     public void HideApp()
     {
-        if (!IsActive) return;
+        if (!IsContainerActive) return;
 
         _appContainer.SetActive(false);
     }
 
     public void ShowApp()
     {
-        if (IsActive) return;
+        if (IsContainerActive) return;
 
-        _appWindow.transform.SetAsLastSibling();
         _appContainer.SetActive(true);
     }
 }

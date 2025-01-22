@@ -27,6 +27,9 @@ public class GlobalEventManager : MonoBehaviour
     public static event Action OnCloseBrowser;
     public static event Action OnClearTabBar;
 
+    // ***** Game events *****
+    public static event Action<EndingSummary> OnEndGame;
+
     public static void CallOnPageOpen(PageParameter pageParameter)
     {
         OnPageOpen?.Invoke(pageParameter);
@@ -65,5 +68,10 @@ public class GlobalEventManager : MonoBehaviour
     public static void CallOnClearTabBar()
     {
         OnClearTabBar?.Invoke();
+    }
+
+    public static void CallOnEndGame(EndingSummary summary)
+    {
+        OnEndGame?.Invoke(summary);
     }
 }
