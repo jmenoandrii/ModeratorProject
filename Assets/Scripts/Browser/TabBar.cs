@@ -8,6 +8,7 @@ public class TabBar : MonoBehaviour
 {
     [SerializeField] private TabBarElement[] _elementList;
     private TabBarElement _currentTab;
+    private bool _isCurrentTabChanging = false;
 
     // static tab colors
     private static Color _commonTabColor = new Color(0.314f, 0.314f, 0.314f, 1f);
@@ -37,8 +38,8 @@ public class TabBar : MonoBehaviour
     private void Awake()
     {
         GlobalEventManager.OnPageOpen += ConfigureCurrentTab;
-        GlobalEventManager.OnPageCreated += BindNewPageToNewTab;
-        GlobalEventManager.OnNewPage += AddBarElement;
+        GlobalEventManager.OnPageOpenCreated += BindPageToCurrentTab;
+        GlobalEventManager.OnNewPageCreated += AddBarElement;
         GlobalEventManager.OnShowPage += ChangeCurrentTab;
         GlobalEventManager.OnClosePage += TabClosingHandling;
         GlobalEventManager.OnClearTabBar += ClearTabBar;
@@ -47,8 +48,8 @@ public class TabBar : MonoBehaviour
     private void OnDestroy()
     {
         GlobalEventManager.OnPageOpen -= ConfigureCurrentTab;
-        GlobalEventManager.OnPageCreated -= BindNewPageToNewTab;
-        GlobalEventManager.OnNewPage -= AddBarElement;
+        GlobalEventManager.OnPageOpenCreated -= BindPageToCurrentTab;
+        GlobalEventManager.OnNewPageCreated -= AddBarElement;
         GlobalEventManager.OnShowPage -= ChangeCurrentTab;
         GlobalEventManager.OnClosePage -= TabClosingHandling;
         GlobalEventManager.OnClearTabBar -= ClearTabBar;
@@ -67,12 +68,12 @@ public class TabBar : MonoBehaviour
         _currentTab.SetTitle(pageParameter.title);
     }
 
-    private void BindNewPageToNewTab(GameObject newPage)
+    private void BindPageToCurrentTab(GameObject page)
     {
-        _currentTab.SetPage(newPage);
+        _currentTab.SetPage(page);
     }
 
-    private void AddBarElement(PageParameter defaultPageParameter)
+    private void AddBarElement(PageParameter defaultPageParameter, GameObject newPage)
     {
         foreach (TabBarElement element in _elementList)
         {
@@ -84,6 +85,7 @@ public class TabBar : MonoBehaviour
                 break;
             }
         }
+        BindPageToCurrentTab(newPage);
     }
 
     private void TabClosingHandling(TabBarElement tab)

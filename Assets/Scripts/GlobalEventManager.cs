@@ -19,8 +19,9 @@ public class GlobalEventManager : MonoBehaviour
 
     // ***** Browser events *****
     public static event Action<PageParameter> OnPageOpen;
-    public static event Action<GameObject> OnPageCreated;
+    public static event Action<GameObject> OnPageOpenCreated;
     public static event Action<PageParameter> OnNewPage;
+    public static event Action<PageParameter, GameObject> OnNewPageCreated;
     public static event Action<TabBarElement> OnShowPage;
     public static event Action<TabBarElement> OnClosePage;
     public static event Action OnCloseBrowser;
@@ -31,14 +32,19 @@ public class GlobalEventManager : MonoBehaviour
         OnPageOpen?.Invoke(pageParameter);
     }
 
-    public static void CallOnPageCreated(GameObject pageParameter)
+    public static void CallOnPageOpenCreated(GameObject page)
     { 
-        OnPageCreated?.Invoke(pageParameter); 
+        OnPageOpenCreated?.Invoke(page); 
     }
 
     public static void CallOnNewPage(PageParameter defaultPageParameter)
     {
         OnNewPage?.Invoke(defaultPageParameter);
+    }
+
+    public static void CallOnNewPageCreated(PageParameter defaultPageParameter, GameObject page)
+    {
+        OnNewPageCreated?.Invoke(defaultPageParameter, page);
     }
 
     public static void CallOnShowPage(TabBarElement tab)

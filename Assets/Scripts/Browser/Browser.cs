@@ -44,7 +44,7 @@ public class Browser : App
         GlobalEventManager.OnCloseBrowser -= CloseApp;
     }
 
-    private GameObject SpawnPage(PageParameter pageParameter)
+    private GameObject SpawnPage(PageParameter pageParameter, bool isForNewPageCalling = false)
     {
         GameObject newPage = Instantiate(pageParameter.prefab);
 
@@ -54,7 +54,10 @@ public class Browser : App
         newPage.transform.localRotation = Quaternion.identity;
         newPage.transform.localScale = Vector3.one;
 
-        GlobalEventManager.CallOnPageCreated(newPage);
+        if (!isForNewPageCalling)
+            GlobalEventManager.CallOnPageOpenCreated(newPage);
+        else
+            GlobalEventManager.CallOnNewPageCreated(pageParameter, newPage);
 
         return newPage;
     }
@@ -99,7 +102,7 @@ public class Browser : App
 
     private void OpenMainPage(PageParameter defaultPageParameter)
     {
-        GameObject newPage = SpawnPage(defaultPageParameter);
+        GameObject newPage = SpawnPage(defaultPageParameter, true);
 
         _currentPage?.SetActive(false);
         _currentPage = newPage;
