@@ -6,6 +6,7 @@ using static UnityEditor.Rendering.FilterWindow;
 
 public class TabBar : MonoBehaviour
 {
+    [SerializeField] private NewPageButton _newPageButton;
     [SerializeField] private TabBarElement[] _elementList;
     private TabBarElement _currentTab;
 
@@ -32,6 +33,11 @@ public class TabBar : MonoBehaviour
             Debug.LogError("There are more than one current tab in the TabBar");
         else if (currentTabCount < 1)
             Debug.LogError("There are no current tab in the TabBar");
+
+        if (_newPageButton == null)
+        {
+            Debug.LogError("_newPageButton is not assigned!");
+        }
     }
 
     private void Awake()
@@ -86,6 +92,7 @@ public class TabBar : MonoBehaviour
             }
         }
         BindPageToCurrentTab(newPage);
+        _newPageButton.transform.SetAsLastSibling();
     }
 
     private void TabClosingHandling(TabBarElement tab)
