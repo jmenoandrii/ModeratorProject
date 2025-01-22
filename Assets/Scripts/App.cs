@@ -46,7 +46,7 @@ public class App : MonoBehaviour
     }
 
     //When we fully close app
-    public void CloseApp()
+    public virtual void CloseApp()
     {
         GlobalEventManager.CallOnAppClose(this);
 
