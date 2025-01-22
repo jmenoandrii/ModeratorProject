@@ -48,11 +48,14 @@ public class Browser : App
     {
         GameObject newPage = Instantiate(pageParameter.prefab);
 
-        newPage.transform.SetParent(_contentContainer.transform);
+        RectTransform rectTransform = newPage.GetComponent<RectTransform>();
 
-        newPage.transform.localPosition = Vector3.zero;
-        newPage.transform.localRotation = Quaternion.identity;
-        newPage.transform.localScale = Vector3.one;
+        rectTransform.SetParent(_contentContainer.transform, false);
+
+        rectTransform.anchoredPosition = Vector2.zero;
+        rectTransform.sizeDelta = Vector2.zero;
+        rectTransform.localRotation = Quaternion.identity;
+        rectTransform.localScale = Vector3.one;
 
         if (!isForNewPageCalling)
             GlobalEventManager.CallOnPageOpenCreated(newPage);

@@ -8,7 +8,6 @@ public class TabBar : MonoBehaviour
 {
     [SerializeField] private TabBarElement[] _elementList;
     private TabBarElement _currentTab;
-    private bool _isCurrentTabChanging = false;
 
     // static tab colors
     private static Color _commonTabColor = new Color(0.314f, 0.314f, 0.314f, 1f);
