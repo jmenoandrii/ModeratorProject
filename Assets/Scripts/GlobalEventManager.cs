@@ -30,7 +30,8 @@ public class GlobalEventManager : MonoBehaviour
     // ***** Posts events *****
     public static event Action OnLoadNextPost;
     public static event Action OnInitAdminPost;
-    public static event Action<PostsLoader.Post> OnSendAdminPost;
+    public static event Action<AdminPostsLoader.AdminPost> OnSendAdminPost;
+    public static event Action<AdminPostsLoader.Impact> OnSendImpact;
 
     // ***** Game events *****
     public static event Action<EndingSummary> OnEndGame;
@@ -90,8 +91,13 @@ public class GlobalEventManager : MonoBehaviour
         OnInitAdminPost?.Invoke();
     }
 
-    public static void CallOnSendAdminPost(PostsLoader.Post post)
+    public static void CallOnSendAdminPost(AdminPostsLoader.AdminPost post)
     {
         OnSendAdminPost?.Invoke(post);
+    }
+
+    public static void CallOnSendImpact(AdminPostsLoader.Impact impact)
+    {
+        OnSendImpact?.Invoke(impact);
     }
 }

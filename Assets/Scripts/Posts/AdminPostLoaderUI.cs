@@ -21,7 +21,7 @@ public class AdminPostLoaderUI : MonoBehaviour
         GlobalEventManager.CallOnInitAdminPost();
     }
 
-    private void UpdatePost(PostsLoader.Post post)
+    private void UpdatePost(AdminPostsLoader.AdminPost post)
     {
         if (post == null)
         {
@@ -31,10 +31,17 @@ public class AdminPostLoaderUI : MonoBehaviour
 
         OnPostsFound();
         _postUI.SetPostData(post.nickname, post.content, post.date);
+        _postUI.acceptImpact = post.acceptImpact;
+        _postUI.denyImpact = post.denyImpact;
     }
 
-    public void NextPost()
+    public void NextPost(bool isAccept)
     {
+        if (isAccept)
+            GlobalEventManager.CallOnSendImpact(_postUI.acceptImpact);
+        else
+            GlobalEventManager.CallOnSendImpact(_postUI.denyImpact);
+
         GlobalEventManager.CallOnLoadNextPost();
     }
 

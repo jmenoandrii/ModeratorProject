@@ -3,12 +3,40 @@
         {
             "nickname": "@fwaf",
             "content": "This is the content of the first post.",
-            "date": "awfwa."
+            "date": "awfwa.",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 10,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": -5,
+                "pacifismToMilitarismValue": 7
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 2,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": -1,
+                "authoritarianismToDemocracyValue": 10,
+                "pacifismToMilitarismValue": 7
+            }
         },
         {
             "nickname": "@fwafaw",
             "content": "Thiswafwaf post.",
-            "date": "awfwa."
+            "date": "awfwa.",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": -25,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 12,
+                "pacifismToMilitarismValue": -1
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 1,
+                "conservatismToProgressValue": 10,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 5,
+                "pacifismToMilitarismValue": -2
+            }
         }
     ]
 }

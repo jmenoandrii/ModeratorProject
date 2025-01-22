@@ -6,6 +6,49 @@ public class AdminPostsLoader : PostsLoader
 {
     private int _currentIdPost = 0;
     private int _maxIdPost = 0;
+    protected new PostWrapper _postWrapper;
+
+
+    [System.Serializable]
+    public class Impact
+    {
+        public int conspiracyToScienceValue;
+        public int conservatismToProgressValue;
+        public int communismToCapitalismValue;
+        public int authoritarianismToDemocracyValue;
+        public int pacifismToMilitarismValue;
+    }
+
+    [System.Serializable]
+    public class AdminPost
+    {
+        public string nickname;
+        public string content;
+        public string date;
+        public Impact acceptImpact;
+        public Impact denyImpact;
+    }
+
+    [System.Serializable]
+    public new class PostWrapper
+    {
+        public List<AdminPost> posts;
+    }
+
+    protected new PostWrapper CreatePostWrapper()
+    {
+        TextAsset jsonFile = Resources.Load<TextAsset>(_jsonFilePath);
+        if (jsonFile == null)
+        {
+            Debug.LogError("Cannot find JSON file: " + _jsonFilePath);
+            return null;
+        }
+
+        string jsonData = jsonFile.text;
+
+        return JsonUtility.FromJson<PostWrapper>(jsonData);
+    }
+
 
     private void Awake()
     {
@@ -61,7 +104,7 @@ public class AdminPostsLoader : PostsLoader
             return;
         }
 
-        var post = _postWrapper.posts[postId];
+        AdminPost post = _postWrapper.posts[postId];
         GlobalEventManager.CallOnSendAdminPost(post);
     }
 }

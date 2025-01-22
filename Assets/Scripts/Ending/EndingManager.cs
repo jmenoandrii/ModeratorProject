@@ -23,6 +23,17 @@ public class EndingManager : MonoBehaviour
     [SerializeField, Range(-50, 50)] private int _authoritarianismToDemocracyValue;
     [SerializeField, Range(-50, 50)] private int _pacifismToMilitarismValue;
 
+
+    private void Awake()
+    {
+        GlobalEventManager.OnSendImpact += EditValue;
+    }
+
+    private void OnDestroy()
+    {
+        GlobalEventManager.OnSendImpact -= EditValue;
+    }
+
     public void DetermineEnding()
     {
         Ending selectedEnding = null;
@@ -57,6 +68,15 @@ public class EndingManager : MonoBehaviour
     public void EndGame()
     {
         DetermineEnding();
+    }
+
+    private void EditValue(AdminPostsLoader.Impact impact)
+    {
+        _conspiracyToScienceValue += impact.conspiracyToScienceValue;
+        _conservatismToProgressValue += impact.conservatismToProgressValue;
+        _communismToCapitalismValue += impact.communismToCapitalismValue;
+        _authoritarianismToDemocracyValue += impact.authoritarianismToDemocracyValue;
+        _pacifismToMilitarismValue += impact.pacifismToMilitarismValue;
     }
 }
 
