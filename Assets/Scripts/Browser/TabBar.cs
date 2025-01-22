@@ -13,9 +13,9 @@ public class TabBar : MonoBehaviour
     private TabBarElement _currentTab;
 
     // static tab colors
-    private static Color _commonTabColor = new Color(0.314f, 0.314f, 0.314f, 1f);
+    private static Color _commonTabColor = new Color(1f, 1f, 1f, 1f);
     public static Color CommonTabColor { get { return _commonTabColor; } }
-    private static Color _currentTabColor = new Color(0.196f, 0.196f, 0.196f, 1f);
+    private static Color _currentTabColor = new Color(0.858f, 0.858f, 0.858f, 1f);
     public static Color CurrentTabColor { get { return _currentTabColor; } }
 
     private void Start()

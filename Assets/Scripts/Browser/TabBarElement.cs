@@ -9,7 +9,7 @@ public class TabBarElement : BarElement
     [SerializeField] private Image _background;
     public GameObject Page {  get { return _page; } }
     public bool IsCurrentPage { get { return _isCurrentPage; } }
-
+    
     private void Awake()
     {
         if (_background == null)

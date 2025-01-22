@@ -1330,6 +1330,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pageParameter:
-    prefab: {fileID: 9144731719441114241, guid: af129c3a5df37654a8ac5eff17d1c42e, type: 3}
+    prefab: {fileID: 3529161850418143754, guid: af129c3a5df37654a8ac5eff17d1c42e, type: 3}
     icon: {fileID: -5415944397975741624, guid: 2f29bef26819f4a3fa47f73390a4e4ff, type: 3}
     title: FaceBook
