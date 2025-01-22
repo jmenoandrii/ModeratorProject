@@ -944,7 +944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pageParameter:
-    prefab: {fileID: 5543118748138750032, guid: 28ceb792b94674c4194c885b892155f9, type: 3}
+    prefab: {fileID: 1293555242501224734, guid: 1ecb0b98b8cda0b4ebc7b62d452fa0d6, type: 3}
     icon: {fileID: 236750691000774572, guid: 240a9adf939204e2ca892c8d49919047, type: 3}
     title: Admin Panel
 --- !u!1 &7555739171354961978

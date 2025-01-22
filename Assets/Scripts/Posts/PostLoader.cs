@@ -3,66 +3,66 @@ using UnityEngine;
 
 public class PostsLoader : MonoBehaviour
 {
-    [SerializeField] private GameObject _postPrefab; // Prefab for post UI elements
-    [SerializeField] private Transform _contentParent; // Parent object to hold the posts
-    [SerializeField] private string _jsonFilePath; // Path to the JSON file in Resources
+    [SerializeField] protected GameObject _postPrefab;
+    [SerializeField] protected Transform _contentParent;
+    [SerializeField] protected string _jsonFilePath;
 
-    private bool _isLoaded = false; // Flag to prevent reloading posts
+    protected bool _isLoaded = false;
 
-    // Class to represent individual posts
     [System.Serializable]
     public class Post
     {
-        public string title;
+        public string nickname;
         public string content;
+        public string date;
     }
 
-    // Wrapper class to hold a list of posts
     [System.Serializable]
     public class PostWrapper
     {
-        public List<Post> posts; // List of posts
+        public List<Post> posts;
     }
 
-    // Called when the object is enabled
     private void OnEnable()
     {
-        LoadPosts(); // Load posts when the object is enabled
+        LoadPosts();
     }
 
-    // Method to load posts from the JSON file
-    public void LoadPosts()
+    protected PostWrapper CreatePostWrapper()
     {
-        if (_isLoaded) return; // If posts are already loaded, exit the method
-
-        TextAsset jsonFile = Resources.Load<TextAsset>(_jsonFilePath); // Load the JSON file from Resources
+        TextAsset jsonFile = Resources.Load<TextAsset>(_jsonFilePath);
         if (jsonFile == null)
         {
-            Debug.LogError("Cannot find JSON file: " + _jsonFilePath); // Log an error if the file is not found
-            return;
+            Debug.LogError("Cannot find JSON file: " + _jsonFilePath);
+            return null;
         }
 
-        // Deserialize the JSON data into a PostWrapper object
         string jsonData = jsonFile.text;
-        PostWrapper postWrapper = JsonUtility.FromJson<PostWrapper>(jsonData);
+
+        return JsonUtility.FromJson<PostWrapper>(jsonData);
+    }
+
+    public virtual void LoadPosts()
+    {
+        if (_isLoaded) return;
+
+        PostWrapper postWrapper = CreatePostWrapper();
         if (postWrapper == null || postWrapper.posts == null)
         {
-            Debug.LogError("Failed to deserialize posts from JSON."); // Log an error if deserialization fails
+            Debug.LogError("Failed to deserialize posts from JSON.");
             return;
         }
 
-        // Instantiate a post object for each post in the list
         foreach (var post in postWrapper.posts)
         {
-            GameObject postObject = Instantiate(_postPrefab, _contentParent); // Instantiate the prefab under the content parent
+            GameObject postObject = Instantiate(_postPrefab, _contentParent);
 
-            // If the PostUI component exists, set the post data
             if (postObject.TryGetComponent<PostUI>(out var postUI))
             {
-                postUI.SetPostData(post.title, post.content); // Set the title and content of the post
+                postUI.SetPostData(post.nickname, post.content, post.date);
             }
         }
 
-        _isLoaded = true; // Mark the posts as loaded
+        _isLoaded = true;
     }
 }

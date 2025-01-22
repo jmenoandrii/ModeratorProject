@@ -1,7 +1,7 @@
 {
     "posts": [
         {
-            "title": "First Post",
+            "nickname": "First Post",
             "content": "This is the content of the first post."
         },
         {

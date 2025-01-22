@@ -4,12 +4,14 @@ using UnityEngine.UI;
 
 public class PostUI : MonoBehaviour
 {
-    [SerializeField] private TMP_Text titleText;
+    [SerializeField] private TMP_Text nicknameText;
     [SerializeField] private TMP_Text contentText;
+    [SerializeField] private TMP_Text dateText;
 
-    public void SetPostData(string title, string content)
+    public void SetPostData(string nickname, string content, string date)
     {
-        titleText.SetText(title);
+        nicknameText.SetText(nickname);
         contentText.SetText(content);
+        dateText.SetText(date);
     }
 }

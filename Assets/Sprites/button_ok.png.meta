@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 53c2161df99964816972aab02c92ef82
+guid: eb76594a5ad29b64ab9e573e568424db
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6351617318852302439
-    second: popup_0
+      213: 3168406664108987082
+    second: button_ok_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -101,7 +101,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: popup_0
+      name: button_ok_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 196
-        height: 80
+        width: 40
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 999e69863b58ad7a0800000000000000
-      internalID: -6351617318852302439
+      spriteID: ac25236f21178fb20800000000000000
+      internalID: 3168406664108987082
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      popup_0: -6351617318852302439
+      button_ok_0: 3168406664108987082
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
