@@ -27,6 +27,11 @@ public class GlobalEventManager : MonoBehaviour
     public static event Action OnCloseBrowser;
     public static event Action OnClearTabBar;
 
+    // ***** Posts events *****
+    public static event Action OnLoadNextPost;
+    public static event Action OnInitAdminPost;
+    public static event Action<PostsLoader.Post> OnSendAdminPost;
+
     // ***** Game events *****
     public static event Action<EndingSummary> OnEndGame;
 
@@ -73,5 +78,20 @@ public class GlobalEventManager : MonoBehaviour
     public static void CallOnEndGame(EndingSummary summary)
     {
         OnEndGame?.Invoke(summary);
+    }
+
+    public static void CallOnLoadNextPost()
+    {
+        OnLoadNextPost?.Invoke();
+    }
+
+    public static void CallOnInitAdminPost()
+    {
+        OnInitAdminPost?.Invoke();
+    }
+
+    public static void CallOnSendAdminPost(PostsLoader.Post post)
+    {
+        OnSendAdminPost?.Invoke(post);
     }
 }

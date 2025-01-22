@@ -3089,6 +3089,7 @@ GameObject:
   - component: {fileID: 622111836}
   - component: {fileID: 622111838}
   - component: {fileID: 622111839}
+  - component: {fileID: 622111840}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3162,6 +3163,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cryptoWalletBalance: 0
   _victimsCount: 0
+--- !u!114 &622111840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622111835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63778b0ae81e560408600b8976d99bf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _jsonFilePath: PostsToReview/post_p1
 --- !u!1 &654595956
 GameObject:
   m_ObjectHideFlags: 0

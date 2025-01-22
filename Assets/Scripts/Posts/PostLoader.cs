@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class PostsLoader : MonoBehaviour
 {
-    [SerializeField] protected GameObject _postPrefab;
-    [SerializeField] protected Transform _contentParent;
     [SerializeField] protected string _jsonFilePath;
+
+    protected PostWrapper _postWrapper;
 
     protected bool _isLoaded = false;
 
@@ -21,11 +21,6 @@ public class PostsLoader : MonoBehaviour
     public class PostWrapper
     {
         public List<Post> posts;
-    }
-
-    private void OnEnable()
-    {
-        LoadPosts();
     }
 
     protected PostWrapper CreatePostWrapper()
@@ -51,16 +46,6 @@ public class PostsLoader : MonoBehaviour
         {
             Debug.LogError("Failed to deserialize posts from JSON.");
             return;
-        }
-
-        foreach (var post in postWrapper.posts)
-        {
-            GameObject postObject = Instantiate(_postPrefab, _contentParent);
-
-            if (postObject.TryGetComponent<PostUI>(out var postUI))
-            {
-                postUI.SetPostData(post.nickname, post.content, post.date);
-            }
         }
 
         _isLoaded = true;
