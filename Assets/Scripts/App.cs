@@ -9,7 +9,7 @@ public class App : MonoBehaviour
     [SerializeField] private string _title;
     [Header("Window Elements")]
     [SerializeField] private Image _appIcon;
-    [SerializeField] private TextMeshProUGUI _appTitle;
+    [SerializeField] private TMP_Text _appTitle;
     [SerializeField] private GameObject _appContainer;
     [SerializeField] private GameObject _appWindow;
 
@@ -22,22 +22,19 @@ public class App : MonoBehaviour
     public string Title { get { return _title; } }
     public bool IsActive { get {  return _appContainer.activeSelf; } }
 
-    private void Awake()
-    {
-        if (_appIcon == null)
-            _appIcon.sprite = _icon;
-        if (_appTitle == null)
-            _appTitle.text = _title;
-
-        // protection
-        if (_appWindow == null)
-            _appWindow = gameObject;
-    }
-
     private void OnEnable()
     {
         if (!_isInitialized) 
         {
+            if (_appIcon != null)
+                _appIcon.sprite = _icon;
+            if (_appTitle != null)
+                _appTitle.SetText(_title);
+
+            // protection
+            if (_appWindow == null)
+                _appWindow = gameObject;
+
             _initialPosition = _appWindow.transform.localPosition;
             _initialRotation = _appWindow.transform.localRotation;
 
