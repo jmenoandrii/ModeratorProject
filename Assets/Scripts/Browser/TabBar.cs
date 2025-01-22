@@ -8,6 +8,8 @@ public class TabBar : MonoBehaviour
 {
     [SerializeField] private NewPageButton _newPageButton;
     [SerializeField] private TabBarElement[] _elementList;
+    public static int CountOfActiveElement { get; private set; }
+    public static int MaxOfActiveElement { get; private set; }
     private TabBarElement _currentTab;
 
     // static tab colors
@@ -18,6 +20,9 @@ public class TabBar : MonoBehaviour
 
     private void Start()
     {
+        CountOfActiveElement = 0;
+        MaxOfActiveElement = _elementList.Length;
+
         // protection
         int currentTabCount = 0;
         foreach (TabBarElement element in _elementList)
@@ -27,6 +32,10 @@ public class TabBar : MonoBehaviour
                 currentTabCount++;
                 // set
                 _currentTab = element;
+            }
+            if (element.IsActive)
+            {
+                CountOfActiveElement++;
             }
         }
         if (currentTabCount > 1)
@@ -80,6 +89,8 @@ public class TabBar : MonoBehaviour
 
     private void AddBarElement(PageParameter defaultPageParameter, GameObject newPage)
     {
+        CountOfActiveElement++;
+
         foreach (TabBarElement element in _elementList)
         {
             if (!element.IsActive)
@@ -97,6 +108,8 @@ public class TabBar : MonoBehaviour
 
     private void TabClosingHandling(TabBarElement tab)
     {
+        CountOfActiveElement--;
+
         if (!tab.IsCurrentPage) return; // if it wasn't current page, TabBar have no need to do something
 
         foreach (TabBarElement element in _elementList.Reverse())
@@ -114,7 +127,9 @@ public class TabBar : MonoBehaviour
 
     private void ClearTabBar()
     {
-        foreach(TabBarElement element in _elementList)
+        CountOfActiveElement = 0;
+
+        foreach (TabBarElement element in _elementList)
         {
             element.Hide();
         }

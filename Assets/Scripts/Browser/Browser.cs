@@ -5,6 +5,7 @@ public class Browser : App
     [Header("Browser Components")]
     [SerializeField] private GameObject _contentContainer;
     [SerializeField] private GameObject _currentPage;
+    [SerializeField] private PopUp _popUpWindow;
     [SerializeField] private NewPageButton _newPageButton;
 
     private void Start()
@@ -12,17 +13,22 @@ public class Browser : App
         // protection
         if (_contentContainer == null)
         {
-            Debug.LogError("_contentContainer is not assigned!");
+            Debug.LogError($"[{gameObject.name}]: _contentContainer is not assigned!");
         }
 
         if (_currentPage == null)
         {
-            Debug.LogError("_currentPage is not assigned!");
+            Debug.LogError($"[{gameObject.name}]: _currentPage is not assigned!");
         }
 
         if (_newPageButton == null)
         {
-            Debug.LogError("_newPageButton is not assigned!");
+            Debug.LogError($"[{gameObject.name}]: _newPageButton is not assigned!");
+        }
+
+        if (_popUpWindow == null)
+        {
+            Debug.LogError($"[{gameObject.name}]: _popUp is not assigned!");
         }
     }
 
@@ -105,6 +111,12 @@ public class Browser : App
 
     private void OpenMainPage(PageParameter defaultPageParameter)
     {
+        if (TabBar.CountOfActiveElement >= TabBar.MaxOfActiveElement)
+        {
+            _popUpWindow.Show();
+            return;
+        }
+
         GameObject newPage = SpawnPage(defaultPageParameter, true);
 
         _currentPage?.SetActive(false);

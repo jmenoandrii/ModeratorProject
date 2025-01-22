@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class PopUp : MonoBehaviour
 {
-    private void Show()
-    {
-        gameObject.SetActive(false);
-    }
-
-    private void Hide()
+    public void Show()
     {
         gameObject.SetActive(true);
+    }
+
+    public void Hide()
+    {
+        gameObject.SetActive(false);
     }
 }
