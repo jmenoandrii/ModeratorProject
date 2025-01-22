@@ -20,7 +20,8 @@ public class App : MonoBehaviour
 
     public Sprite Icon { get { return _icon; } }
     public string Title { get { return _title; } }
-    public bool IsActive { get {  return _appContainer.activeSelf; } }
+    public bool IsContainerActive { get {  return _appContainer.activeSelf; } }
+    public bool IsAppActive { get {  return _appWindow.activeSelf; } }
 
     private void OnEnable()
     {
@@ -55,7 +56,15 @@ public class App : MonoBehaviour
     //When we first open app
     public void OpenApp()
     {
-        if (_appWindow.activeSelf) return;
+        _appWindow.transform.SetAsLastSibling();
+        
+        if (IsAppActive) 
+        {
+            if (!IsContainerActive) 
+                ShowApp();
+
+            return;
+        }
 
         _appWindow.SetActive(true);
 
@@ -67,16 +76,15 @@ public class App : MonoBehaviour
 
     public void HideApp()
     {
-        if (!IsActive) return;
+        if (!IsContainerActive) return;
 
         _appContainer.SetActive(false);
     }
 
     public void ShowApp()
     {
-        if (IsActive) return;
+        if (IsContainerActive) return;
 
-        _appWindow.transform.SetAsLastSibling();
         _appContainer.SetActive(true);
     }
 }
