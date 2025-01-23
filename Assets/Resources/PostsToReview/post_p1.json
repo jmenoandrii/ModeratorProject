@@ -9,14 +9,18 @@
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": -5,
-                "pacifismToMilitarismValue": 7
+                "pacifismToMilitarismValue": 7,
+                "profit": 1,
+                "victims": 1
             },
             "denyImpact": {
                 "conspiracyToScienceValue": 2,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": -1,
                 "authoritarianismToDemocracyValue": 10,
-                "pacifismToMilitarismValue": 7
+                "pacifismToMilitarismValue": 7,
+                "profit": 100,
+                "victims": 100
             }
         },
         {
@@ -28,14 +32,18 @@
                 "conservatismToProgressValue": -25,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 12,
-                "pacifismToMilitarismValue": -1
+                "pacifismToMilitarismValue": -1,
+                "profit": 5,
+                "victims": 5
             },
             "denyImpact": {
                 "conspiracyToScienceValue": 1,
                 "conservatismToProgressValue": 10,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 5,
-                "pacifismToMilitarismValue": -2
+                "pacifismToMilitarismValue": -2,
+                "profit": 150,
+                "victims": 150
             }
         }
     ]

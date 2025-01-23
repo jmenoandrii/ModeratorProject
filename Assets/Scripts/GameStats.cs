@@ -21,6 +21,19 @@ public class GameStats : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        GlobalEventManager.OnSendImpact += ProcessImpact;
+    }
+
+    private void OnDestroy()
+    {
+        GlobalEventManager.OnSendImpact -= ProcessImpact;
+    }
+
+    private void ProcessImpact(AdminPostsLoader.Impact impact)
+    {
+        AddToWallet(impact.profit);
+        IncrementVictimsCount(impact.victims);
     }
 
     public void AddToWallet(int amount)

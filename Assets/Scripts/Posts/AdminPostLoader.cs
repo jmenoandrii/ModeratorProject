@@ -19,6 +19,8 @@ public class AdminPostsLoader : MonoBehaviour
         public int communismToCapitalismValue;
         public int authoritarianismToDemocracyValue;
         public int pacifismToMilitarismValue;
+        public int profit;
+        public int victims;
     }
 
     [System.Serializable]
