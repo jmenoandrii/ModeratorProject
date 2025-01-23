@@ -3090,6 +3090,7 @@ GameObject:
   - component: {fileID: 622111838}
   - component: {fileID: 622111839}
   - component: {fileID: 622111840}
+  - component: {fileID: 622111841}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3176,6 +3177,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _jsonFilePath: PostsToReview/post_p1
+--- !u!114 &622111841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622111835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3ef87868d8de41b98ec31afab5c8b15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _postsLoader: {fileID: 622111840}
+  _jsonFilePaths:
+  - PostsToReview/post_p1
+  - PostsToReview/post_p2
+  - PostsToReview/post_p3
+  - PostsToReview/post_p4
+  _timerDuration: 4
 --- !u!1 &654595956
 GameObject:
   m_ObjectHideFlags: 0

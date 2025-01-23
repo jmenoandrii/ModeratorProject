@@ -6,8 +6,7 @@ public class AdminPostsLoader : PostsLoader
 {
     private int _currentIdPost = 0;
     private int _maxIdPost = 0;
-    protected new PostWrapper _postWrapper;
-
+    private PostWrapper _adminPostWrapper;
 
     [System.Serializable]
     public class Impact
@@ -29,18 +28,30 @@ public class AdminPostsLoader : PostsLoader
         public Impact denyImpact;
     }
 
+    private void Awake()
+    {
+        GlobalEventManager.OnInitAdminPost += SendCurrentPost;
+        GlobalEventManager.OnLoadNextPost += TryLoadNextPost;
+    }
+
+    private void OnDestroy()
+    {
+        GlobalEventManager.OnInitAdminPost -= SendCurrentPost;
+        GlobalEventManager.OnLoadNextPost -= TryLoadNextPost;
+    }
+
     [System.Serializable]
     public new class PostWrapper
     {
         public List<AdminPost> posts;
     }
 
-    protected new PostWrapper CreatePostWrapper()
+    protected new PostWrapper LoadPostsFromFile(string jsonFilePath)
     {
-        TextAsset jsonFile = Resources.Load<TextAsset>(_jsonFilePath);
+        TextAsset jsonFile = Resources.Load<TextAsset>(jsonFilePath);
         if (jsonFile == null)
         {
-            Debug.LogError("Cannot find JSON file: " + _jsonFilePath);
+            Debug.LogError("Cannot find JSON file: " + jsonFilePath);
             return null;
         }
 
@@ -49,62 +60,52 @@ public class AdminPostsLoader : PostsLoader
         return JsonUtility.FromJson<PostWrapper>(jsonData);
     }
 
-
-    private void Awake()
+    public override void LoadPosts(string jsonFilePath)
     {
-        GlobalEventManager.OnInitAdminPost += ReturnCurrentPost;
-        GlobalEventManager.OnLoadNextPost += LoadNextPost;
-    }
+        if (_isLoaded && jsonFilePath == _jsonFilePath) return;
+        _isLoaded = false;
 
-    private void OnDestroy()
-    {
-        GlobalEventManager.OnInitAdminPost -= ReturnCurrentPost;
-        GlobalEventManager.OnLoadNextPost -= LoadNextPost;
-    }
-
-    private void Start()
-    {
-        LoadPosts();
-    }
-
-    public override void LoadPosts()
-    {
-        if (_isLoaded) return;
-
-        _postWrapper = CreatePostWrapper();
-        if (_postWrapper == null || _postWrapper.posts == null)
+        _adminPostWrapper = LoadPostsFromFile(jsonFilePath);
+        if (_adminPostWrapper == null || _adminPostWrapper.posts == null)
         {
             Debug.LogError("Failed to deserialize posts from JSON.");
             return;
         }
         
-        _maxIdPost = _postWrapper.posts.Count - 1;
+        _maxIdPost = _adminPostWrapper.posts.Count - 1;
         _currentIdPost = 0;
-
-        ReturnCurrentPost();
-
+        SendPost(_currentIdPost);
         _isLoaded = true;
     }
 
-    public void LoadNextPost() {
-        _currentIdPost++;
-        HandlePostAction(_currentIdPost);
+    public bool IsNoPostsFound()
+    {
+        return _currentIdPost > _maxIdPost;
     }
 
-    private void ReturnCurrentPost()
+    public void TryLoadNextPost()
     {
-        HandlePostAction(_currentIdPost);
-    }
-
-    private void HandlePostAction(int postId)
-    {
-        if (_maxIdPost < postId)
+        if (IsNoPostsFound())
         {
-            GlobalEventManager.CallOnSendAdminPost(null);
+            GlobalEventManager.CallOnNoPostsFound();
+            SendPost(null);
             return;
         }
 
-        AdminPost post = _postWrapper.posts[postId];
+        _currentIdPost++;
+        SendPost(_currentIdPost);
+    }
+
+    public void SendPost(int? postId)
+    {
+        // If postId == null or more than max, they will send null
+        var post = (postId == null || postId > _maxIdPost) ? null : _adminPostWrapper.posts[postId.Value];
         GlobalEventManager.CallOnSendAdminPost(post);
     }
+
+    public void SendCurrentPost()
+    {
+        SendPost(_currentIdPost);
+    }
+
 }

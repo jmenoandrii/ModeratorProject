@@ -30,11 +30,13 @@ public class GlobalEventManager : MonoBehaviour
     // ***** Posts events *****
     public static event Action OnLoadNextPost;
     public static event Action OnInitAdminPost;
+    public static event Action OnNoPostsFound;
     public static event Action<AdminPostsLoader.AdminPost> OnSendAdminPost;
     public static event Action<AdminPostsLoader.Impact> OnSendImpact;
 
     // ***** Game events *****
     public static event Action<EndingSummary> OnEndGame;
+    public static event Action OnEndInitiate;
 
     public static void CallOnPageOpen(PageParameter pageParameter)
     {
@@ -81,6 +83,11 @@ public class GlobalEventManager : MonoBehaviour
         OnEndGame?.Invoke(summary);
     }
 
+    public static void CallOnEndInitiate()
+    {
+        OnEndInitiate?.Invoke();
+    }
+
     public static void CallOnLoadNextPost()
     {
         OnLoadNextPost?.Invoke();
@@ -89,6 +96,11 @@ public class GlobalEventManager : MonoBehaviour
     public static void CallOnInitAdminPost()
     {
         OnInitAdminPost?.Invoke();
+    }
+
+    public static void CallOnNoPostsFound()
+    {
+        OnNoPostsFound?.Invoke();
     }
 
     public static void CallOnSendAdminPost(AdminPostsLoader.AdminPost post)

@@ -23,12 +23,12 @@ public class PostsLoader : MonoBehaviour
         public List<Post> posts;
     }
 
-    protected PostWrapper CreatePostWrapper()
+    protected PostWrapper LoadPostsFromFile(string jsonFilePath)
     {
-        TextAsset jsonFile = Resources.Load<TextAsset>(_jsonFilePath);
+        TextAsset jsonFile = Resources.Load<TextAsset>(jsonFilePath);
         if (jsonFile == null)
         {
-            Debug.LogError("Cannot find JSON file: " + _jsonFilePath);
+            Debug.LogError("Cannot find JSON file: " + jsonFilePath);
             return null;
         }
 
@@ -37,11 +37,11 @@ public class PostsLoader : MonoBehaviour
         return JsonUtility.FromJson<PostWrapper>(jsonData);
     }
 
-    public virtual void LoadPosts()
+    public virtual void LoadPosts(string jsonFilePath)
     {
         if (_isLoaded) return;
 
-        PostWrapper postWrapper = CreatePostWrapper();
+        PostWrapper postWrapper = LoadPostsFromFile(jsonFilePath);
         if (postWrapper == null || postWrapper.posts == null)
         {
             Debug.LogError("Failed to deserialize posts from JSON.");

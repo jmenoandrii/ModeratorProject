@@ -27,11 +27,13 @@ public class EndingManager : MonoBehaviour
     private void Awake()
     {
         GlobalEventManager.OnSendImpact += EditValue;
+        GlobalEventManager.OnEndInitiate += EndGame;
     }
 
     private void OnDestroy()
     {
         GlobalEventManager.OnSendImpact -= EditValue;
+        GlobalEventManager.OnEndInitiate -= EndGame;
     }
 
     public void DetermineEnding()
