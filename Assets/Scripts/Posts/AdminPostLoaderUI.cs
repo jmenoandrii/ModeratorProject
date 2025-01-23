@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -11,6 +12,8 @@ public class AdminPostLoaderUI : MonoBehaviour
     [SerializeField] private TMP_Text _timer;
     [SerializeField] private float _timerDuration = 10f;
     private float _curTimer = 0f;
+    private TimeSpan _timeSpan;
+    private string _timeStr;
 
     private void Awake()
     {
@@ -34,7 +37,9 @@ public class AdminPostLoaderUI : MonoBehaviour
         if (_curTimer != 0f)
         {
             _curTimer -= Time.deltaTime;
-            _timer.SetText(_curTimer.ToString());
+            _timeSpan = TimeSpan.FromSeconds(_curTimer);
+            _timeStr = string.Format("{0:D2}:{1:D2}", _timeSpan.Minutes, _timeSpan.Seconds);
+            _timer.SetText(_timeStr);
         }
     }
 
