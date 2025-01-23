@@ -78,12 +78,13 @@ public class AdminPostsLoader : MonoBehaviour
         _maxIdPost = _postWrapper.posts.Count - 1;
         _currentIdPost = 0;
         SendPost(_currentIdPost);
+        SendLeftPostCount();
         _isLoaded = true;
     }
 
     public bool IsNoPostsFound()
     {
-        return _currentIdPost > _maxIdPost;
+        return _currentIdPost >= _maxIdPost;
     }
 
     public void TryLoadNextPost()
@@ -92,11 +93,18 @@ public class AdminPostsLoader : MonoBehaviour
         {
             GlobalEventManager.CallOnNoPostsFound();
             SendPost(null);
+            GlobalEventManager.CallOnSendLeftPostCount(0);
             return;
         }
 
         _currentIdPost++;
         SendPost(_currentIdPost);
+        SendLeftPostCount();
+    }
+
+    public void SendLeftPostCount()
+    {
+        GlobalEventManager.CallOnSendLeftPostCount(_maxIdPost + 1 - _currentIdPost);
     }
 
     public void SendPost(int? postId)
@@ -109,6 +117,7 @@ public class AdminPostsLoader : MonoBehaviour
     public void SendCurrentPost()
     {
         SendPost(_currentIdPost);
+        SendLeftPostCount();
     }
 
 }

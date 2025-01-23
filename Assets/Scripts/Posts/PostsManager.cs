@@ -32,7 +32,6 @@ public class PostManager : MonoBehaviour
     {
         if (_currentFileIndex >= _jsonFilePaths.Length)
         {
-            Debug.LogError("No more files to load.");
             return;
         }
 

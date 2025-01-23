@@ -33,6 +33,8 @@ public class GlobalEventManager : MonoBehaviour
     public static event Action OnNoPostsFound;
     public static event Action<AdminPostsLoader.AdminPost> OnSendAdminPost;
     public static event Action<AdminPostsLoader.Impact> OnSendImpact;
+    public static event Action<int> OnSendLeftPostCount;
+
 
     // ***** Game events *****
     public static event Action<EndingSummary> OnEndGame;
@@ -111,5 +113,10 @@ public class GlobalEventManager : MonoBehaviour
     public static void CallOnSendImpact(AdminPostsLoader.Impact impact)
     {
         OnSendImpact?.Invoke(impact);
+    }
+
+    public static void CallOnSendLeftPostCount(int count)
+    {
+        OnSendLeftPostCount?.Invoke(count);
     }
 }

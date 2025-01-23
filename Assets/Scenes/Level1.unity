@@ -3195,7 +3195,7 @@ MonoBehaviour:
   - PostsToReview/post_p2
   - PostsToReview/post_p3
   - PostsToReview/post_p4
-  _timerDuration: 4
+  _timerDuration: 10
 --- !u!1 &654595956
 GameObject:
   m_ObjectHideFlags: 0
