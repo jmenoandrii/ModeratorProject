@@ -37,7 +37,7 @@ public class PostsLoader : MonoBehaviour
         return JsonUtility.FromJson<PostWrapper>(jsonData);
     }
 
-    public virtual void LoadPosts(string jsonFilePath)
+    public void LoadPosts(string jsonFilePath)
     {
         if (_isLoaded) return;
 

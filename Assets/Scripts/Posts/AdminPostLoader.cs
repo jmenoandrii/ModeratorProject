@@ -2,11 +2,14 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class AdminPostsLoader : PostsLoader
+public class AdminPostsLoader : MonoBehaviour
 {
+    [SerializeField] protected string _jsonFilePath;
+    private PostWrapper _postWrapper;
+    protected bool _isLoaded = false;
+
     private int _currentIdPost = 0;
     private int _maxIdPost = 0;
-    private PostWrapper _adminPostWrapper;
 
     [System.Serializable]
     public class Impact
@@ -41,12 +44,12 @@ public class AdminPostsLoader : PostsLoader
     }
 
     [System.Serializable]
-    public new class PostWrapper
+    public class PostWrapper
     {
         public List<AdminPost> posts;
     }
 
-    protected new PostWrapper LoadPostsFromFile(string jsonFilePath)
+    protected PostWrapper LoadPostsFromFile(string jsonFilePath)
     {
         TextAsset jsonFile = Resources.Load<TextAsset>(jsonFilePath);
         if (jsonFile == null)
@@ -60,19 +63,19 @@ public class AdminPostsLoader : PostsLoader
         return JsonUtility.FromJson<PostWrapper>(jsonData);
     }
 
-    public override void LoadPosts(string jsonFilePath)
+    public void LoadPosts(string jsonFilePath)
     {
         if (_isLoaded && jsonFilePath == _jsonFilePath) return;
         _isLoaded = false;
 
-        _adminPostWrapper = LoadPostsFromFile(jsonFilePath);
-        if (_adminPostWrapper == null || _adminPostWrapper.posts == null)
+        _postWrapper = LoadPostsFromFile(jsonFilePath);
+        if (_postWrapper == null || _postWrapper.posts == null)
         {
             Debug.LogError("Failed to deserialize posts from JSON.");
             return;
         }
         
-        _maxIdPost = _adminPostWrapper.posts.Count - 1;
+        _maxIdPost = _postWrapper.posts.Count - 1;
         _currentIdPost = 0;
         SendPost(_currentIdPost);
         _isLoaded = true;
@@ -99,7 +102,7 @@ public class AdminPostsLoader : PostsLoader
     public void SendPost(int? postId)
     {
         // If postId == null or more than max, they will send null
-        var post = (postId == null || postId > _maxIdPost) ? null : _adminPostWrapper.posts[postId.Value];
+        var post = (postId == null || postId > _maxIdPost) ? null : _postWrapper.posts[postId.Value];
         GlobalEventManager.CallOnSendAdminPost(post);
     }
 
