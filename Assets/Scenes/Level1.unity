@@ -3117,6 +3117,17 @@ MonoBehaviour:
   _communismToCapitalismValue: 0
   _authoritarianismToDemocracyValue: 0
   _pacifismToMilitarismValue: 0
+  _limitValue: 35
+  _conspiracyEnding: {fileID: 11400000, guid: 347a94cea7284ce4f8541307f5688fe5, type: 2}
+  _scienceEnding: {fileID: 11400000, guid: 6fb29f0c7b5e2854f93a787f35198b76, type: 2}
+  _conservatismEnding: {fileID: 11400000, guid: 16486d88f4d26d64198bd87efd8f134f, type: 2}
+  _progressEnding: {fileID: 11400000, guid: 1e337b2fa4c618640972a2c61858379b, type: 2}
+  _communismEnding: {fileID: 11400000, guid: f76e9e9a36a209a46ac324679f77eb03, type: 2}
+  _capitalismEnding: {fileID: 11400000, guid: d7fb192358a5cce4d9b6beb37932e51b, type: 2}
+  _authoritarianismEnding: {fileID: 11400000, guid: e667374c50bb01147a382af7309e7166, type: 2}
+  _democracyEnding: {fileID: 11400000, guid: 9dfb470ff6c241f448f1a9a68c779416, type: 2}
+  _pacifismEnding: {fileID: 11400000, guid: d016b1ace6887f647972b9ab0ec156e7, type: 2}
+  _militarismEnding: {fileID: 11400000, guid: 64051012649d8b141934ed83cfb4dbb8, type: 2}
 --- !u!4 &622111837
 Transform:
   m_ObjectHideFlags: 0
