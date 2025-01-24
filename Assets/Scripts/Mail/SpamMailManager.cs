@@ -38,8 +38,6 @@ public class SpamMailManager : MonoBehaviour
 
         string jsonData = jsonFile.text;
 
-        Debug.Log(jsonData);
-
         _maiWrapper = JsonUtility.FromJson<MailWrapper>(jsonData);
     }
 

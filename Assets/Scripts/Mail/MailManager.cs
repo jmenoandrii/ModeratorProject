@@ -2,18 +2,22 @@ using UnityEngine;
 
 public class MailManager : MonoBehaviour
 {
-    [Header("Mail Settings")]
     [SerializeField] private GameObject _mailListBox;
+    [SerializeField] private FullMailUI _fullMailUI;
     [SerializeField] private GameObject _mailPrefab;
 
     private void Awake()
     {
         GlobalEventManager.OnAddNewMail += AddNewMail;
+        GlobalEventManager.OnShowFullMail += ShowFullMail;
+        GlobalEventManager.OnHideFullMail += HideFullMail;
     }
 
     private void OnDestroy()
     {
         GlobalEventManager.OnAddNewMail -= AddNewMail;
+        GlobalEventManager.OnShowFullMail -= ShowFullMail;
+        GlobalEventManager.OnHideFullMail -= HideFullMail;
     }
 
     private void AddNewMail(Mail mail)
@@ -34,5 +38,19 @@ public class MailManager : MonoBehaviour
         MailUI mailUI = newMail.GetComponent<MailUI>();
 
         mailUI.SetData(mail);
+    }
+
+    private void ShowFullMail(Mail mail)
+    {
+        _fullMailUI.SetData(mail);
+
+        _mailListBox.SetActive(false);
+        _fullMailUI.gameObject.SetActive(true);
+    }
+
+    private void HideFullMail()
+    {
+        _mailListBox.SetActive(true);
+        _fullMailUI.gameObject.SetActive(false);
     }
 }

@@ -122,9 +122,21 @@ public class GlobalEventManager : MonoBehaviour
 
     // ***** Mail *****
     public static event Action<Mail> OnAddNewMail;
+    public static event Action<Mail> OnShowFullMail;
+    public static event Action OnHideFullMail;
 
     public static void CallOnAddNewMail(Mail mail)
     {
         OnAddNewMail?.Invoke(mail);
+    }
+
+    public static void CallOnShowFullMail(Mail mail)
+    {
+        OnShowFullMail?.Invoke(mail);
+    }
+
+    public static void CallOnHideFullMail()
+    {
+        OnHideFullMail?.Invoke();
     }
 }
