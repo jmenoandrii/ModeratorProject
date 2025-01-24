@@ -12,5 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67bd974215ede1468674f6aa9ca2fd7, type: 3}
   m_Name: Conspiracy
   m_EditorClassIdentifier: 
-  endingName: Conspiracy
-  description: When your lack of evidence is the evidence
+  endingName: Conspiracy. Ending 1/10
+  description: In 2012, the Mayan calendar came true. The strange phenomena that
+    began in 2004 reached a climax. The sky was lit up with unearthly lights, the
+    planet Nibiru approached, and time stood still. Humanity disappeared without
+    a trace, leaving empty cities and unsolved mysteries. The end of the world came
+    quietly, like the completion of a great cycle, and the Earth turned into a silent
+    artefact in the vast cosmos.
+  image: {fileID: -1947211271899460957, guid: 2174a9dbb97eb4938a29d451f56844cc, type: 3}
+  timeline: 'People have begun to notice more often the manifestations of extraterrestrial
+    intervention, such as circles in the fields or the direct existence of flying
+    saucers in the sky. Scientists discover a new planet number 9 known as Planet
+    Nibiru or Planet X  The world came to an end with the end of the Mayan calendar
+    in 2012. '

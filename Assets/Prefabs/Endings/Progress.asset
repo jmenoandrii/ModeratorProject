@@ -15,3 +15,8 @@ MonoBehaviour:
   endingName: Progress
   description: "Fixing problems we didn\u2019t know we had in ways we don\u2019t
     fully understand"
+  images:
+  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
+  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
+  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
+  years: d4070000d7070000dc070000

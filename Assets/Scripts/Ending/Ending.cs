@@ -11,4 +11,6 @@ public class Ending : ScriptableObject
         public EndingManager.AxisRange axisAuthoritarianismToDemocracy;
         public EndingManager.AxisRange axisPacifismToMilitarism;
 
+    public Sprite image;
+    public string timeline;
 }

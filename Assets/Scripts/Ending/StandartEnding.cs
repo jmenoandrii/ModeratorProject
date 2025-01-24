@@ -6,4 +6,7 @@ public class StandartEnding : ScriptableObject
 {
     public string endingName;
     public string description;
+
+    public Sprite image;
+    public string timeline;
 }
