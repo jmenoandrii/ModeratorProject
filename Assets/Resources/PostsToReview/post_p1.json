@@ -1,49 +1,371 @@
 {
     "posts": [
         {
-            "nickname": "@fwaf",
-            "content": "This is the content of the first post.",
-            "date": "awfwa.",
+            "nickname": "@true4you",
+            "content": "Мобільні телефони – це зло! Вони вбивають наш мозок! А ще від них випадає волосся і ростуть роги! Люди стають більш агресивні. Задумайтеся телефони - це інструмент масового контролю #Мобільні #Жарти #Технофобія",
+            "date": "1994-01-01",
             "acceptImpact": {
-                "conspiracyToScienceValue": 10,
+                "conspiracyToScienceValue": 3,
+                "conservatismToProgressValue": 3,
+                "communismToCapitalismValue": 1,
+                "authoritarianismToDemocracyValue": 1,
+                "pacifismToMilitarismValue": -2,
+                "profit": 0,
+                "victims": 42
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": -3,
+                "conservatismToProgressValue": -3,
+                "communismToCapitalismValue": -1,
+                "authoritarianismToDemocracyValue": -1,
+                "pacifismToMilitarismValue": 2,
+                "profit": 0,
+                "victims": 2
+            }
+        },
+        {
+            "nickname": "@canofduty",
+            "content": "Цей інтернет – зло! Там одна порнографія і злочинність! Він руйнує нашу молодь! Ваші діти також будуть помирати на ваших руках через кляти ІНПТЕРНЕТ #Інтернет #Мораль #Занепокоєння",
+            "date": "1995-12-23",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": -2,
+                "communismToCapitalismValue": -3,
+                "authoritarianismToDemocracyValue": -2,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 6326
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 2,
+                "communismToCapitalismValue": 3,
+                "authoritarianismToDemocracyValue": 2,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 6156
+            }
+        },  
+        {
+            "nickname": "@AltRite",
+            "content": "Скільки ще смертей потрібно, щоб зупинити цю безглузду війну? Наші хлопці гинуть за чужі інтереси! Поверніть солдатів додому! #Війна #Мир #Протест",
+            "date": "1994-08-15",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 1,
+                "communismToCapitalismValue": 1,
+                "authoritarianismToDemocracyValue": 3,
+                "pacifismToMilitarismValue": -2,
+                "profit": 0,
+                "victims": -5000
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": -1,
+                "communismToCapitalismValue": -1,
+                "authoritarianismToDemocracyValue": -3,
+                "pacifismToMilitarismValue": 2,
+                "profit": 150,
+                "victims": 1000
+            }
+        },
+        {
+            "nickname": "@dark_viridian",
+            "content": "Знову війна… Страшно за наших солдатів. Хочеться, щоб все це швидше закінчилось. #Війна #Страх #Мир",
+            "date": "1994-03-10",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": -5,
-                "pacifismToMilitarismValue": 7,
-                "profit": 1,
+                "authoritarianismToDemocracyValue": 3,
+                "pacifismToMilitarismValue": -3,
+                "profit": 0,
+                "victims": -500
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": -3,
+                "pacifismToMilitarismValue": 3,
+                "profit": 150,
+                "victims": 1500
+            }
+        },
+        {
+            "nickname": "@_CH1LL_GUY_",
+            "content": "Як же швидко все змінилося… Ще вчора була одна країна, а сьогодні – зовсім інша реальність. Політики чорти німа морозива за 2 копійки. Сумно… #СРСР #Розпад #Зміни",
+            "date": "1992-01-20",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": -1,
+                "communismToCapitalismValue": -3,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": -2,
+                "profit": -5,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 1,
+                "communismToCapitalismValue": 2,
+                "authoritarianismToDemocracyValue": -1,
+                "pacifismToMilitarismValue": 0,
+                "profit": 50,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@Pan_Banan",
+            "content": "Розвал Союзу – це результат зради національних інтересів! Ми втратили економічну та політичну могутність! Треба четвертувати винних! #СРСР #Зрада #Політика",
+            "date": "1992-02-05",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 2,
+                "conservatismToProgressValue": -2,
+                "communismToCapitalismValue": -3,
+                "authoritarianismToDemocracyValue": -1,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 761
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": -2,
+                "conservatismToProgressValue": 2,
+                "communismToCapitalismValue": 3,
+                "authoritarianismToDemocracyValue": 1,
+                "pacifismToMilitarismValue": 0,
+                "profit": 500,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@Maxinekitten",
+            "content": "Вони хочуть знести нашу історичну будівлю заради чергового торгового центру! Це варварство! Ми не дозволимо їм знищити нашу історію! Приєднуйтесь до мирного протесту! Беріть автомати і гранати, паліть шини, тільки зі смертю політиків ми вирішимо це мирно. #Історія #Культура #ЗбережемоСпадщину",
+            "date": "1990-09-13",
+            "acceptImpact": {
+                "conspiracyToScienceValue": -2,
+                "conservatismToProgressValue": -2,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 3,
+                "pacifismToMilitarismValue": -3,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 2,
+                "conservatismToProgressValue": 2,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": -3,
+                "pacifismToMilitarismValue": 3,
+                "profit": 100,
                 "victims": 1
+            }
+        },
+        {
+            "nickname": "@Chrissy_Cakes",
+            "content": "Як вони можуть знести цю будівлю?! Там же вся історія нашого міста! Це ж не просто каміння! Давайте проголосуємо щоб всіх хто приймав цей указ було депортовано. #Історія #Культура #Біль #Квас",
+            "date": "1993-04-15",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 1,
+                "conservatismToProgressValue": 2,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 3,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": -1,
+                "conservatismToProgressValue": -2,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": -3,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@Faustella",
+            "content": "Подивіться на цю фотографію! Ця дитина померла через брудну воду! Це жахливо! Ми не можемо це терпіти! Водоканал має відповісти! #Вода #Діти #Трагедія",
+            "date": "1992-05-05",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 0,
+                "profit": 300,
+                "victims": 2987
+            }
+        },
+        {
+            "nickname": "@ElaraMundo121",
+            "content": "Скільки ще дітей має загинути, щоб водоканал почав працювати?! Ми вимагаємо чисту воду для нашого міста! Завтра мітинг біля мерії! Приходьте всі! Ми маємо придушити соціальну нерівність! #ЧистаВода #Протест #ВимагаємоЗмін",
+            "date": "1992-05-10",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 2,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": -3,
+                "authoritarianismToDemocracyValue": -1,
+                "pacifismToMilitarismValue": -1,
+                "profit": 0,
+                "victims": 0
             },
             "denyImpact": {
                 "conspiracyToScienceValue": 2,
                 "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": -1,
-                "authoritarianismToDemocracyValue": 10,
-                "pacifismToMilitarismValue": 7,
-                "profit": 100,
+                "communismToCapitalismValue": 3,
+                "authoritarianismToDemocracyValue": 1,
+                "pacifismToMilitarismValue": 1,
+                "profit": 70,
                 "victims": 100
             }
         },
         {
-            "nickname": "@fwafaw",
-            "content": "Thiswafwaf post.",
-            "date": "awfwa.",
+            "nickname": "@Viktor_Probirka",
+            "content": "Ви все ще вірите, що вакцини – це для вашого блага? Подумайте ще раз! Кожна ін'єкція – це посилює контроль над вашим тілом. Наночіпи, зміна ДНК, стеження – це вже не фантастика, а реальність. Вони хочуть контролювати кожен ваш крок! Прокиньтесь, поки не пізно! #Вакцини #КонтрольНадСвідомістю #Чіпування #СвітовийУряд",
+            "date": "1991-06-01",
             "acceptImpact": {
-                "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": -25,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 12,
-                "pacifismToMilitarismValue": -1,
-                "profit": 5,
-                "victims": 5
+                "conspiracyToScienceValue": -2,
+                "conservatismToProgressValue": -2,
+                "communismToCapitalismValue": -1,
+                "authoritarianismToDemocracyValue": -1,
+                "pacifismToMilitarismValue": 2,
+                "profit": 0,
+                "victims": 0
             },
             "denyImpact": {
-                "conspiracyToScienceValue": 1,
-                "conservatismToProgressValue": 10,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 5,
+                "conspiracyToScienceValue": 2,
+                "conservatismToProgressValue": 2,
+                "communismToCapitalismValue": 1,
+                "authoritarianismToDemocracyValue": 1,
                 "pacifismToMilitarismValue": -2,
-                "profit": 150,
-                "victims": 150
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@Have_a_good_day",
+            "content": "Нам постійно говорять, що вакцини безпечні та необхідні. Але хто гарантує їхню повну безпеку? Хто перевіряє склад вакцин та довгострокові наслідки їхнього використання? Фармацевтичні компанії заробляють мільярди, а ми повинні сліпо їм вірити? Занадто багато питань залишається без відповідей. #Вакцини #Сумніви #Фарміндустрія #Здоров'я",
+            "date": "1991-06-05",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 1,
+                "conservatismToProgressValue": -1,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": -1,
+                "conservatismToProgressValue": 1,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@Maxinekitten",
+            "content": "Вакцинація має бути добровільною, а не примусовою! Кожна людина має право самостійно вирішувати, що вводити в своє тіло. Примусова вакцинація – це порушення прав людини та посягання на особисту свободу! Вимагаємо скасування примусової вакцинації! #Вакцинація #СвободаВибору #ПраваЛюдини #Протест",
+            "date": "1991-06-10",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": -2,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": -2,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 2,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 2,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@Faustella",
+            "content": "Я боюся за своїх дітей! Нам нав'язують ці вакцини, але ніхто не може гарантувати їхньої безпеки! Що, якщо це зашкодить моїй дитині? Я не хочу ризикувати здоров'ям своєї сім'ї! #Вакцини #СтрахЗаДітей #Здоров'я #Безпека",
+            "date": "1991-06-15",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 1,
+                "conservatismToProgressValue": -1,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 1,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": -1,
+                "conservatismToProgressValue": 1,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": -1,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@True_speaker_honest",
+            "content": "Питання вакцинації залишається одним з найбільш дискусійних у сучасному суспільстві. З одного боку, вакцини рятують мільйони життів. З іншого – існують побоювання щодо їхніх побічних ефектів та можливого впливу на організм. Чи існує баланс між суспільною безпекою та особистим вибором? #Вакцини #Здоров'я #Суспільство #Дискусія",
+            "date": "1991-06-20",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 3,
+                "authoritarianismToDemocracyValue": 2,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": -3,
+                "authoritarianismToDemocracyValue": -2,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@BigmaSeaver2580",
+            "content": "Інтернет – це диво! Стільки інформації, стільки можливостей для спілкування! Це майбутнє! Стільки грошей! Стільки воєнних технологій! #Інтернет #Технології #Майбутнє",
+            "date": "1995-04-10",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 1,
+                "conservatismToProgressValue": 3,
+                "communismToCapitalismValue": 1,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 1,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": -1,
+                "conservatismToProgressValue": -3,
+                "communismToCapitalismValue": -1,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": -1,
+                "profit": 0,
+                "victims": 0
             }
         }
     ]

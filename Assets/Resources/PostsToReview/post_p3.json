@@ -1,49 +1,279 @@
 {
     "posts": [
         {
-            "nickname": "@fwaf",
-            "content": "This is the content of the first post.",
-            "date": "awfwa.",
+            "nickname": "@Viktor_Probirka",
+            "content": "Слухайте, люди, це не просто теракт. Жодного чіткого відео з Пентагону! Жодного! Башти-близнюки склалися, як карткові будиночки, – експерти кажуть, це контрольований підрив. Хто стоїть за цим? Кому вигідна війна на Близькому Сході? Нам брешуть, це очевидно! #911 #ЗмоваСтоліття #Прокинься",
+            "date": "2001-09-11",
             "acceptImpact": {
-                "conspiracyToScienceValue": 10,
-                "conservatismToProgressValue": 0,
+                "conspiracyToScienceValue": -3,
+                "conservatismToProgressValue": -1,
                 "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": -5,
-                "pacifismToMilitarismValue": 7,
-                "profit": 5540,
-                "victims": 76
+                "authoritarianismToDemocracyValue": -2,
+                "pacifismToMilitarismValue": 2,
+                "profit": 0,
+                "victims": 0
             },
             "denyImpact": {
-                "conspiracyToScienceValue": 2,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": -1,
-                "authoritarianismToDemocracyValue": 10,
-                "pacifismToMilitarismValue": 7,
-                "profit": 10,
+                "conspiracyToScienceValue": 3,
+                "conservatismToProgressValue": 1,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 2,
+                "pacifismToMilitarismValue": -2,
+                "profit": 0,
                 "victims": 0
             }
         },
         {
-            "nickname": "@fwafaw",
-            "content": "Thiswafwaf post.",
-            "date": "awfwa.",
+            "nickname": "@true4you",
+            "content": "Залишається багато питань без відповідей щодо подій 11 вересня. Відсутність публічних відеозаписів з місця ураження Пентагону та характер руйнування веж Всесвітнього торгового центру породили численні теорії. Чи була офіційна версія подій повною? #911 #Розслідування #Факти",
+            "date": "2001-09-11",
             "acceptImpact": {
                 "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": -25,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 12,
+                "conservatismToProgressValue": 1,
+                "communismToCapitalismValue": 2,
+                "authoritarianismToDemocracyValue": -1,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": -1,
+                "communismToCapitalismValue": -2,
+                "authoritarianismToDemocracyValue": 1,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@True_speaker_honest",
+            "content": "Інженери та архітектори досі сперечаються щодо причин руйнування веж-близнюків. Версія контрольованого знесення залишається однією з найбільш обговорюваних. Чи всі факти були враховані в офіційному звіті? #911 #Розслідування #Експерти",
+            "date": "2001-09-11",
+            "acceptImpact": {
+                "conspiracyToScienceValue": -1,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 2,
+                "authoritarianismToDemocracyValue": -1,
                 "pacifismToMilitarismValue": -1,
-                "profit": 41,
-                "victims": 6
+                "profit": 0,
+                "victims": 0
             },
             "denyImpact": {
                 "conspiracyToScienceValue": 1,
-                "conservatismToProgressValue": 10,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": -2,
+                "authoritarianismToDemocracyValue": 1,
+                "pacifismToMilitarismValue": 1,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@Mr_Mistress",
+            "content": "Ой, ну звичайно, літаки просто так розвалили сталеві вежі, як з картону. Ідеально рівно, як під лінійку. Ніхто нічого не підривав, звісно ж. #911 #Сарказм #ВірюЯкДитина",
+            "date": "2001-09-11",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 2,
+                "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 5,
+                "authoritarianismToDemocracyValue": -1,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": -2,
+                "conservatismToProgressValue": 2,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 1,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@TruthLover51",
+            "content": "SARS – це біологічна зброя, створена в лабораторії! Китай приховує правду! ВООЗ їм підігрує! Це глобальна змова проти людства! #SARS #Біозброя #Змова",
+            "date": "2003-05-01",
+            "acceptImpact": {
+                "conspiracyToScienceValue": -3,
+                "conservatismToProgressValue": -2,
+                "communismToCapitalismValue": -1,
+                "authoritarianismToDemocracyValue": -3,
+                "pacifismToMilitarismValue": -1,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 3,
+                "conservatismToProgressValue": 2,
+                "communismToCapitalismValue": 1,
+                "authoritarianismToDemocracyValue": 3,
+                "pacifismToMilitarismValue": 1,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@true4you",
+            "content": "Походження вірусу SARS досі викликає багато питань. Існують різні теорії, включаючи версію про лабораторне створення. Чи вдасться встановити істину? #SARS #Вірус #Дослідження",
+            "date": "2003-05-01",
+            "acceptImpact": {
+                "conspiracyToScienceValue": -1,
+                "conservatismToProgressValue": 1,
+                "communismToCapitalismValue": 3,
+                "authoritarianismToDemocracyValue": -1,
+                "pacifismToMilitarismValue": 1,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 1,
+                "conservatismToProgressValue": -1,
+                "communismToCapitalismValue": -3,
+                "authoritarianismToDemocracyValue": 1,
+                "pacifismToMilitarismValue": -1,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@Maxinekitten",
+            "content": "Етна знову димить! І це не випадковість! Буріння, видобуток корисних копалин – все це провокує вулканічну активність! Ми руйнуємо планету, а вона нам мститься! #Етна #Екологія #ЗупинимоРуйнування",
+            "date": "2002-11-05",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": -2,
+                "communismToCapitalismValue": -1,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": -3,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 2,
+                "communismToCapitalismValue": 1,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 3,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@deathMarine666",
+            "content": "Знову Етна… Страшно уявити, що буде далі. Кажуть, що це через людську діяльність. Невже ми самі собі шкодимо? #Етна #Вулкан #Страх",
+            "date": "2002-11-05",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": -1,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 1,
+                "pacifismToMilitarismValue": -1,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 1,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": -1,
+                "pacifismToMilitarismValue": 1,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@_your_waifu_",
+            "content": "О, ці вибори! Флорида вирішила долю країни, а підрахунок голосів був як цирк на дроті. Демократія в дії, як то кажуть. #Вибори2000 #Фарс #Америка",
+            "date": "2000-11-07",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 1,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": -1,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": -1,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 1,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@Harry_Jameson",
+            "content": "Вибори 2000 року в США стали прикладом серйозних проблем у виборчій системі. Суперечки щодо підрахунку голосів у Флориді породили хвилю критики та сумнівів у легітимності результатів. #Вибори2000 #Політика #Аналіз",
+            "date": "2000-11-07",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 2,
+                "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": -2,
-                "profit": 10,
-                "victims": 1
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": -2,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 2,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@WorldKnowledgeCollector",
+            "content": "СНІД – це хвороба грішників! Вони самі винні! #СНІД #Кара #Засудження",
+            "date": "2003-06-01",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": -2,
+                "communismToCapitalismValue": -2,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 1,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 2,
+                "communismToCapitalismValue": 2,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": -1,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@Less_than_three",
+            "content": "Хворі на СНІД – такі ж люди, як і ми! Їм потрібна підтримка, а не осуд! #СНІД #Підтримка #Толерантність",
+            "date": "2003-06-01",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 1,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 2,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": -1,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": -1,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": -2,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 1,
+                "profit": 0,
+                "victims": 0
             }
         }
     ]

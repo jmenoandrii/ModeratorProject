@@ -1,48 +1,462 @@
 {
     "posts": [
         {
-            "nickname": "@fwaf",
-            "content": "This is the content of the first post.",
-            "date": "awfwa.",
+            "nickname": "@Le0ndreab0b",
+            "content": "Вибух в Атланті… Занадто багато питань без відповідей. Щось тут нечисто. #Атланта96 #Теракт #Підозри",
+            "date": "1996-07-27",
             "acceptImpact": {
-                "conspiracyToScienceValue": 10,
+                "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": -5,
-                "pacifismToMilitarismValue": 7,
-                "profit": 1052,
+                "communismToCapitalismValue": 1,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 3,
+                "profit": 0,
                 "victims": 0
             },
             "denyImpact": {
-                "conspiracyToScienceValue": 2,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": -1,
-                "authoritarianismToDemocracyValue": 10,
-                "pacifismToMilitarismValue": 7,
-                "profit": 25,
+                "conspiracyToScienceValue": -5,
+                "conservatismToProgressValue": -2,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 2,
+                "pacifismToMilitarismValue": -1,
+                "profit": 0,
                 "victims": 0
             }
         },
         {
-            "nickname": "@fwafaw",
-            "content": "Thiswafwaf post.",
-            "date": "awfwa.",
+            "nickname": "@AntonDemiurge",
+            "content": "Олімпіада в Атланті – це була велика подія для нашої країни! Нехай цей теракт не затьмарить нам свято спорту! #Атланта96 #Олімпіада #Патріотизм",
+            "date": "1996-07-27",
             "acceptImpact": {
-                "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": -25,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 12,
+                "conspiracyToScienceValue": 1,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 1,
+                "authoritarianismToDemocracyValue": 3,
                 "pacifismToMilitarismValue": -1,
-                "profit": 42778,
-                "victims": 100
+                "profit": 0,
+                "victims": 0
             },
             "denyImpact": {
                 "conspiracyToScienceValue": 1,
-                "conservatismToProgressValue": 10,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 1,
+                "authoritarianismToDemocracyValue": 3,
+                "pacifismToMilitarismValue": -1,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@TysonFan86743",
+            "content": "Тайсона засудили несправедливо! Це була змова! Він найкращий, і його просто хотіли зупинити! #Тайсон #Бокс #Несправедливість",
+            "date": "1997-06-28",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 1,
+                "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 5,
+                "authoritarianismToDemocracyValue": 1,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": -1,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": -1,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@Have_a_good_day",
+            "content": "Ну, вкусив вухо – буває. Зате запам'ятається надовго. #Тайсон #Бокс #Скандал",
+            "date": "1997-06-28",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 3,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 1,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": -3,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": -1,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@Viktor_Probirka",
+            "content": "Титанік не просто потонув! Це було сплановане вбивство! Золото на борту, конкуренція… Історія про айсберг – лише прикриття! Прокиньтесь! #Титанік #Змова #Секрети",
+            "date": "1997-12-19",
+            "acceptImpact": {
+                "conspiracyToScienceValue": -3,
+                "conservatismToProgressValue": -3,
+                "communismToCapitalismValue": -2,
+                "authoritarianismToDemocracyValue": -2,
+                "pacifismToMilitarismValue": 2,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 3,
+                "conservatismToProgressValue": 3,
+                "communismToCapitalismValue": 2,
+                "authoritarianismToDemocracyValue": 2,
                 "pacifismToMilitarismValue": -2,
-                "profit": 1050,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@DNDDilemma",
+            "content": "Вже стільки років минуло, а про 'Титанік' досі ходять легенди. Кажуть, що його навмисне потопили… Хто знає, де правда? #Титанік #Історія #Загадки",
+            "date": "1997-12-19",
+            "acceptImpact": {
+                "conspiracyToScienceValue": -1,
+                "conservatismToProgressValue": -1,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": -1,
+                "pacifismToMilitarismValue": 1,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 1,
+                "conservatismToProgressValue": 1,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 1,
+                "pacifismToMilitarismValue": -1,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@meowmeowmeow11",
+            "content": "Все зникло під попелом… Наш дім, наше життя… Уряд нічого не зробив, щоб нас захистити! Вони просто спостерігали, як ми все втрачаємо! Народе нам треба об’єднатися. Підпишіть петицію про те щоб покарали винних. #Монсеррат #Вулкан #Горе",
+            "date": "1997-08-15",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": -1,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 1,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@dream446",
+            "content": "Катастрофа на Монсеррат – це результат бездіяльності влади! Вони не підготували план евакуації, не попередили людей вчасно! Хто понесе відповідальність за ці втрати? #Монсеррат #Безвідповідальність #Звинувачення",
+            "date": "1997-08-15",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 1,
+                "authoritarianismToDemocracyValue": -2,
+                "pacifismToMilitarismValue": 3,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": -1,
+                "authoritarianismToDemocracyValue": 2,
+                "pacifismToMilitarismValue": -3,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@Rumbletide",
+            "content": "Радіоактивний метал з Чорнобиля вже в руках терористів! Це кінець! Всі в небезпеці! #Чорнобиль #Радіація #Терор",
+            "date": "1997-10-15",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 2,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": -1,
+                "authoritarianismToDemocracyValue": -2,
+                "pacifismToMilitarismValue": 2,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": -2,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 1,
+                "authoritarianismToDemocracyValue": 2,
+                "pacifismToMilitarismValue": -2,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@True_speaker_honest",
+            "content": "З'являються повідомлення про торгівлю радіоактивними матеріалами з Чорнобильської зони. Чи існує реальна загроза потрапляння цих матеріалів до рук злочинців? #Чорнобиль #Радіація #Розслідування",
+            "date": "1997-10-15",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 1,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 2,
+                "authoritarianismToDemocracyValue": 1,
+                "pacifismToMilitarismValue": 1,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": -1,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": -2,
+                "authoritarianismToDemocracyValue": -1,
+                "pacifismToMilitarismValue": -1,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@robomaktod",
+            "content": "Комета Хейла-Боппа – це знак з небес! Це кінець світу, як написано в пророцтвах! Готуйтесь до Судного дня! #Комета #Апокаліпсис #БожийЗнак",
+            "date": "1997-03-22",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 2,
+                "conservatismToProgressValue": -2,
+                "communismToCapitalismValue": 1,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 3,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": -2,
+                "conservatismToProgressValue": 2,
+                "communismToCapitalismValue": -1,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": -3,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@Carl_the_Karl",
+            "content": "Знову ці страшилки про кінець світу через комету. Кожен раз одне й те ж. #Комета #Страшилки #Смішно",
+            "date": "1997-03-22",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 3,
+                "conservatismToProgressValue": 2,
+                "communismToCapitalismValue": -1,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": -3,
+                "conservatismToProgressValue": -2,
+                "communismToCapitalismValue": 1,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@Viktor_Probirka",
+            "content": "Діану вбили! Це була операція королівської родини! Вони не хотіли, щоб вона вийшла заміж за мусульманина! Правду приховують, але ми її дізнаємось! #Діана #Змова #КоролівськаРодина",
+            "date": "1997-08-31",
+            "acceptImpact": {
+                "conspiracyToScienceValue": -3,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 2,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 3,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": -2,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@user125761394",
+            "content": "Неможливо повірити, що Діани більше немає… Така трагічна смерть… #Діана #Сум #Трагедія",
+            "date": "1997-08-31",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": -3,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 3,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@EmSeaMarcy",
+            "content": "Мобільні телефони – це повільна смерть! Радіація вбиває наші клітини мозку! Корпорації знають про це, але мовчать заради прибутку! Не користуйтесь цими вбивчими пристроями! #Мобільні #Радіація #ЗмоваКорпорацій",
+            "date": "1997-11-15",
+            "acceptImpact": {
+                "conspiracyToScienceValue": -3,
+                "conservatismToProgressValue": -3,
+                "communismToCapitalismValue": -1,
+                "authoritarianismToDemocracyValue": -1,
+                "pacifismToMilitarismValue": 2,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 3,
+                "conservatismToProgressValue": 3,
+                "communismToCapitalismValue": 1,
+                "authoritarianismToDemocracyValue": 1,
+                "pacifismToMilitarismValue": -2,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@PierMillier",
+            "content": "Ой, знову ці страшилки про мобільники і рак. Скоро скажуть, що від телевізора теж можна померти. Може, краще взагалі жити в печері? #Мобільні #Страшилки #Смішно",
+            "date": "1997-11-15",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 2,
+                "conservatismToProgressValue": 2,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 1,
+                "pacifismToMilitarismValue": 1,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": -2,
+                "conservatismToProgressValue": -2,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": -1,
+                "pacifismToMilitarismValue": -1,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@EmotionsForSale",
+            "content": "Боже мій, Y2K! Залишилося кілька днів! Кажуть, все зламається! Літаки падатимуть, банкомати не працюватимуть, світ зупиниться! Я накупила консерв і свічок, а ви? Страшно! #Y2K #КінецьСвіту #Паніка",
+            "date": "1999-12-31",
+            "acceptImpact": {
+                "conspiracyToScienceValue": -2,
+                "conservatismToProgressValue": -2,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": -1,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 2,
+                "conservatismToProgressValue": 2,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 1,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@AltRite",
+            "content": "Y2K? Серйозно? Комп'ютери збожеволіють і світ рухне? Сподіваюсь, мій старенький 'Денді' переживе цю 'катастрофу'. Запасаюсь попкорном! #Y2K #Комп'ютернийАпокаліпсис #Смішно",
+            "date": "1999-12-31",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 1,
+                "conservatismToProgressValue": 2,
+                "communismToCapitalismValue": -1,
+                "authoritarianismToDemocracyValue": 1,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": -1,
+                "conservatismToProgressValue": -2,
+                "communismToCapitalismValue": 1,
+                "authoritarianismToDemocracyValue": -1,
+                "pacifismToMilitarismValue": 0,
+                "profit": 0,
+                "victims": 0
+            }
+        },
+        {
+            "nickname": "@Gavdra1",
+            "content": "Чеченські бойовики – це терористи! Їх потрібно знищити! Захистимо нашу країну від цієї загрози! #Чечня #Війна #ЗахистБатьківщини",
+            "date": "1995-05-10",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 1,
+                "communismToCapitalismValue": 1,
+                "authoritarianismToDemocracyValue": 3,
+                "pacifismToMilitarismValue": -2,
+                "profit": 0,
+                "victims": 105
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": -1,
+                "communismToCapitalismValue": -1,
+                "authoritarianismToDemocracyValue": -3,
+                "pacifismToMilitarismValue": 2,
+                "profit": 50,
+                "victims": 450
+            }
+        },
+        {
+            "nickname": "@distanTeribble",
+            "content": "Війна – це завжди горе і втрати. Потрібно шукати мирні шляхи вирішення конфлікту. #Чечня #Війна #Мир",
+            "date": "1995-05-15",
+            "acceptImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 3,
+                "pacifismToMilitarismValue": -3,
+                "profit": 0,
+                "victims": 0
+            },
+            "denyImpact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": -3,
+                "pacifismToMilitarismValue": 3,
+                "profit": 0,
                 "victims": 0
             }
         }
