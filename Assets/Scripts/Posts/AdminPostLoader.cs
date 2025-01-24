@@ -31,6 +31,7 @@ public class AdminPostsLoader : MonoBehaviour
         public string date;
         public Impact acceptImpact;
         public Impact denyImpact;
+        public Mail mail;
     }
 
     [System.Serializable]
@@ -132,6 +133,9 @@ public class AdminPostsLoader : MonoBehaviour
         // If postId == null or more than max, they will send null
         var post = (postId == null || postId > _maxIdPost) ? null : _postWrapper.posts[postId.Value];
         GlobalEventManager.CallOnSendAdminPost(post);
+
+        if (post != null && !post.mail.IsVoid)
+            GlobalEventManager.CallOnAddNewMail(post.mail);
     }
 
     public void SendCurrentPost()

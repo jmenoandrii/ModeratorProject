@@ -6,6 +6,7 @@ public class PostManager : MonoBehaviour
     [SerializeField] private AdminPostsLoader _postsLoader;
     [SerializeField] private string[] _jsonFilePaths;
     [SerializeField] private float _timerDuration = 10f;
+    [SerializeField] private Mail _adminPanelMail;
     private float _curTimer = 0;
     private int _currentFileIndex = 0;
     private int _iterations = 0;
@@ -38,6 +39,10 @@ public class PostManager : MonoBehaviour
         }
 
         _postsLoader.LoadPosts(_jsonFilePaths[_currentFileIndex]);
+
+        if (_isStartedLoadNextBlock)
+            GlobalEventManager.CallOnAddNewMail(_adminPanelMail);
+
         _currentFileIndex++;
         _isLoaded = true;
         _isStartedLoadNextBlock = false;

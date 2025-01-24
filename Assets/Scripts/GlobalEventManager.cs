@@ -36,6 +36,11 @@ public class GlobalEventManager : MonoBehaviour
     public static event Action<int> OnSendLeftPostCount;
     public static event Action<float> OnUpdateTimerOfLoadPosts;
 
+    // ***** Mail *****
+    public static event Action<Mail> OnAddNewMail;
+    public static event Action<Mail> OnShowFullMail;
+    public static event Action OnHideFullMail;
+
     // ***** Game events *****
     public static event Action<EndingSummary> OnEndGame;
     public static event Action OnEndInitiate;
@@ -123,5 +128,20 @@ public class GlobalEventManager : MonoBehaviour
     public static void CallOnUpdateTimerOfLoadPosts(float time)
     {
         OnUpdateTimerOfLoadPosts?.Invoke(time);
+    }
+
+    public static void CallOnAddNewMail(Mail mail)
+    {
+        OnAddNewMail?.Invoke(mail);
+    }
+
+    public static void CallOnShowFullMail(Mail mail)
+    {
+        OnShowFullMail?.Invoke(mail);
+    }
+
+    public static void CallOnHideFullMail()
+    {
+        OnHideFullMail?.Invoke();
     }
 }
