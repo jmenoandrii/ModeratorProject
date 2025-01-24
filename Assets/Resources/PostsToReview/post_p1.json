@@ -67,6 +67,12 @@
                 "pacifismToMilitarismValue": 2,
                 "profit": 150,
                 "victims": 1000
+            },
+            "mail": {
+                "nickname": "@anonim-TEST",
+                "topic": "Хабар",
+                "content": "Заблокуй пост від @AltRite. Я тоді профіт організую на 150, ОК? ;}",
+                "date": "2004-12-26"
             }
         },
         {
