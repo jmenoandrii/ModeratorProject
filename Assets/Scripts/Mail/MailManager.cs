@@ -34,6 +34,8 @@ public class MailManager : MonoBehaviour
         rectTransform.localRotation = Quaternion.identity;
         rectTransform.localScale = Vector3.one;*/
 
+        newMail.transform.SetAsFirstSibling();
+
         // Set mail data
         MailUI mailUI = newMail.GetComponent<MailUI>();
 
