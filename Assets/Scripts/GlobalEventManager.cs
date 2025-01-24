@@ -119,4 +119,12 @@ public class GlobalEventManager : MonoBehaviour
     {
         OnSendLeftPostCount?.Invoke(count);
     }
+
+    // ***** Mail *****
+    public static event Action<Mail> OnAddNewMail;
+
+    public static void CallOnAddNewMail(Mail mail)
+    {
+        OnAddNewMail?.Invoke(mail);
+    }
 }
