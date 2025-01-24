@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 240a9adf939204e2ca892c8d49919047
+guid: 33eb39708e2b04756bc2411512ab94da
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 236750691000774572
-    second: startbutton25_0
+      213: -605052496438707891
+    second: friend-panel_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: startbutton25_0
+      name: friend-panel_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 60
-        height: 25
+        width: 482
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cafed65cf7b194300800000000000000
-      internalID: 236750691000774572
+      spriteID: d49be4fc5fb6a97f0800000000000000
+      internalID: -605052496438707891
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      startbutton25_0: 236750691000774572
+      friend-panel_0: -605052496438707891
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

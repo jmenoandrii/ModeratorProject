@@ -6,12 +6,14 @@ public class PostManager : MonoBehaviour
     [SerializeField] private AdminPostsLoader _postsLoader;
     [SerializeField] private string[] _jsonFilePaths;
     [SerializeField] private float _timerDuration = 10f;
+    private float _curTimer = 0;
     private int _currentFileIndex = 0;
     private int _iterations = 0;
     private const int _maxIterations = 4;
 
     private bool _isLoaded = false;
     private bool _isStartedLoadNextBlock = false;
+    private bool _isTimerStarted = false;
 
     private void Awake()
     {
@@ -45,24 +47,34 @@ public class PostManager : MonoBehaviour
     {
         if (!_isStartedLoadNextBlock && _postsLoader.IsNoPostsFound())
         {
-            StartCoroutine(StartTimer());
+            _isTimerStarted = true;
+            _curTimer = _timerDuration;
             _isStartedLoadNextBlock = true;
         }
     }
 
-    private IEnumerator StartTimer()
+    private void Update()
     {
-        _isLoaded = false;
-        yield return new WaitForSeconds(_timerDuration);
+        if (_isTimerStarted)
+        {
+            _isLoaded = false;
+            GlobalEventManager.CallOnUpdateTimerOfLoadPosts(_curTimer);
 
-        _iterations++;
-        if (_iterations >= _maxIterations)
-        {
-            EndGame();
-        }
-        else
-        {
-            LoadNextFile();
+            _curTimer -= Time.deltaTime;
+
+            if (_curTimer <= 0)
+            {
+                _isTimerStarted = false;
+                _iterations++;
+                if (_iterations >= _maxIterations)
+                {
+                    EndGame();
+                }
+                else
+                {
+                    LoadNextFile();
+                }
+            } 
         }
     }
 

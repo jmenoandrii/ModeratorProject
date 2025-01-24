@@ -1,12 +1,12 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class AdminPostsLoader : MonoBehaviour
 {
-    [SerializeField] protected string _jsonFilePath;
+    private string _jsonFilePath;
     private PostWrapper _postWrapper;
     protected bool _isLoaded = false;
+    private bool _isNoMorePosts = false;
 
     private int _currentIdPost = 0;
     private int _maxIdPost = 0;
@@ -33,6 +33,12 @@ public class AdminPostsLoader : MonoBehaviour
         public Impact denyImpact;
     }
 
+    [System.Serializable]
+    public class PostWrapper
+    {
+        public List<AdminPost> posts;
+    }
+
     private void Awake()
     {
         GlobalEventManager.OnInitAdminPost += SendCurrentPost;
@@ -45,12 +51,6 @@ public class AdminPostsLoader : MonoBehaviour
         GlobalEventManager.OnLoadNextPost -= TryLoadNextPost;
     }
 
-    [System.Serializable]
-    public class PostWrapper
-    {
-        public List<AdminPost> posts;
-    }
-
     protected PostWrapper LoadPostsFromFile(string jsonFilePath)
     {
         TextAsset jsonFile = Resources.Load<TextAsset>(jsonFilePath);
@@ -61,6 +61,8 @@ public class AdminPostsLoader : MonoBehaviour
         }
 
         string jsonData = jsonFile.text;
+
+        _jsonFilePath = jsonFilePath;
 
         return JsonUtility.FromJson<PostWrapper>(jsonData);
     }
@@ -76,6 +78,8 @@ public class AdminPostsLoader : MonoBehaviour
             Debug.LogError("Failed to deserialize posts from JSON.");
             return;
         }
+
+        _postWrapper = ShufflePosts(_postWrapper);
         
         _maxIdPost = _postWrapper.posts.Count - 1;
         _currentIdPost = 0;
@@ -84,13 +88,26 @@ public class AdminPostsLoader : MonoBehaviour
         _isLoaded = true;
     }
 
+    private PostWrapper ShufflePosts(PostWrapper wrapper)
+    {
+        for (int i = wrapper.posts.Count - 1; i > 0; i--)
+        {
+            int j = Random.Range(0, i + 1);
+            (wrapper.posts[j], wrapper.posts[i]) = (wrapper.posts[i], wrapper.posts[j]);
+        }
+        return wrapper;
+    }
+
     public bool IsNoPostsFound()
     {
-        return _currentIdPost >= _maxIdPost;
+        return _currentIdPost > _maxIdPost;
     }
 
     public void TryLoadNextPost()
     {
+        if (_currentIdPost == _maxIdPost)
+            _currentIdPost++;
+
         if (IsNoPostsFound())
         {
             GlobalEventManager.CallOnNoPostsFound();
@@ -99,6 +116,7 @@ public class AdminPostsLoader : MonoBehaviour
             return;
         }
 
+        _isNoMorePosts = false;
         _currentIdPost++;
         SendPost(_currentIdPost);
         SendLeftPostCount();

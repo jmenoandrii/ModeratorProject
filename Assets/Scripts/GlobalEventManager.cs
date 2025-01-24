@@ -34,7 +34,7 @@ public class GlobalEventManager : MonoBehaviour
     public static event Action<AdminPostsLoader.AdminPost> OnSendAdminPost;
     public static event Action<AdminPostsLoader.Impact> OnSendImpact;
     public static event Action<int> OnSendLeftPostCount;
-
+    public static event Action<float> OnUpdateTimerOfLoadPosts;
 
     // ***** Game events *****
     public static event Action<EndingSummary> OnEndGame;
@@ -118,5 +118,10 @@ public class GlobalEventManager : MonoBehaviour
     public static void CallOnSendLeftPostCount(int count)
     {
         OnSendLeftPostCount?.Invoke(count);
+    }
+
+    public static void CallOnUpdateTimerOfLoadPosts(float time)
+    {
+        OnUpdateTimerOfLoadPosts?.Invoke(time);
     }
 }
