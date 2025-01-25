@@ -1080,7 +1080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pageParameter:
-    prefab: {fileID: 1293555242501224734, guid: 1ecb0b98b8cda0b4ebc7b62d452fa0d6, type: 3}
+    prefab: {fileID: 1379367614909976525, guid: f9ac02345d0eac24287574ee128b16eb, type: 3}
     icon: {fileID: 236750691000774572, guid: 240a9adf939204e2ca892c8d49919047, type: 3}
     title: Admin Panel
 --- !u!1 &6867215288403445698
