@@ -13,7 +13,7 @@ public class MailUI : MonoBehaviour
         _mail = mail;
         _nickname.SetText(mail.nickname);
         _topic.SetText(mail.topic);
-        _date.SetText(mail.date);
+        _date?.SetText(mail.date);
     }
 
     public void ShowFull()

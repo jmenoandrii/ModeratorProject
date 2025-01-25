@@ -5,6 +5,9 @@ public class MailManager : MonoBehaviour
     [SerializeField] private GameObject _mailListBox;
     [SerializeField] private FullMailUI _fullMailUI;
     [SerializeField] private GameObject _mailPrefab;
+    [SerializeField] private GameObject _mailApp;
+    [SerializeField] private PopUp _popUpApp;
+    [SerializeField] private MailUI _popUpMailUI;
 
     private void Awake()
     {
@@ -40,6 +43,13 @@ public class MailManager : MonoBehaviour
         MailUI mailUI = newMail.GetComponent<MailUI>();
 
         mailUI.SetData(mail);
+
+        // PopUp
+        if (!_mailApp.activeSelf)
+        {
+            _popUpMailUI.SetData(mail);
+            _popUpApp.Show();
+        }
     }
 
     private void ShowFullMail(Mail mail)
