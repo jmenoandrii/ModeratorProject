@@ -1230,7 +1230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pageParameter:
-    prefab: {fileID: 970753346477280054, guid: f7074179b02f0a34489a52dabbed4d52, type: 3}
+    prefab: {fileID: 1326001459694192159, guid: f7074179b02f0a34489a52dabbed4d52, type: 3}
     icon: {fileID: -805152099705150805, guid: ab1f0c781a948e84b9741ab3e86105c1, type: 3}
     title: MyMoney
 --- !u!1 &7555739171354961978
