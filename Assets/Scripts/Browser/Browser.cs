@@ -142,6 +142,9 @@ public class Browser : App
 
     public override void CloseApp()
     {
+        if (!gameObject.activeSelf)
+            return;
+        
         ResetBrowser();
 
         base.CloseApp();

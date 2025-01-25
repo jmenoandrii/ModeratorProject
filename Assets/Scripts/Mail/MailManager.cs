@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class MailManager : MonoBehaviour
 {
-    [SerializeField] private GameObject _mailListBox;
+    [SerializeField] private Transform _mailListsContainer;
+    [SerializeField] private GameObject _mailLists;
     [SerializeField] private FullMailUI _fullMailUI;
     [SerializeField] private GameObject _mailPrefab;
 
@@ -27,7 +28,7 @@ public class MailManager : MonoBehaviour
 
         RectTransform rectTransform = newMail.GetComponent<RectTransform>();
 
-        rectTransform.SetParent(_mailListBox.transform, false);
+        rectTransform.SetParent(_mailListsContainer, false);
 
         /*rectTransform.anchoredPosition = Vector2.zero;
         rectTransform.sizeDelta = Vector2.zero;
@@ -46,13 +47,13 @@ public class MailManager : MonoBehaviour
     {
         _fullMailUI.SetData(mail);
 
-        _mailListBox.SetActive(false);
+        _mailLists.SetActive(false);
         _fullMailUI.gameObject.SetActive(true);
     }
 
     private void HideFullMail()
     {
-        _mailListBox.SetActive(true);
+        _mailLists.SetActive(true);
         _fullMailUI.gameObject.SetActive(false);
     }
 }

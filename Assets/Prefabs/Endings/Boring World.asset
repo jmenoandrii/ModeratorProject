@@ -15,22 +15,19 @@ MonoBehaviour:
   endingName: Boring World
   description: Your world is so boring!
   axisConspiracyToScience:
-    min: -5
-    max: 5
+    min: -9
+    max: 9
   axisConservatismToProgress:
-    min: -5
-    max: 5
+    min: -9
+    max: 9
   axisCommunismToCapitalism:
-    min: -5
-    max: 5
+    min: -9
+    max: 9
   axisAuthoritarianismToDemocracy:
-    min: -5
-    max: 5
+    min: -9
+    max: 9
   axisPacifismToMilitarism:
-    min: -5
-    max: 5
-  images:
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  years: d4070000d7070000dc070000
+    min: -9
+    max: 9
+  image: {fileID: 0}
+  timeline: 
