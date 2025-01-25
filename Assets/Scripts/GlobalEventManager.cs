@@ -44,6 +44,7 @@ public class GlobalEventManager : MonoBehaviour
     // ***** Game events *****
     public static event Action<EndingSummary> OnEndGame;
     public static event Action OnEndInitiate;
+    public static event Action<int> OnChangeCryptoWallet; 
 
     public static void CallOnPageOpen(PageParameter pageParameter)
     {
@@ -94,6 +95,12 @@ public class GlobalEventManager : MonoBehaviour
     {
         OnEndInitiate?.Invoke();
     }
+
+    public static void CallOnChangeCryptoWallet(int amount)
+    {
+        OnChangeCryptoWallet?.Invoke(amount);
+    }
+
 
     public static void CallOnLoadNextPost()
     {
