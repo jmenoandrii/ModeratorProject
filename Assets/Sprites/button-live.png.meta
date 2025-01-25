@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 33eb39708e2b04756bc2411512ab94da
+guid: 4b0e9dad0d98e438baf405b68554544c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -605052496438707891
-    second: friend-panel_0
+      213: 21208927584349219
+    second: button-live_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: friend-panel_0
+      name: button-live_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 482
-        height: 30
+        width: 15
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d49be4fc5fb6a97f0800000000000000
-      internalID: -605052496438707891
+      spriteID: 32c6bb248695b4000800000000000000
+      internalID: 21208927584349219
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      friend-panel_0: -605052496438707891
+      button-live_0: 21208927584349219
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

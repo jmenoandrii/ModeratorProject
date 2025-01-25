@@ -38,6 +38,10 @@ public class AdminPostLoaderUI : MonoBehaviour
 
     private void OnEnable()
     {
+        foreach (var icon in _valueIcons)
+        {
+            icon.Rewind();
+        }
         GlobalEventManager.CallOnInitAdminPost();
     }
 

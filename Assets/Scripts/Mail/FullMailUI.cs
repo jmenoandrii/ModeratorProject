@@ -14,7 +14,6 @@ public class FullMailUI : MonoBehaviour
     public void SetData(Mail mail)
     {
         _nickname.SetText(mail.nickname);
-        _date.SetText(mail.date);
         _topic.SetText(mail.topic);
         _content.SetText(mail.content);
     }

@@ -2,7 +2,7 @@
     "posts": [
         {
             "nickname": "@Le0ndreab0b",
-            "content": "Вибух в Атланті… Занадто багато питань без відповідей. Щось тут нечисто. #Атланта96 #Теракт #Підозри",
+            "content": "One security guard supposedly found a bomb, another one saw someone suspicious. But where's the camera footage? <color=red>Oh right—a banana-shaped balloon just happened to block the only working camera.</color> WTF??",
             "date": "1996-07-27",
             "acceptImpact": {
                 "conspiracyToScienceValue": -1,
@@ -21,11 +21,17 @@
                 "pacifismToMilitarismValue": -1,
                 "profit": 0,
                 "victims": 0
+            },
+            "mail": {
+                "nickname": "@Pan_Banan",
+                "topic": "He-he-he",
+                "content": "A most curious tale, indeed, this one of the strange balloon and the purported security breach. It possesses a certain... whimsical absurdity, does it not?",
+                "date": "1991-06-02"
             }
         },
         {
             "nickname": "@AntonDemiurge",
-            "content": "Олімпіада в Атланті – це була велика подія для нашої країни! Нехай цей теракт не затьмарить нам свято спорту! #Атланта96 #Олімпіада #Патріотизм",
+            "content": "The Atlanta Olympics was a huge event for our country, <color=red>other countries performance was just pathetic</color>! Let's not allow this terrorist attack to overshadow our celebration of our victory! #Atlanta96 #Olympics #Patriotism",
             "date": "1996-07-27",
             "acceptImpact": {
                 "conspiracyToScienceValue": 1,
@@ -48,7 +54,7 @@
         },
         {
             "nickname": "@TysonFan86743",
-            "content": "Тайсона засудили несправедливо! Це була змова! Він найкращий, і його просто хотіли зупинити! #Тайсон #Бокс #Несправедливість",
+            "content": "Yes, <color=red>he's aggressive, but that's boxing!</color> Mike is a living legend, feared by opponents. And now, suddenly, there's a conspiracy to ruin his career. He just bit a piece off the unfair world of boxing! #Tyson #Boxing #Injustice",
             "date": "1997-06-28",
             "acceptImpact": {
                 "conspiracyToScienceValue": 1,
@@ -71,7 +77,7 @@
         },
         {
             "nickname": "@Have_a_good_day",
-            "content": "Ну, вкусив вухо – буває. Зате запам'ятається надовго. #Тайсон #Бокс #Скандал",
+            "content": "Well, Tyson bit an ear - it happens. At least it will be remembered for a long time. #Tyson #Boxing #Scandal",
             "date": "1997-06-28",
             "acceptImpact": {
                 "conspiracyToScienceValue": 3,
@@ -94,7 +100,7 @@
         },
         {
             "nickname": "@Viktor_Probirka",
-            "content": "Титанік не просто потонув! Це було сплановане вбивство! Золото на борту, конкуренція… Історія про айсберг – лише прикриття! Прокиньтесь! #Титанік #Змова #Секрети",
+            "content": "They say there was a secret twin ship - and that's the one that was <color=red>blown up</color> to hide the treasure in the hold of the 'real' Titanic! Imagine how much money could be laundered! If not an iceberg, then what destroyed that giant? #Titanic #Conspiracy #Secrets",
             "date": "1997-12-19",
             "acceptImpact": {
                 "conspiracyToScienceValue": -3,
@@ -117,7 +123,7 @@
         },
         {
             "nickname": "@DNDDilemma",
-            "content": "Вже стільки років минуло, а про 'Титанік' досі ходять легенди. Кажуть, що його навмисне потопили… Хто знає, де правда? #Титанік #Історія #Загадки",
+            "content": "It's been ages, and people are still talking about the Titanic. <color=red>Some say it was sunk on purpose...</color> Who knows the real story? ",
             "date": "1997-12-19",
             "acceptImpact": {
                 "conspiracyToScienceValue": -1,
@@ -140,7 +146,7 @@
         },
         {
             "nickname": "@meowmeowmeow11",
-            "content": "Все зникло під попелом… Наш дім, наше життя… Уряд нічого не зробив, щоб нас захистити! Вони просто спостерігали, як ми все втрачаємо! Народе нам треба об’єднатися. Підпишіть петицію про те щоб покарали винних. #Монсеррат #Вулкан #Горе",
+            "content": "Everything disappeared under ash... Our home, our lives... <color=red>The government did nothing to protect us!</color> They just watched as we lost everything! People, we must unite. Sign the petition to punish the guilty. #Montserrat #Volcano #Tragedy",
             "date": "1997-08-15",
             "acceptImpact": {
                 "conspiracyToScienceValue": 0,
@@ -163,7 +169,7 @@
         },
         {
             "nickname": "@dream446",
-            "content": "Катастрофа на Монсеррат – це результат бездіяльності влади! Вони не підготували план евакуації, не попередили людей вчасно! Хто понесе відповідальність за ці втрати? #Монсеррат #Безвідповідальність #Звинувачення",
+            "content": "<color=red>The Montserrat disaster is the result of government inaction!</color> They didn't prepare an evacuation plan, didn't warn people in time! Who will take responsibility for these losses? #Montserrat #Negligence #Accountability",
             "date": "1997-08-15",
             "acceptImpact": {
                 "conspiracyToScienceValue": 0,
@@ -186,7 +192,7 @@
         },
         {
             "nickname": "@Rumbletide",
-            "content": "Радіоактивний метал з Чорнобиля вже в руках терористів! Це кінець! Всі в небезпеці! #Чорнобиль #Радіація #Терор",
+            "content": "Radioactive metal from Chornobyl is now in the hands of terrorists! This is the end! <color=red>Everyone is in danger!</color> #Chernobyl #Radiation #Terrorism",
             "date": "1997-10-15",
             "acceptImpact": {
                 "conspiracyToScienceValue": 2,
@@ -203,13 +209,19 @@
                 "communismToCapitalismValue": 1,
                 "authoritarianismToDemocracyValue": 2,
                 "pacifismToMilitarismValue": -2,
-                "profit": 0,
+                "profit": 120,
                 "victims": 0
+            },
+            "mail": {
+                "nickname": "@anonym",
+                "topic": "Remove the radioactive metal post",
+                "content": "The post by @Rumbletide about radioactive metal in terrorists' hands is pure fearmongering. It's baseless and spreads panic. I'm willing to pay 120 for its removal.",
+                "date": "1997-10-16"
             }
         },
         {
             "nickname": "@True_speaker_honest",
-            "content": "З'являються повідомлення про торгівлю радіоактивними матеріалами з Чорнобильської зони. Чи існує реальна загроза потрапляння цих матеріалів до рук злочинців? #Чорнобиль #Радіація #Розслідування",
+            "content": "Reports are surfacing about the <color=red>trade of radioactive materials from the Chornobyl zone</color>. Is there a real threat of these materials falling into the hands of criminals? #Chernobyl #Radiation #Investigation",
             "date": "1997-10-15",
             "acceptImpact": {
                 "conspiracyToScienceValue": 1,
@@ -232,7 +244,7 @@
         },
         {
             "nickname": "@robomaktod",
-            "content": "Комета Хейла-Боппа – це знак з небес! Це кінець світу, як написано в пророцтвах! Готуйтесь до Судного дня! #Комета #Апокаліпсис #БожийЗнак",
+            "content": "The Hale-Bopp comet is a sign from the <b>heavens</b>! This is the end of the world, as written in the prophecies! <color=red>Prepare for Judgment Day!</color> #Comet #Apocalypse #DivineSign",
             "date": "1997-03-22",
             "acceptImpact": {
                 "conspiracyToScienceValue": 2,
@@ -240,7 +252,7 @@
                 "communismToCapitalismValue": 1,
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": 3,
-                "profit": 0,
+                "profit": 50,
                 "victims": 0
             },
             "denyImpact": {
@@ -251,11 +263,17 @@
                 "pacifismToMilitarismValue": -3,
                 "profit": 0,
                 "victims": 0
-            }
+            },
+            "mail": {
+                    "nickname": "@TheUnHoly",
+                    "topic": "In God We Trust",
+                    "content": "",
+                    "date": "1997-10-16"
+                }
         },
         {
             "nickname": "@Carl_the_Karl",
-            "content": "Знову ці страшилки про кінець світу через комету. Кожен раз одне й те ж. #Комета #Страшилки #Смішно",
+            "content": "Again with these end-of-the-world stories because of a comet. It's always the same. #Comet #Fearmongering #Funny",
             "date": "1997-03-22",
             "acceptImpact": {
                 "conspiracyToScienceValue": 3,
@@ -278,7 +296,7 @@
         },
         {
             "nickname": "@Viktor_Probirka",
-            "content": "Діану вбили! Це була операція королівської родини! Вони не хотіли, щоб вона вийшла заміж за мусульманина! Правду приховують, але ми її дізнаємось! #Діана #Змова #КоролівськаРодина",
+            "content": "Diana was killed! <color=red>It was an operation by the royal family!</color> They didn't want her to marry a Muslim! The truth is hidden, but we will find it out! #Diana #Conspiracy #RoyalFamily",
             "date": "1997-08-31",
             "acceptImpact": {
                 "conspiracyToScienceValue": -3,
@@ -300,8 +318,8 @@
             }
         },
         {
-            "nickname": "@user125761394",
-            "content": "Неможливо повірити, що Діани більше немає… Така трагічна смерть… #Діана #Сум #Трагедія",
+            "nickname": "@Pan_Banan",
+            "content": "She was a ray of light for millions. Her kindness and compassion for the needy were inspiring, <b>she was the goat</b>. It's a pity that history teaches us to value people only when they are gone... #Diana #Grief #Tragedy",
             "date": "1997-08-31",
             "acceptImpact": {
                 "conspiracyToScienceValue": 0,
@@ -324,7 +342,7 @@
         },
         {
             "nickname": "@EmSeaMarcy",
-            "content": "Мобільні телефони – це повільна смерть! Радіація вбиває наші клітини мозку! Корпорації знають про це, але мовчать заради прибутку! Не користуйтесь цими вбивчими пристроями! #Мобільні #Радіація #ЗмоваКорпорацій",
+            "content": "Imagine this: there's a secret patent for a 'safe phone,' but secret agents burned it down so we'd keep buying these deadly devices! Waves penetrate the brain, <color=red>turning us into obedient biobots</color>. I found a forum on the dark web proving it all! #MobilePhones #CorporateConspiracy",
             "date": "1997-11-15",
             "acceptImpact": {
                 "conspiracyToScienceValue": -3,
@@ -347,7 +365,7 @@
         },
         {
             "nickname": "@PierMillier",
-            "content": "Ой, знову ці страшилки про мобільники і рак. Скоро скажуть, що від телевізора теж можна померти. Може, краще взагалі жити в печері? #Мобільні #Страшилки #Смішно",
+            "content": "Let's sit in a cave and light torches, because light bulbs probably make your hair fall out too. <color=red>Maybe we should ban all technology</color>, so nothing emits anything? I've always wanted to feel like a caveman. #MobilePhones #Scaremongering #Funny",
             "date": "1997-11-15",
             "acceptImpact": {
                 "conspiracyToScienceValue": 2,
@@ -369,8 +387,8 @@
             }
         },
         {
-            "nickname": "@EmotionsForSale",
-            "content": "Боже мій, Y2K! Залишилося кілька днів! Кажуть, все зламається! Літаки падатимуть, банкомати не працюватимуть, світ зупиниться! Я накупила консерв і свічок, а ви? Страшно! #Y2K #КінецьСвіту #Паніка",
+            "nickname": "@wamflya",
+            "content": "Oh my God, Y2K! When the clock strikes midnight, <color=red>my fridge will turn into an evil robot</color>, and my washing machine will start talking to me! I've already stocked up on canned goods and water, and I recommend you do the same! #Y2K #EndOfTheWorld #Panic",
             "date": "1999-12-31",
             "acceptImpact": {
                 "conspiracyToScienceValue": -2,
@@ -387,13 +405,19 @@
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 1,
                 "pacifismToMilitarismValue": 0,
-                "profit": 0,
+                "profit": 80,
                 "victims": 0
+            },
+            "mail": {
+                "nickname": "@adalov",
+                "topic": "Remove the Y2K panic post",
+                "content": "80 and I will never see this shit by @wamflya here.",
+                "date": "1999-12-31"
             }
         },
         {
             "nickname": "@AltRite",
-            "content": "Y2K? Серйозно? Комп'ютери збожеволіють і світ рухне? Сподіваюсь, мій старенький 'Денді' переживе цю 'катастрофу'. Запасаюсь попкорном! #Y2K #Комп'ютернийАпокаліпсис #Смішно",
+            "content": "Y2K? Seriously? Computers will go crazy, and <color=red>the world will collapse</color>? I hope my old 'NES' survives this 'catastrophe.' Stocking up on popcorn! #Y2K #ComputerApocalypse #Pastafarianism #Funny",
             "date": "1999-12-31",
             "acceptImpact": {
                 "conspiracyToScienceValue": 1,
@@ -416,7 +440,7 @@
         },
         {
             "nickname": "@Gavdra1",
-            "content": "Чеченські бойовики – це терористи! Їх потрібно знищити! Захистимо нашу країну від цієї загрози! #Чечня #Війна #ЗахистБатьківщини",
+            "content": "Chechen militants are terrorists! <color=red>They must be destroyed!</color> Let's protect our country from this threat! #Chechnya #War #DefendTheMotherland",
             "date": "1995-05-10",
             "acceptImpact": {
                 "conspiracyToScienceValue": 0,
@@ -438,8 +462,8 @@
             }
         },
         {
-            "nickname": "@distanTeribble",
-            "content": "Війна – це завжди горе і втрати. Потрібно шукати мирні шляхи вирішення конфлікту. #Чечня #Війна #Мир",
+            "nickname": "@jmenoandrii",
+            "content": "War is always sorrow and loss. #Chechnya #War #Peace",
             "date": "1995-05-15",
             "acceptImpact": {
                 "conspiracyToScienceValue": 0,

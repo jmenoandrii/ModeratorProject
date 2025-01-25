@@ -5,7 +5,8 @@ public class MailUI : MonoBehaviour
 {
     [SerializeField] private TMP_Text _nickname;
     [SerializeField] private TMP_Text _topic;
-    [SerializeField] private TMP_Text _date;
+    [SerializeField] private GameObject _newEmailBadge;
+
     private Mail _mail;
 
     public void SetData(Mail mail)
@@ -13,11 +14,12 @@ public class MailUI : MonoBehaviour
         _mail = mail;
         _nickname.SetText(mail.nickname);
         _topic.SetText(mail.topic);
-        _date.SetText(mail.date);
     }
 
     public void ShowFull()
     {
+        _newEmailBadge.SetActive(false);
+
         GlobalEventManager.CallOnShowFullMail(_mail);
     }
 }
