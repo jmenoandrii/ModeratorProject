@@ -174,6 +174,7 @@ public class AdminPostLoaderUI : MonoBehaviour
     {
         _postUI.gameObject.SetActive(false);
         _buttons.gameObject.SetActive(false);
+        _loading.gameObject.SetActive(false);
         _noFoundPosts.gameObject.SetActive(true);
         _noPostsFindAudio.Play();
     }

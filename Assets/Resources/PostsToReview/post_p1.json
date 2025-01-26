@@ -53,8 +53,8 @@
             "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 1,
-                "communismToCapitalismValue": 1,
-                "authoritarianismToDemocracyValue": 3,
+                "communismToCapitalismValue": 2,
+                "authoritarianismToDemocracyValue": 2,
                 "pacifismToMilitarismValue": -2,
                 "profit": 0,
                 "victims": 0
@@ -62,8 +62,8 @@
             "denyImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": -1,
-                "communismToCapitalismValue": -1,
-                "authoritarianismToDemocracyValue": -3,
+                "communismToCapitalismValue": -2,
+                "authoritarianismToDemocracyValue": -2,
                 "pacifismToMilitarismValue": 2,
                 "profit": 0,
                 "victims": 1000
@@ -76,8 +76,8 @@
             "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 3,
+                "communismToCapitalismValue": -2,
+                "authoritarianismToDemocracyValue": 2,
                 "pacifismToMilitarismValue": -2,
                 "profit": 0,
                 "victims": 0
@@ -85,8 +85,8 @@
             "denyImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": -3,
+                "communismToCapitalismValue": 2,
+                "authoritarianismToDemocracyValue": -2,
                 "pacifismToMilitarismValue": 3,
                 "profit": 0,
                 "victims": 1500
@@ -144,19 +144,19 @@
             "date": "1994-06-12",
             "acceptImpact": {
                 "conspiracyToScienceValue": -2,
-                "conservatismToProgressValue": -2,
-                "communismToCapitalismValue": 2,
-                "authoritarianismToDemocracyValue": 3,
-                "pacifismToMilitarismValue": -3,
+                "conservatismToProgressValue": 2,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": -2,
                 "profit": 0,
                 "victims": 0
             },
             "denyImpact": {
                 "conspiracyToScienceValue": 2,
                 "conservatismToProgressValue": 2,
-                "communismToCapitalismValue": -2,
-                "authoritarianismToDemocracyValue": -3,
-                "pacifismToMilitarismValue": 3,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 2,
                 "profit": 150,
                 "victims": 1
             },
@@ -175,7 +175,7 @@
                 "conspiracyToScienceValue": 1,
                 "conservatismToProgressValue": 2,
                 "communismToCapitalismValue": 1,
-                "authoritarianismToDemocracyValue": 3,
+                "authoritarianismToDemocracyValue": 2,
                 "pacifismToMilitarismValue": 0,
                 "profit": 0,
                 "victims": 0
@@ -184,7 +184,7 @@
                 "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": -1,
-                "authoritarianismToDemocracyValue": -3,
+                "authoritarianismToDemocracyValue": -2,
                 "pacifismToMilitarismValue": 0,
                 "profit": 0,
                 "victims": 0
@@ -196,17 +196,17 @@
             "date": "1994-06-10",
             "acceptImpact": {
                 "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": 0,
+                "conservatismToProgressValue": 2,
+                "communismToCapitalismValue": 3,
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": 0,
                 "profit": 0,
                 "victims": 0
             },
             "denyImpact": {
-                "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": 0,
+                "conspiracyToScienceValue": -1,
+                "conservatismToProgressValue": -1,
+                "communismToCapitalismValue": -3,
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": 0,
                 "profit": 300,
@@ -253,7 +253,7 @@
             "content": "Do you still believe vaccines are for your benefit? Think again! Every injection increases control over your body. Nanobots, DNA modification, surveillance - this is no longer science fiction, its already <color=red>among us</color>. They want to control your every move! Wake up before it's too late! #Vaccines #MindControl #Chipping #WorldGovernment",
             "date": "1994-06-07",
             "acceptImpact": {
-                "conspiracyToScienceValue": -2,
+                "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 0,
@@ -262,7 +262,7 @@
                 "victims": 0
             },
             "denyImpact": {
-                "conspiracyToScienceValue": 2,
+                "conspiracyToScienceValue": 1,
                 "conservatismToProgressValue": 2,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 0,
@@ -380,18 +380,18 @@
             "content": "Yesterday, I found an Indian curry recipe online, and today I'm already discussing <color=red>restoring totalitarian regimes</color> with a friend from Japan. It's incredible how quickly you can find information! Imagine: in 10 years, we might even shop online! #Internet #Technology #Future",
             "date": "1994-06-11",
             "acceptImpact": {
-                "conspiracyToScienceValue": -1,
+                "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": -3,
-                "communismToCapitalismValue": 2,
+                "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": -3,
                 "pacifismToMilitarismValue": 1,
                 "profit": 0,
                 "victims": 0
             },
             "denyImpact": {
-                "conspiracyToScienceValue": 1,
+                "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 3,
-                "communismToCapitalismValue": -2,
+                "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 3,
                 "pacifismToMilitarismValue": -1,
                 "profit": 0,

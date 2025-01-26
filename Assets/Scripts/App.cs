@@ -76,6 +76,8 @@ public class App : MonoBehaviour
 
     public virtual void HideApp()
     {
+        _appWindow.transform.SetAsFirstSibling();
+
         if (!IsContainerActive) return;
 
         _appContainer.SetActive(false);

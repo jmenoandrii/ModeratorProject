@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,6 +14,11 @@ public class WorldIndexUI : MonoBehaviour
     private void OnDestroy()
     {
         GlobalEventManager.OnChangeAxis -= UpdateAxisSliders;
+    }
+
+    private void OnEnable()
+    {
+        GlobalEventManager.CallOnInitWorldIndex();
     }
 
     private void UpdateAxisSliders(int _conspiracyToScienceValue, int _conservatismToProgressValue, int _communismToCapitalismValue, int _authoritarianismToDemocracyValue, int _pacifismToMilitarismValue)

@@ -45,12 +45,14 @@ public class EndingManager : MonoBehaviour
     {
         GlobalEventManager.OnSendImpact += EditValue;
         GlobalEventManager.OnEndInitiate += EndGame;
+        GlobalEventManager.OnInitWorldIndex += InitWorldIndex;
     }
 
     private void OnDestroy()
     {
         GlobalEventManager.OnSendImpact -= EditValue;
         GlobalEventManager.OnEndInitiate -= EndGame;
+        GlobalEventManager.OnInitWorldIndex += InitWorldIndex;
     }
 
     private T GetConditionalResult<T>(int value, T negativeRes, T positiveRes)
@@ -163,6 +165,11 @@ public class EndingManager : MonoBehaviour
         _authoritarianismToDemocracyValue += impact.authoritarianismToDemocracyValue;
         _pacifismToMilitarismValue += impact.pacifismToMilitarismValue;
 
+        GlobalEventManager.CallOnChangeAxis(_conspiracyToScienceValue, _conservatismToProgressValue, _communismToCapitalismValue, _authoritarianismToDemocracyValue, _pacifismToMilitarismValue);
+    }
+
+    private void InitWorldIndex()
+    {
         GlobalEventManager.CallOnChangeAxis(_conspiracyToScienceValue, _conservatismToProgressValue, _communismToCapitalismValue, _authoritarianismToDemocracyValue, _pacifismToMilitarismValue);
     }
 }

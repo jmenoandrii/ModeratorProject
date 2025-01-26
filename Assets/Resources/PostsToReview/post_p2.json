@@ -45,7 +45,7 @@
             "denyImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": 2,
+                "communismToCapitalismValue": 1,
                 "authoritarianismToDemocracyValue": -1,
                 "pacifismToMilitarismValue": -3,
                 "profit": 0,
@@ -81,7 +81,7 @@
             "date": "1999-01-22",
             "acceptImpact": {
                 "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 2,
+                "conservatismToProgressValue": 1,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 1,
                 "pacifismToMilitarismValue": 0,
@@ -104,8 +104,8 @@
             "date": "1999-01-20",
             "acceptImpact": {
                 "conspiracyToScienceValue": -3,
-                "conservatismToProgressValue": -3,
-                "communismToCapitalismValue": -2,
+                "conservatismToProgressValue": -2,
+                "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": -2,
                 "pacifismToMilitarismValue": 2,
                 "profit": 0,
@@ -113,8 +113,8 @@
             },
             "denyImpact": {
                 "conspiracyToScienceValue": 3,
-                "conservatismToProgressValue": 3,
-                "communismToCapitalismValue": 2,
+                "conservatismToProgressValue": 2,
+                "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 2,
                 "pacifismToMilitarismValue": -2,
                 "profit": 0,
@@ -150,9 +150,9 @@
             "date": "1999-01-20",
             "acceptImpact": {
                 "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 2,
+                "conservatismToProgressValue": 1,
                 "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 3,
+                "authoritarianismToDemocracyValue": 1,
                 "pacifismToMilitarismValue": 0,
                 "profit": 0,
                 "victims": 0
@@ -161,7 +161,7 @@
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": -1,
                 "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": -3,
+                "authoritarianismToDemocracyValue": -1,
                 "pacifismToMilitarismValue": 0,
                 "profit": 0,
                 "victims": 0
@@ -196,8 +196,8 @@
             "date": "1999-01-19",
             "acceptImpact": {
                 "conspiracyToScienceValue": -1,
-                "conservatismToProgressValue": 2,
-                "communismToCapitalismValue": 3,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 2,
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": 1,
                 "profit": 0,
@@ -225,8 +225,8 @@
             "date": "1999-01-21",
             "acceptImpact": {
                 "conspiracyToScienceValue": -1,
-                "conservatismToProgressValue": 2,
-                "communismToCapitalismValue": 3,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 2,
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": 1,
                 "profit": 0,
@@ -257,7 +257,7 @@
             },
             "denyImpact": {
                 "conspiracyToScienceValue": 2,
-                "conservatismToProgressValue": 2,
+                "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": -3,
@@ -355,7 +355,7 @@
             },
             "denyImpact": {
                 "conspiracyToScienceValue": 3,
-                "conservatismToProgressValue": 3,
+                "conservatismToProgressValue": 2,
                 "communismToCapitalismValue": 1,
                 "authoritarianismToDemocracyValue": 1,
                 "pacifismToMilitarismValue": -2,
@@ -401,7 +401,7 @@
             },
             "denyImpact": {
                 "conspiracyToScienceValue": 2,
-                "conservatismToProgressValue": 2,
+                "conservatismToProgressValue": 1,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 1,
                 "pacifismToMilitarismValue": 0,
@@ -446,7 +446,7 @@
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 1,
                 "communismToCapitalismValue": 1,
-                "authoritarianismToDemocracyValue": 3,
+                "authoritarianismToDemocracyValue": 2,
                 "pacifismToMilitarismValue": 2,
                 "profit": 0,
                 "victims": 0
@@ -455,7 +455,7 @@
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": -1,
                 "communismToCapitalismValue": -1,
-                "authoritarianismToDemocracyValue": -3,
+                "authoritarianismToDemocracyValue": -2,
                 "pacifismToMilitarismValue": -2,
                 "profit": 20,
                 "victims": 450
@@ -475,7 +475,7 @@
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 3,
+                "authoritarianismToDemocracyValue": 2,
                 "pacifismToMilitarismValue": -3,
                 "profit": 0,
                 "victims": 0
@@ -484,7 +484,7 @@
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": -3,
+                "authoritarianismToDemocracyValue": -2,
                 "pacifismToMilitarismValue": 1,
                 "profit": 0,
                 "victims": 512
