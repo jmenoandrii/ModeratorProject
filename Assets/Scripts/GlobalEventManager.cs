@@ -50,6 +50,7 @@ public class GlobalEventManager : MonoBehaviour
     public static event Action<EndingSummary> OnEndGame;
     public static event Action OnEndInitiate;
     public static event Action<int> OnChangeCryptoWallet; 
+    public static event Action<int, int, int, int, int> OnChangeAxis; 
 
     public static void CallOnPageOpen(PageParameter pageParameter)
     {
@@ -170,5 +171,10 @@ public class GlobalEventManager : MonoBehaviour
     public static void CallOnInitSaperField(int x, int y)
     {
         OnInitSaperField?.Invoke(x, y);
+    }
+
+    public static void CallOnChangeAxis(int _conspiracyToScienceValue, int _conservatismToProgressValue, int _communismToCapitalismValue, int _authoritarianismToDemocracyValue, int _pacifismToMilitarismValue)
+    {
+        OnChangeAxis?.Invoke(_conspiracyToScienceValue, _conservatismToProgressValue, _communismToCapitalismValue, _authoritarianismToDemocracyValue, _pacifismToMilitarismValue);
     }
 }

@@ -162,6 +162,8 @@ public class EndingManager : MonoBehaviour
         _communismToCapitalismValue += impact.communismToCapitalismValue;
         _authoritarianismToDemocracyValue += impact.authoritarianismToDemocracyValue;
         _pacifismToMilitarismValue += impact.pacifismToMilitarismValue;
+
+        GlobalEventManager.CallOnChangeAxis(_conspiracyToScienceValue, _conservatismToProgressValue, _communismToCapitalismValue, _authoritarianismToDemocracyValue, _pacifismToMilitarismValue);
     }
 }
 
