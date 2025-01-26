@@ -13,9 +13,13 @@ MonoBehaviour:
   m_Name: Progress
   m_EditorClassIdentifier: 
   endingName: Progress. Ending 4/11
-  description: "Fixing problems we didn\u2019t know we had in ways we don\u2019t
-    fully understand"
-  image: {fileID: 0}
+  description: "In 2004 almost the whole world was captivated by a new science fiction
+    book \u201CNew Dark Ages. Colony\u201D. A new space race has begun. In 2008 after
+    lots of experiments and inventions they successfully achieved the historic feat
+    of sending a human to Mars and started Mars colonization. By 2014 the human race
+    became a space civilization. They proudly called themselves \u201CFirst type
+    civilization\u201D"
+  image: {fileID: -1072517729625351813, guid: e74e7a2a6a9fa436a98beccd7f486381, type: 3}
   timeline: "#In 2004, Humanity was overwhelmed by the idea of \u200B\u200Bcosmic
     expansion.<br>#In 2008, First person landed on Mars to establish a colony.<br>#In
     2014, Half of the human population lived beyond the Earth."

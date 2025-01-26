@@ -75,6 +75,8 @@ public class AdminPostsLoader : MonoBehaviour
         if (_isLoaded && jsonFilePath == _jsonFilePath) return;
         _isLoaded = false;
 
+        _isSentEmail = false;
+
         _postWrapper = LoadPostsFromFile(jsonFilePath);
         if (_postWrapper == null || _postWrapper.posts == null)
         {
@@ -124,6 +126,8 @@ public class AdminPostsLoader : MonoBehaviour
     {
         if (_currentIdPost == _maxIdPost)
             _currentIdPost++;
+
+        _isSentEmail = false;
 
         if (IsNoPostsFound())
         {
