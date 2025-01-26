@@ -22,6 +22,8 @@ public class Saper : App
     [SerializeField] private Sprite _lossSprite;
     [SerializeField] private Sprite _neutralSprite; // can be null
 
+    [SerializeField] private AudioSource _audioWin, _audioLose, _audioChoose, _audioFlag;
+
     private int[,] _valueField;
     private SaperCell[,] _cellField;
     private int _openedCellCount = 0;
@@ -144,6 +146,18 @@ public class Saper : App
         }
     }
 
+    public void PlayFlagAudio()
+    {
+        _audioFlag.Stop();
+        _audioFlag.Play();
+    }
+
+    public void PlayChooseCellAudio()
+    {
+        _audioChoose.Stop();
+        _audioChoose.Play();
+    }
+
     public void Restart()
     {
         IsEndGame = false;
@@ -191,6 +205,7 @@ public class Saper : App
 
         _timer.PauesTimer();
 
+        _audioLose.Play();
         _emoji.sprite = _lossSprite;
     }
 
@@ -200,12 +215,14 @@ public class Saper : App
 
         _timer.PauesTimer();
 
+        _audioWin.Play();
         _emoji.sprite = _winSprite;
     }
 
     public override void OpenApp()
     {
-        _timer.StartTimer();
+        if (!IsAppActive)
+            _timer.StartTimer();
 
         base.OpenApp();
     }

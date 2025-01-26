@@ -6,7 +6,7 @@ public class AdminPostsLoader : MonoBehaviour
     private string _jsonFilePath;
     private PostWrapper _postWrapper;
     protected bool _isLoaded = false;
-    private bool _isNoMorePosts = false;
+    private bool _isSentEmail = false;
 
     private int _maxPostsToSelect;
 
@@ -133,7 +133,6 @@ public class AdminPostsLoader : MonoBehaviour
             return;
         }
 
-        _isNoMorePosts = false;
         _currentIdPost++;
         SendPost(_currentIdPost);
         SendLeftPostCount();
@@ -150,8 +149,11 @@ public class AdminPostsLoader : MonoBehaviour
         var post = (postId == null || postId > _maxIdPost) ? null : _postWrapper.posts[postId.Value];
         GlobalEventManager.CallOnSendAdminPost(post);
 
-        if (post != null && !post.mail.IsVoid)
+        if (post != null && !post.mail.IsVoid && !_isSentEmail)
+        {
             GlobalEventManager.CallOnAddNewMail(post.mail);
+            _isSentEmail = true;
+        }
     }
 
     public void SendCurrentPost()

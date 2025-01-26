@@ -33,6 +33,7 @@ public class SaperCell : MonoBehaviour, IPointerClickHandler
         if (eventData.button == PointerEventData.InputButton.Left)
         {
             Open();
+            Saper.instance.PlayChooseCellAudio();
         }
         else if (eventData.button == PointerEventData.InputButton.Right)
         {
@@ -90,11 +91,14 @@ public class SaperCell : MonoBehaviour, IPointerClickHandler
 
     private void ToggleFlag()
     {
-        if (IsOpened || (_isFlag && !SaperScore.instance.IsAbleToIncrease) ||
+        if ((IsOpened & !_isFlag) || (_isFlag && !SaperScore.instance.IsAbleToIncrease) ||
             (!_isFlag && !SaperScore.instance.IsAbleToDecrease))
             return;
 
         _isFlag = !_isFlag;
+
+        if (_isFlag)
+            Saper.instance.PlayFlagAudio();
      
         _img.gameObject.SetActive(_isFlag);
 

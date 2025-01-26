@@ -20,7 +20,7 @@ MonoBehaviour:
     of the Party was removed, as the online environment became fully monitored and
     regulated. Humanity gradually adapted to the new rules of the game, choosing
     survival over freedom."
-  image: {fileID: 0}
+  image: {fileID: -6359466965156462845, guid: b9e1cd79ba5084dd1a62179129a80237, type: 3}
   timeline: '#In 2004, Chinese workers appeared in workplaces.<br>#In 2009, China
     started extending its territories.<br>#In 2014, pledging allegiance to the Chinese
     Party became a condition for survival.'

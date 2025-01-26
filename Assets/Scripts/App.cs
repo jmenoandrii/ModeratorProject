@@ -83,6 +83,8 @@ public class App : MonoBehaviour
 
     public virtual void ShowApp()
     {
+        _appWindow.transform.SetAsLastSibling();
+        
         if (IsContainerActive) return;
 
         _appContainer.SetActive(true);
