@@ -29,6 +29,6 @@ MonoBehaviour:
   axisPacifismToMilitarism:
     min: -9
     max: 9
-  image: {fileID: 0}
+  image: {fileID: -6631695563982442019, guid: 57888514cd6f343769469dc2d93071b1, type: 3}
   timeline: "#In 2004 \u2014 Nothing happened<br>#In 2006 \u2014 Nothing happened<br>#In
     2014 \u2014 Nothing happened"
