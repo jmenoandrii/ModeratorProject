@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67bd974215ede1468674f6aa9ca2fd7, type: 3}
   m_Name: Communism
   m_EditorClassIdentifier: 
-  endingName: Communism
-  description: "Everyone gets a slice, but who\u2019s baking the pie?"
-  images:
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  years: d4070000d7070000dc070000
+  endingName: Communism. Ending 5/11
+  description: "The rise of the Chinese Communist Party\u2019s influence was coupled
+    with a decline in the value of human labor due to automation and the availability
+    of cheap labor. The system was reinforced by ideology: taking an oath to the
+    Party became the only path to survival. Despite total control, no meme or criticism
+    of the Party was removed, as the online environment became fully monitored and
+    regulated. Humanity gradually adapted to the new rules of the game, choosing
+    survival over freedom."
+  image: {fileID: 0}
+  timeline: '#In 2004, Chinese workers appeared in workplaces.<br>#In 2009, China
+    started extending its territories.<br>#In 2014, pledging allegiance to the Chinese
+    Party became a condition for survival.'

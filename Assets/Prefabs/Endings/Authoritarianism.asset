@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67bd974215ede1468674f6aa9ca2fd7, type: 3}
   m_Name: Authoritarianism
   m_EditorClassIdentifier: 
-  endingName: Authoritarianism
-  description: When your opinion counts, but only as evidence against you
-  images:
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  years: d4070000d7070000dc070000
+  endingName: Authoritarianism. Ending 7/11
+  description: "In 2004, a new leader in North Korea consolidated power and expanded
+    influence beyond the nation. Using total surveillance ideology, a system emerged
+    where every citizen was constantly monitored. By 2007, the concept of \"Big Brother\"
+    dominated half the globe. Cameras, sensors, and algorithms controlled every action
+    and word. Freedom became a myth, and people\u2019s lives were entirely subject
+    to the state\u2019s will."
+  image: {fileID: 0}
+  timeline: '#In 2004, North Korea gained a new leader.<br>#By 2007, "Big Brother"
+    controlled half the planet.'

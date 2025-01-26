@@ -1,22 +1,88 @@
 {
     "mails": [
         {
-            "nickname": "@Ali",
-            "topic": "Жнижечки!!!",
-            "content": "Купуй, трать, шикуй. Чорну п'ятницю святкуй!",
-            "date": "2004-12-26"
+            "nickname": "@FoxtrotShop",
+            "topic": "Electronics Clearance Sale!",
+            "content": "Get up to 40% off on smartphones, laptops, and home appliances at Foxtrot. Hurry—limited stock available! Upgrade your tech without breaking the bank.",
+            "date": ""
         },
         {
-            "nickname": "@OblEnergo",
-            "topic": "Комуналка",
-            "content": "Май совість, поплати вже! Наша платформа дає зручні та комфортні можливості оплати",
-            "date": "2004-11-05"
+            "nickname": "@SecretDietPills",
+            "topic": "Lose 20lbs in a Week!",
+            "content": "Doctors HATE her! This woman discovered a simple trick to lose weight FAST!",
+            "date": ""
         },
         {
-            "nickname": "@ATB",
-            "topic": "Нові товари",
-            "content": "Диви, диви, яке все гарне і нове. Біжи доки не розібрали як гаряче!",
-            "date": "2004-05-12"
+            "nickname": "@GambleMoney777",
+            "topic": "Work From Home - $5000/Week!",
+            "content": "Quit your job and make thousands working from home! No experience required!",
+            "date": ""
+        },
+        {
+            "nickname": "@ATB_Deals",
+            "topic": "Save Big on Groceries!",
+            "content": "Enjoy up to 50% off on selected items at ATB this weekend! Don't miss our daily deals and special flash sales. Shop now and save more!",
+            "date": ""
+        },
+        {
+            "nickname": "@FreeIphone15",
+            "topic": "You've Won an iPhone 15!",
+            "content": "Congratulations! You've been selected to receive a FREE iPhone 15!",
+            "date": ""
+        },
+        {
+            "nickname": "@MiracleCream",
+            "topic": "Erase Wrinkles in Seconds!",
+            "content": "Look 10 years younger with this miracle cream!",
+            "date": ""
+        },
+        {
+            "nickname": "@UnlockYourPotential",
+            "topic": "Unlock Your Hidden Potential!",
+            "content": "Discover the secrets to success and happiness! Transform your life with this powerful gym program",
+            "date": ""
+        },
+        {
+            "nickname": "@OlhaNearYou",
+            "topic": "Meet Hot Singles in Your Area!",
+            "content": "Find your perfect match today! Thousands of singles are waiting to connect with you)",
+            "date": ""
+        },
+        {
+            "nickname": "@McDonaldsUkraine",
+            "topic": "Tasty Combo Deals!",
+            "content": "Grab our new Combo Meal and enjoy a burger, fries, and drink at a special price. Download our app for exclusive coupons and surprise offers!",
+            "date": ""
+        },
+        {
+            "nickname": "@TrioLingo",
+            "topic": "Learn Any Language in 3 Days!",
+            "content": "Speak fluently in any language in just 3 days with this revolutionary method!",
+            "date": ""
+        },
+        {
+            "nickname": "@VPN_Cat",
+            "topic": "Browse the Internet Anonymously!",
+            "content": "Protect your privacy with the best VPN service! Get a special discount today",
+            "date": ""
+        },
+        {
+            "nickname": "@Silpo",
+            "topic": "More Bonuses, More Taste!",
+            "content": "Earn double bonus points on your favorite groceries at Silpo. Indulge in fresh produce, premium meats, and new international products—all while racking up points twice as fast!",
+            "date": ""
+        },
+        {
+            "nickname": "@KFC_UA",
+            "topic": "Finger-Lickin’ Good Deals",
+            "content": "Treat yourself to our new spicy bucket and get a free drink! Don’t miss out on our limited-time offers. Order online or stop by your nearest KFC.",
+            "date": ""
+        },
+        {
+            "nickname": "@ComfyElectronics",
+            "topic": "Smart Savings on Smart Devices!",
+            "content": "For a limited time, grab the latest gadgets with up to 30% off at Comfy. From smartphones to smart TVs—unbeatable prices await!",
+            "date": ""
         }
     ]
 }

@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67bd974215ede1468674f6aa9ca2fd7, type: 3}
   m_Name: Militarism
   m_EditorClassIdentifier: 
-  endingName: Militarism
-  description: Solving awkward disagreements with louder bangs
-  images:
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  years: d4070000d7070000dc070000
+  endingName: Militarism. Ending 10/11
+  description: "In 2004, the assassination of the British king by a Chinese agent
+    ignited global conflict. By 2006, World War III was in full swing, involving
+    all major powers. Technological warfare reached its peak, leaving no room for
+    peace. By 2012, Earth was a barren wasteland, with only remnants of civilization
+    surviving. Militarism became the ultimate symbol of humanity\u2019s self-destruction."
+  image: {fileID: -1665967967866077197, guid: 6564b022589ae4e24a1b9e6bf4695aa8, type: 3}
+  timeline: '#In 2004, a Chinese agent assassinated the British king.<br>#By 2006,
+    a global war erupted.<br>#In 2012, Earth became a wasteland.'

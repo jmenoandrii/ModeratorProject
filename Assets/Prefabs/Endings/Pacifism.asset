@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67bd974215ede1468674f6aa9ca2fd7, type: 3}
   m_Name: Pacifism
   m_EditorClassIdentifier: 
-  endingName: Pacifism
-  description: Fighting for peace... just very, very politely
+  endingName: Pacifism. Ending 9/11
+  description: "In 2004, the world achieved unprecedented peace. By 2007, nearly
+    all weapons were destroyed, and humanity embraced pacifism. But in 2012, an alien
+    invasion occurred. With no way to resist, humans were quickly defeated and imprisoned
+    in cocoons, serving as energy sources for their new overlords. Humanity\u2019s
+    pursuit of peace became its ultimate downfall."
   image: {fileID: 6938213204211126481, guid: c5bee94fed3584205a77f7c363dd6d2d, type: 3}
-  timeline: 
+  timeline: '#In 2004, global peace was established.<br>#By 2007, almost all weapons
+    were destroyed.<br>#In 2012, aliens invaded and enslaved humanity.'

@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67bd974215ede1468674f6aa9ca2fd7, type: 3}
   m_Name: Democracy
   m_EditorClassIdentifier: 
-  endingName: Democracy
-  description: Where we all get a say, but mostly just to argue about it
+  endingName: Democracy. Ending 8/11
+  description: "Somewhere, I\u2019ve heard this before..."
   image: {fileID: -7546220971003174884, guid: 7f5758f818edb4573a4ef7c74a73044a, type: 3}
-  timeline: 
+  timeline: '#In 2004, the Indian Ocean tsunami struck.<br>#In 2008, the global financial
+    crisis unfolded.<br>#By 2014, the Revolution of Dignity and the annexation of
+    Crimea occurred.'

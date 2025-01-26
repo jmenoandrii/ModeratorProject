@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67bd974215ede1468674f6aa9ca2fd7, type: 3}
   m_Name: Progress
   m_EditorClassIdentifier: 
-  endingName: Progress
+  endingName: Progress. Ending 4/11
   description: "Fixing problems we didn\u2019t know we had in ways we don\u2019t
     fully understand"
-  images:
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  years: d4070000d7070000dc070000
+  image: {fileID: 0}
+  timeline: "#In 2004, Humanity was overwhelmed by the idea of \u200B\u200Bcosmic
+    expansion.<br>#In 2008, First person landed on Mars to establish a colony.<br>#In
+    2014, Half of the human population lived beyond the Earth."

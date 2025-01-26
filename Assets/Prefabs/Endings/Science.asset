@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67bd974215ede1468674f6aa9ca2fd7, type: 3}
   m_Name: Science
   m_EditorClassIdentifier: 
-  endingName: Science
-  description: Proving your hunches wrong, one experiment at a time
-  images:
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  years: d4070000d7070000dc070000
+  endingName: Science. Ending 2/11
+  description: "In 2004, humanity learned to control computers with chips, and by
+    2009, people were replacing body parts with cybernetic implants. This was the
+    dawn of the cyberpunk era: cities glowed with neon, and humans equipped themselves
+    with artificial eyes, enhanced limbs, and embedded internet processors. But alongside
+    progress came a dark side\u2014corporations seized control, and hackers could
+    infiltrate not just machines but humans themselves. Humanity became a blend of
+    flesh and metal, erasing the line between man and machine."
+  image: {fileID: 6471194276870814058, guid: f5d25c4d3b70b4712b2fc87f3b5536a7, type: 3}
+  timeline: '#In 2004, humanity discovered how to control computers through implanted
+    chips.<br>#By 2009, people began actively replacing body parts with cybernetic
+    implants.<br>#In 2014, Cyberpunk became a reality.'

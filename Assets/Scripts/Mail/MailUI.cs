@@ -18,7 +18,7 @@ public class MailUI : MonoBehaviour
 
     public void ShowFull()
     {
-        _newEmailBadge.SetActive(false);
+        _newEmailBadge?.SetActive(false);
 
         GlobalEventManager.CallOnShowFullMail(_mail);
     }

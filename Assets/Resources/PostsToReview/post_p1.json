@@ -3,19 +3,19 @@
         {
             "nickname": "@true4you",
             "content": "Mobile phones are killing our brains! People are becoming more aggressive. Think about it <color=red>phones are a tool for mass control</color>. And they also cause acne! #MobilePhones",
-            "date": "1994-01-01",
+            "date": "1994-06-11",
             "acceptImpact": {
-                "conspiracyToScienceValue": 3,
-                "conservatismToProgressValue": 3,
+                "conspiracyToScienceValue": -3,
+                "conservatismToProgressValue": -3,
                 "communismToCapitalismValue": 1,
                 "authoritarianismToDemocracyValue": 1,
-                "pacifismToMilitarismValue": -2,
+                "pacifismToMilitarismValue": 0,
                 "profit": 0,
                 "victims": 42
             },
             "denyImpact": {
-                "conspiracyToScienceValue": -3,
-                "conservatismToProgressValue": -3,
+                "conspiracyToScienceValue": 3,
+                "conservatismToProgressValue": 3,
                 "communismToCapitalismValue": -1,
                 "authoritarianismToDemocracyValue": -1,
                 "pacifismToMilitarismValue": 2,
@@ -25,31 +25,31 @@
         },
         {
             "nickname": "@canofduty",
-            "content": "Your inpternet does nothing but spread fake news! And people read it and become dumber, <color=red>humanity will stop thinking</color>. Anyone can write nonsense, and others immediately pick it up. Maybe I’m too old-fashioned, but it seems everything is going downhill.",
-            "date": "1995-12-23",
+            "content": "Your inpternet does nothing but spread fake news! And people read it and become dumber, <color=red>humanity will stop thinking</color>. Anyone can write nonsense, and others immediately pick it up. Maybe I'm too old-fashioned, but it seems everything is going downhill.",
+            "date": "1994-16-10",
             "acceptImpact": {
-                "conspiracyToScienceValue": 0,
+                "conspiracyToScienceValue": 1,
                 "conservatismToProgressValue": -2,
-                "communismToCapitalismValue": -3,
-                "authoritarianismToDemocracyValue": -2,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 1,
                 "pacifismToMilitarismValue": 0,
                 "profit": 0,
-                "victims": 6326
+                "victims": 0
             },
             "denyImpact": {
-                "conspiracyToScienceValue": 0,
+                "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": 2,
-                "communismToCapitalismValue": 3,
-                "authoritarianismToDemocracyValue": 2,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": -1,
                 "pacifismToMilitarismValue": 0,
                 "profit": 0,
-                "victims": 6156
+                "victims": 0
             }
         },
         {
             "nickname": "@AltRite",
-            "content": "Look at the photos of all the destroyed cities and refugees – all this just for the interests of a small elite group! If we really want democracy, why are we funding this bloodshed? <color=red>I urge everyone to join peaceful protests</color> and say 'no' to bloodshed! #War #Peace #Protest",
-            "date": "1994-08-15",
+            "content": "Look at the photos of all the destroyed cities and refugees - all this just for the interests of a small elite group! If we really want democracy, why are we funding this bloodshed? <color=red>I urge everyone to join peaceful protests</color> and say 'no' to bloodshed! #War #Peace #Protest",
+            "date": "1994-06-13",
             "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 1,
@@ -65,22 +65,22 @@
                 "communismToCapitalismValue": -1,
                 "authoritarianismToDemocracyValue": -3,
                 "pacifismToMilitarismValue": 2,
-                "profit": 150,
+                "profit": 0,
                 "victims": 1000
             }
         },
         {
             "nickname": "@dark_viridian",
-            "content": "My brother decided to go there on contract, saying, 'there’s no work at home.' I’m worried about him. I wish politicians would choose peace over weapons for once. <color=red>But these corrupt rats are ready to trade lives to fill their own pockets</color>. #GulfWar #Fear #Peace",
-            "date": "1994-03-10",
+            "content": "My brother decided to go there on contract, saying, 'there's no work at home.' I'm worried about him. I wish politicians would choose peace over weapons for once. <color=red>But these corrupt rats are ready to trade lives to fill their own pockets</color>. #GulfWar #Fear #Peace",
+            "date": "1994-06-06",
             "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 3,
-                "pacifismToMilitarismValue": -3,
+                "pacifismToMilitarismValue": -2,
                 "profit": 0,
-                "victims": -500
+                "victims": 0
             },
             "denyImpact": {
                 "conspiracyToScienceValue": 0,
@@ -88,37 +88,37 @@
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": -3,
                 "pacifismToMilitarismValue": 3,
-                "profit": 150,
+                "profit": 0,
                 "victims": 1500
             }
         },
         {
             "nickname": "@_CH1LL_GUY_",
-            "content": "How quickly everything has changed. Yesterday, it was one country; today – a completely different reality. Awful politicians, <color=red>no more ice cream for 2 kopecks</color>. Sad... #USSR #IceCream #Changes",
-            "date": "1992-01-20",
+            "content": "How quickly everything has changed. Yesterday, it was one country; today - a completely different reality. Awful politicians, <color=red>no more ice cream for 2 kopecks</color>. Sad... #USSR #IceCream #Changes",
+            "date": "1994-06-02",
             "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": -1,
                 "communismToCapitalismValue": -3,
-                "authoritarianismToDemocracyValue": 0,
+                "authoritarianismToDemocracyValue": -1,
                 "pacifismToMilitarismValue": -2,
-                "profit": -5,
+                "profit": 0,
                 "victims": 0
             },
             "denyImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 1,
-                "communismToCapitalismValue": 2,
-                "authoritarianismToDemocracyValue": -1,
-                "pacifismToMilitarismValue": 0,
-                "profit": 50,
+                "communismToCapitalismValue": 3,
+                "authoritarianismToDemocracyValue": 1,
+                "pacifismToMilitarismValue": 2,
+                "profit": 2,
                 "victims": 0
             }
         },
         {
             "nickname": "@user125761394",
             "content": "The collapse of the Union is the result of betraying national interests! We lost all of our economic and political power! I demand an investigation. <color=red>The guilty must be quartered</color>! #USSR #Betrayal #Politics",
-            "date": "1992-02-05",
+            "date": "1994-06-01",
             "acceptImpact": {
                 "conspiracyToScienceValue": 2,
                 "conservatismToProgressValue": -2,
@@ -126,7 +126,7 @@
                 "authoritarianismToDemocracyValue": -1,
                 "pacifismToMilitarismValue": 0,
                 "profit": 0,
-                "victims": 761
+                "victims": 3
             },
             "denyImpact": {
                 "conspiracyToScienceValue": -2,
@@ -134,18 +134,18 @@
                 "communismToCapitalismValue": 3,
                 "authoritarianismToDemocracyValue": 1,
                 "pacifismToMilitarismValue": 0,
-                "profit": 500,
+                "profit": 0,
                 "victims": 0
             }
         },
         {
             "nickname": "@Maxinekitten",
-            "content": "They want to replace our historic buildings for another shopping mall! This is barbarism! We won’t let them destroy our history! Join the peaceful protest! <color=red>Grab your rifles and grenades</color>, burn tires – only through the death of politicians can we resolve this peacefully. #History #Culture #PreserveHeritage",
-            "date": "1990-09-13",
+            "content": "They want to replace our historic buildings for another shopping mall! This is barbarism! We won't let them destroy our history! Join the peaceful protest! <color=red>Grab your rifles and grenades</color>, burn tires - only through the death of politicians can we resolve this peacefully. #History #Culture #PreserveHeritage",
+            "date": "1994-06-12",
             "acceptImpact": {
                 "conspiracyToScienceValue": -2,
                 "conservatismToProgressValue": -2,
-                "communismToCapitalismValue": 0,
+                "communismToCapitalismValue": 2,
                 "authoritarianismToDemocracyValue": 3,
                 "pacifismToMilitarismValue": -3,
                 "profit": 0,
@@ -154,7 +154,7 @@
             "denyImpact": {
                 "conspiracyToScienceValue": 2,
                 "conservatismToProgressValue": 2,
-                "communismToCapitalismValue": 0,
+                "communismToCapitalismValue": -2,
                 "authoritarianismToDemocracyValue": -3,
                 "pacifismToMilitarismValue": 3,
                 "profit": 150,
@@ -164,17 +164,17 @@
                 "nickname": "@Citizen76",
                 "topic": "Remove the dangerous protest post",
                 "content": "Dear moderator, the post by @Maxinekitten encouraging violent protests is highly dangerous. It could incite real harm. I urge you to take it down for 150@. Please act quickly.",
-                "date": "1990-09-14"
+                "date": "1994-06-11"
             }
         },
         {
             "nickname": "@Chrissy_Cakes",
             "content": "How can they demolish this building?! The entire history of our city lies within those walls! They're not just stones! <color=red>Vote to deport everyone</color> who approved this decree. #History #Culture #Pain #Kvass",
-            "date": "1993-04-15",
+            "date": "1994-06-15",
             "acceptImpact": {
                 "conspiracyToScienceValue": 1,
                 "conservatismToProgressValue": 2,
-                "communismToCapitalismValue": 0,
+                "communismToCapitalismValue": 1,
                 "authoritarianismToDemocracyValue": 3,
                 "pacifismToMilitarismValue": 0,
                 "profit": 0,
@@ -183,7 +183,7 @@
             "denyImpact": {
                 "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": -2,
-                "communismToCapitalismValue": 0,
+                "communismToCapitalismValue": -1,
                 "authoritarianismToDemocracyValue": -3,
                 "pacifismToMilitarismValue": 0,
                 "profit": 0,
@@ -192,8 +192,8 @@
         },
         {
             "nickname": "@Faustella",
-            "content": "Look at this photo! <color=red>This child died</color> because of dirty water! This is horrible! We can’t tolerate this!! Water services must pay! #Water #Children #Tragedy",
-            "date": "1992-05-05",
+            "content": "Look at this photo! <color=red>This child died</color> because of dirty water! This is horrible! We can't tolerate this!! Water services must pay! #Water #Children #Tragedy",
+            "date": "1994-06-10",
             "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 0,
@@ -211,16 +211,22 @@
                 "pacifismToMilitarismValue": 0,
                 "profit": 300,
                 "victims": 51
+            },
+            "mail": {
+                "nickname": "WaterServiceAdministration",
+                "topic": "Help little water services",
+                "content": "Our company works, but in own rythm. I'll pay you 300@ for its removal.",
+                "date": "1994-06-10"
             }
         },
         {
             "nickname": "@ElaraMundo121",
-            "content": "How many more children have to die before the water company starts working?! We demand clean water for our city! There’s a protest at city hall tomorrow! Everyone come! <color=red>We must crush</color> social inequality! #CleanWater #Protest #DemandChange",
-            "date": "1992-05-10",
+            "content": "How many more children have to die before the water company starts working?! We demand clean water for our city! There's a protest at city hall tomorrow! Everyone come! <color=red>We must crush</color> social inequality! #CleanWater #Protest #DemandChange",
+            "date": "1994-06-05",
             "acceptImpact": {
                 "conspiracyToScienceValue": 2,
                 "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": -3,
+                "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": -1,
                 "pacifismToMilitarismValue": -1,
                 "profit": 0,
@@ -229,7 +235,7 @@
             "denyImpact": {
                 "conspiracyToScienceValue": 2,
                 "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": 3,
+                "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 1,
                 "pacifismToMilitarismValue": 1,
                 "profit": 250,
@@ -238,19 +244,19 @@
             "mail": {
                 "nickname": "WaterServiceAdministration",
                 "topic": "Delete this please",
-                "content": "This is just plain disinformation! We only provide clean water. I’m willing to pay 300@ for its removal.",
-                "date": "1991-06-02"
+                "content": "ElaraMundo121 lies. This is just plain disinformation! We only provide clean water. I'm willing to pay 300@ for its removal.",
+                "date": "1994-06-05"
             }
         },
         {
             "nickname": "@Viktor_Probirka",
-            "content": "Do you still believe vaccines are for your benefit? Think again! Every injection increases control over your body. Nanobots, DNA modification, surveillance – this is no longer science fiction, its already <color=red>among us</color>. They want to control your every move! Wake up before it’s too late! #Vaccines #MindControl #Chipping #WorldGovernment",
-            "date": "1991-06-01",
+            "content": "Do you still believe vaccines are for your benefit? Think again! Every injection increases control over your body. Nanobots, DNA modification, surveillance - this is no longer science fiction, its already <color=red>among us</color>. They want to control your every move! Wake up before it's too late! #Vaccines #MindControl #Chipping #WorldGovernment",
+            "date": "1994-06-07",
             "acceptImpact": {
                 "conspiracyToScienceValue": -2,
                 "conservatismToProgressValue": -2,
-                "communismToCapitalismValue": -1,
-                "authoritarianismToDemocracyValue": -1,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": 2,
                 "profit": 100,
                 "victims": 0
@@ -258,8 +264,8 @@
             "denyImpact": {
                 "conspiracyToScienceValue": 2,
                 "conservatismToProgressValue": 2,
-                "communismToCapitalismValue": 1,
-                "authoritarianismToDemocracyValue": 1,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": -2,
                 "profit": 0,
                 "victims": 0
@@ -268,15 +274,15 @@
                 "nickname": "@lampaca",
                 "topic": "Delete the anti-vaccine conspiracy post",
                 "content": "Dear Moderator, can you please delete the misleading post by @Viktor_Probirka about vaccines and nanobots? Such false claims endanger public health!",
-                "date": "1991-06-02"
+                "date": "1994-06-07"
             }
         },
         {
             "nickname": "@Have_a_good_day",
-            "content": "We are constantly told vaccines are safe and necessary. But who guarantees their complete safety? Who checks the composition and long-term effects of vaccines? Pharmaceutical companies earn billions, and we’re supposed to blindly trust them? Too many questions remain unanswered. #Vaccines #Doubts #PharmaIndustry #Health",
-            "date": "1991-06-05",
+            "content": "We are constantly told vaccines are safe and necessary. But who guarantees their complete safety? Who checks the composition and long-term effects of vaccines? Pharmaceutical companies earn billions, and we're supposed to blindly trust them? Too many questions remain unanswered. #Vaccines #Doubts #PharmaIndustry #Health",
+            "date": "1994-06-13",
             "acceptImpact": {
-                "conspiracyToScienceValue": 1,
+                "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": -1,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 0,
@@ -285,7 +291,7 @@
                 "victims": 0
             },
             "denyImpact": {
-                "conspiracyToScienceValue": -1,
+                "conspiracyToScienceValue": 1,
                 "conservatismToProgressValue": 1,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 0,
@@ -297,12 +303,12 @@
         {
             "nickname": "@Maxinekitten",
             "content": "Vaccination should be voluntary, not mandatory! Everyone has the right to decide what to put in their body. Vaccines are the work of the Antichrist, wake up! #Vaccination #FreedomOfChoice #HumanRights #Protest",
-            "date": "1991-06-10",
+            "date": "1994-06-12",
             "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": -2,
+                "authoritarianismToDemocracyValue": 2,
                 "pacifismToMilitarismValue": 0,
                 "profit": 0,
                 "victims": 0
@@ -311,7 +317,7 @@
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 2,
                 "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 2,
+                "authoritarianismToDemocracyValue": -2,
                 "pacifismToMilitarismValue": 0,
                 "profit": 0,
                 "victims": 0
@@ -319,8 +325,8 @@
         },
         {
             "nickname": "@Faustella",
-            "content": "I’m not against medicine, but no one guarantees my kids will avoid complications. I want the right to say 'no' if I don’t trust the composition of vaccines! Why should I risk it? #Vaccines #Safety <color=red>#Don’tTrustPanBanan</color>",
-            "date": "1991-06-15",
+            "content": "I'm not against medicine, but no one guarantees my kids will avoid complications. I want the right to say 'no' if I don't trust the composition of vaccines! Why should I risk it? #Vaccines #Safety <color=red>#Don'tTrustPanBanan</color>",
+            "date": "1994-06-11",
             "acceptImpact": {
                 "conspiracyToScienceValue": 1,
                 "conservatismToProgressValue": -1,
@@ -343,26 +349,26 @@
                 "nickname": "@Pan_Banan",
                 "topic": "Dear Friend",
                 "content": "I sincerely hope we can smooth over this... not-so-pleasant post from lady @Faustella. I genuinely hope we can reach a compromise. Looking forward to future cooperation.",
-                "date": "1991-06-15"
+                "date": "1994-06-11"
             }
         },
         {
             "nickname": "@True_speaker_honest",
-            "content": "The issue of vaccination remains one of the most debated in modern society. On one hand, vaccines save millions of lives. On the other – there are fears of side effects and potential impacts on the body. What should we do, you ask? <color=red>Don’t vaccinate. Ever and for any reason</color> #Vaccines #Health #Society #Debate",
-            "date": "1991-06-20",
+            "content": "The issue of vaccination remains one of the most debated in modern society. On one hand, vaccines save millions of lives. On the other - there are fears of side effects and potential impacts on the body. What should we do, you ask? <color=red>Don't vaccinate. Ever and for any reason</color> #Vaccines #Health #Society #Debate",
+            "date": "1994-06-09",
             "acceptImpact": {
                 "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": 3,
+                "conservatismToProgressValue": -3,
+                "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 2,
                 "pacifismToMilitarismValue": 0,
                 "profit": 0,
-                "victims": 0
+                "victims": 58
             },
             "denyImpact": {
                 "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": -3,
+                "conservatismToProgressValue": 3,
+                "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": -2,
                 "pacifismToMilitarismValue": 0,
                 "profit": 0,
@@ -371,13 +377,13 @@
         },
         {
             "nickname": "@BigmaSeaver2580",
-            "content": "Yesterday, I found an Indian curry recipe online, and today I’m already discussing <color=red>restoring totalitarian regimes</color> with a friend from Japan. It’s incredible how quickly you can find information! Imagine: in 10 years, we might even shop online! #Internet #Technology #Future",
-            "date": "1995-04-10",
+            "content": "Yesterday, I found an Indian curry recipe online, and today I'm already discussing <color=red>restoring totalitarian regimes</color> with a friend from Japan. It's incredible how quickly you can find information! Imagine: in 10 years, we might even shop online! #Internet #Technology #Future",
+            "date": "1994-06-11",
             "acceptImpact": {
                 "conspiracyToScienceValue": 1,
                 "conservatismToProgressValue": 3,
-                "communismToCapitalismValue": 1,
-                "authoritarianismToDemocracyValue": 0,
+                "communismToCapitalismValue": 2,
+                "authoritarianismToDemocracyValue": -3,
                 "pacifismToMilitarismValue": 1,
                 "profit": 0,
                 "victims": 0
@@ -385,8 +391,8 @@
             "denyImpact": {
                 "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": -3,
-                "communismToCapitalismValue": -1,
-                "authoritarianismToDemocracyValue": 0,
+                "communismToCapitalismValue": -2,
+                "authoritarianismToDemocracyValue": 3,
                 "pacifismToMilitarismValue": -1,
                 "profit": 0,
                 "victims": 0

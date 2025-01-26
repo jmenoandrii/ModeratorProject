@@ -10,6 +10,8 @@ public class MailManager : MonoBehaviour
     [SerializeField] private PopUp _popUpApp;
     [SerializeField] private MailUI _popUpMailUI;
 
+    [SerializeField] private Mail _welcomeMail;
+
     private void Awake()
     {
         GlobalEventManager.OnAddNewMail += AddNewMail;
@@ -22,6 +24,11 @@ public class MailManager : MonoBehaviour
         GlobalEventManager.OnAddNewMail -= AddNewMail;
         GlobalEventManager.OnShowFullMail -= ShowFullMail;
         GlobalEventManager.OnHideFullMail -= HideFullMail;
+    }
+
+    public void WelcomeMail()
+    {
+        AddNewMail(_welcomeMail);
     }
 
     private void AddNewMail(Mail mail)
@@ -46,11 +53,8 @@ public class MailManager : MonoBehaviour
         mailUI.SetData(mail);
 
         // PopUp
-        if (!_mailApp.activeSelf)
-        {
-            _popUpMailUI.SetData(mail);
-            _popUpApp.Show();
-        }
+        _popUpMailUI.SetData(mail);
+        _popUpApp.Show();
     }
 
     private void ShowFullMail(Mail mail)

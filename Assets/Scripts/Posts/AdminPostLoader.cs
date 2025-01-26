@@ -8,6 +8,8 @@ public class AdminPostsLoader : MonoBehaviour
     protected bool _isLoaded = false;
     private bool _isNoMorePosts = false;
 
+    private int _maxPostsToSelect;
+
     private int _currentIdPost = 0;
     private int _maxIdPost = 0;
 
@@ -68,7 +70,7 @@ public class AdminPostsLoader : MonoBehaviour
         return JsonUtility.FromJson<PostWrapper>(jsonData);
     }
 
-    public void LoadPosts(string jsonFilePath)
+    public void LoadPosts(string jsonFilePath, int maxPostsToSelect)
     {
         if (_isLoaded && jsonFilePath == _jsonFilePath) return;
         _isLoaded = false;
@@ -80,7 +82,9 @@ public class AdminPostsLoader : MonoBehaviour
             return;
         }
 
-        _postWrapper = ShufflePosts(_postWrapper);
+        _maxPostsToSelect = maxPostsToSelect;
+
+        _postWrapper = SelectRandomPosts(_postWrapper);
         
         _maxIdPost = _postWrapper.posts.Count - 1;
         _currentIdPost = 0;
@@ -97,6 +101,18 @@ public class AdminPostsLoader : MonoBehaviour
             (wrapper.posts[j], wrapper.posts[i]) = (wrapper.posts[i], wrapper.posts[j]);
         }
         return wrapper;
+    }
+
+    private PostWrapper SelectRandomPosts(PostWrapper wrapper)
+    {
+        wrapper = ShufflePosts(wrapper);
+
+        PostWrapper selectedWrapper = new()
+        {
+            posts = wrapper.posts.GetRange(0, Mathf.Min(_maxPostsToSelect, wrapper.posts.Count))
+        };
+
+        return selectedWrapper;
     }
 
     public bool IsNoPostsFound()

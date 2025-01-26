@@ -12,10 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67bd974215ede1468674f6aa9ca2fd7, type: 3}
   m_Name: Capitalism
   m_EditorClassIdentifier: 
-  endingName: Capitalism
-  description: Turning hobbies into side hustles since forever
-  images:
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  years: d4070000d7070000dc070000
+  endingName: Capitalism. Ending 6/11
+  description: "In 2004, Ukraine\u2019s election of a Jewish president symbolized
+    openness and capitalism\u2019s rising influence. In 2009, the global economy
+    transformed, with bytecoin replacing traditional money. By 2014, money controlled
+    everything, even basic survival. Breathing became a privilege, costing 10 bytecoins
+    per breath. Those unable to pay simply ceased to exist. Capitalism reached its
+    peak, where life was measured not in time but in bytecoin balances."
+  image: {fileID: 0}
+  timeline: "#In 2004, Ukraine elected its first Jewish president.<br>#In 2009, ByteCoin
+    became the world\u2019s primary currency.<br>#By 2014, breathing cost 10 bytecoins
+    per breath. Ending 6"

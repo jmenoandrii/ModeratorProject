@@ -14,26 +14,29 @@ public class AdminPostLoaderUI : MonoBehaviour
     [SerializeField] private RectTransform _valueContainer;
     [SerializeField] private RectTransform _acceptPosition;
     [SerializeField] private RectTransform _denyPosition;
-    private bool isBooted = false;
+    private bool _isBooted = false;
     [Header("Timer")]
-    [SerializeField] private TMP_Text _timer;
+    [SerializeField] private Slider _progressSlider;
     [SerializeField] private float _postLoadingTime;
     [SerializeField] private float _iconShownTime;
+    [SerializeField] private AudioSource _noPostsFindAudio;
     private int[] _impactsValue = new int[12];
     [SerializeField] private ValueIcon[] _valueIcons = new ValueIcon[12];
+
+    private Coroutine _currentCoroutine;
 
     private void Awake()
     {
         GlobalEventManager.OnSendAdminPost += UpdatePost;
         GlobalEventManager.OnSendLeftPostCount += SetLestPostCount;
-        GlobalEventManager.OnUpdateTimerOfLoadPosts += UpdateTimer;
+        GlobalEventManager.OnUpdateTimerOfLoadPosts += UpdateSlider;
     }
 
     private void OnDestroy()
     {
         GlobalEventManager.OnSendAdminPost -= UpdatePost;
         GlobalEventManager.OnSendLeftPostCount -= SetLestPostCount;
-        GlobalEventManager.OnUpdateTimerOfLoadPosts -= UpdateTimer;
+        GlobalEventManager.OnUpdateTimerOfLoadPosts -= UpdateSlider;
     }
 
     private void OnEnable()
@@ -42,14 +45,26 @@ public class AdminPostLoaderUI : MonoBehaviour
         {
             icon.Rewind();
         }
+
+        if (_currentCoroutine != null)
+        {
+            _currentCoroutine = StartCoroutine(WaitToLoadPosts());
+        }
+
         GlobalEventManager.CallOnInitAdminPost();
     }
 
-    private void UpdateTimer(float time)
+    private void OnDisable()
     {
-        TimeSpan timeSpan = TimeSpan.FromSeconds(time);
-        string timeStr = string.Format("{0:D2}:{1:D2}", timeSpan.Minutes, timeSpan.Seconds);
-        _timer.SetText(timeStr);
+        if (_currentCoroutine != null)
+        {
+            StopCoroutine(_currentCoroutine);
+        }
+    }
+
+    private void UpdateSlider(float time)
+    {
+        _progressSlider.value = time;
     }
 
     private void UpdatePost(AdminPostsLoader.AdminPost post)
@@ -65,13 +80,16 @@ public class AdminPostLoaderUI : MonoBehaviour
         _postUI.acceptImpact = post.acceptImpact;
         _postUI.denyImpact = post.denyImpact;
 
-        if (isBooted) 
-            StartCoroutine(WaitToLoadPosts());
-        isBooted = true;
+        if (!_isBooted && _currentCoroutine == null)
+        {
+            _currentCoroutine = StartCoroutine(WaitToLoadPosts());
+        }
     }
 
     public void NextPost(bool isAccept)
     {
+        _isBooted = false;
+        
         AdminPostsLoader.Impact impact = isAccept ? _postUI.acceptImpact : _postUI.denyImpact;
 
         GlobalEventManager.CallOnSendImpact(impact);
@@ -104,6 +122,9 @@ public class AdminPostLoaderUI : MonoBehaviour
         {
             button.interactable = true;
         }
+
+        _isBooted = true;
+        _currentCoroutine = null;
     }
 
     private void ShowIconsValue(AdminPostsLoader.Impact impact)
@@ -154,10 +175,13 @@ public class AdminPostLoaderUI : MonoBehaviour
         _postUI.gameObject.SetActive(false);
         _buttons.gameObject.SetActive(false);
         _noFoundPosts.gameObject.SetActive(true);
+        _noPostsFindAudio.Play();
     }
 
     private void OnPostsFound()
     {
+        if (!_isBooted && _currentCoroutine != null)
+            return; 
         _postUI.gameObject.SetActive(true);
         _buttons.gameObject.SetActive(true);
         _noFoundPosts.gameObject.SetActive(false);

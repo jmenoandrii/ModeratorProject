@@ -27,7 +27,7 @@ public class NumberTypewriterEffect : MonoBehaviour
         {
             _textComponent.text = "";
             if (_isAutoStart)
-                StartCoroutine(TypeNumbers());
+                StartEffect();
         }
         else
         {
@@ -38,13 +38,20 @@ public class NumberTypewriterEffect : MonoBehaviour
     public void StartEffect()
     {
         if (!_isStarted)
+        {
             StartCoroutine(TypeNumbers());
+        }
     }
 
     private IEnumerator TypeNumbers()
     {
         _isStarted = true;
 
+        if (_currentNumber == _targetNumber)
+        {
+            _textComponent.text = _currentNumber.ToString();
+        }
+        
         while (_currentNumber < _targetNumber)
         {
             _currentNumber++;

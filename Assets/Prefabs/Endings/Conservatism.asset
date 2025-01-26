@@ -12,10 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67bd974215ede1468674f6aa9ca2fd7, type: 3}
   m_Name: Conservatism
   m_EditorClassIdentifier: 
-  endingName: Conservatism
-  description: Because if it ain't broke, don't you dare try to fix it
-  images:
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  - {fileID: -4364034832326165938, guid: 0938cad7156694686ac8588d19c55e51, type: 3}
-  years: d4070000d7070000dc070000
+  endingName: Conservatism. Ending 3/11
+  description: "In 2004, George Boker Vush\u2019s election strengthened conservatism\u2019s
+    grip. By 2008, the Republican Party abolished the Democratic Party, establishing
+    a one-party system in the name of \"national stability.\" In 2010, a massive
+    glass dome was built over the United States, completely controlling entry and
+    exit. Citizens lived in relative peace, but the cost was high: every aspect of
+    life was controlled, and dissent was punished severely."
+  image: {fileID: 0}
+  timeline: '#In 2004, George Boker Vush won the presidency in America.<br>#In 2008,
+    the Republican Party abolished the Democratic Party.<br>#In 2010 America sealed
+    its skies with a glass dome.'

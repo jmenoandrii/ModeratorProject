@@ -3,7 +3,11 @@ using UnityEngine;
 
 public class PostsLoader : MonoBehaviour
 {
+    [SerializeField] protected GameObject _postPrefab;
+    [SerializeField] protected Transform _contentParent;
+
     [SerializeField] protected string _jsonFilePath;
+    [SerializeField] private int _maxPostsToSelect = 5;
 
     protected PostWrapper _postWrapper;
 
@@ -21,6 +25,11 @@ public class PostsLoader : MonoBehaviour
     public class PostWrapper
     {
         public List<Post> posts;
+    }
+
+    private void OnEnable()
+    {
+        LoadPosts(_jsonFilePath);
     }
 
     protected PostWrapper LoadPostsFromFile(string jsonFilePath)
@@ -48,6 +57,39 @@ public class PostsLoader : MonoBehaviour
             return;
         }
 
+        postWrapper = SelectRandomPosts(postWrapper);
+        
+        foreach (var post in postWrapper.posts)
+        {
+            GameObject postObject = Instantiate(_postPrefab, _contentParent);
+            if (postObject.TryGetComponent<PostUI>(out var postUI))
+            {
+                postUI.SetPostData(post.nickname, post.content, post.date);
+            }
+        }
+
         _isLoaded = true;
+    }
+
+    private PostWrapper ShufflePosts(PostWrapper wrapper)
+    {
+        for (int i = wrapper.posts.Count - 1; i > 0; i--)
+        {
+            int j = Random.Range(0, i + 1);
+            (wrapper.posts[j], wrapper.posts[i]) = (wrapper.posts[i], wrapper.posts[j]);
+        }
+        return wrapper;
+    }
+
+    private PostWrapper SelectRandomPosts(PostWrapper wrapper)
+    {
+        wrapper = ShufflePosts(wrapper);
+
+        PostWrapper selectedWrapper = new()
+        {
+            posts = wrapper.posts.GetRange(0, Mathf.Min(_maxPostsToSelect, wrapper.posts.Count))
+        };
+
+        return selectedWrapper;
     }
 }
