@@ -456,6 +456,17 @@ MonoBehaviour:
   _contentParent: {fileID: 8176373112079082879}
   _jsonFilePath: Posts/posts
   _maxPostsToSelect: 5
+  _adSprites:
+  - {fileID: 5052396143818517044, guid: be414a5aede714023952f8f2309efa9e, type: 3}
+  - {fileID: -8993367807108342231, guid: ba29b204e57732540b06117c2d3e4d49, type: 3}
+  - {fileID: -1436630045915806586, guid: 0f7183c178315d04681ea0ff4390ab3f, type: 3}
+  - {fileID: 9188622290977786463, guid: c27e0413a68191b4bbae931ae653dd78, type: 3}
+  - {fileID: 5407172745095741460, guid: b3bf6f0adefd9334c80982aa123a7cfd, type: 3}
+  - {fileID: 5620590157158963807, guid: b5b479e19f19ac1478a7f2321ecb355b, type: 3}
+  _adObjects:
+  - {fileID: 5057902551809671570}
+  - {fileID: 8847501391202604051}
+  - {fileID: 7109803346924406095}
 --- !u!1 &4209964938014863493
 GameObject:
   m_ObjectHideFlags: 0
@@ -1520,8 +1531,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 773388806388165989}
   m_HandleRect: {fileID: 8994165560083017098}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.3375
+  m_Value: 0
+  m_Size: 0.33333334
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1775,7 +1786,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1

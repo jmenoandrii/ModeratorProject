@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PostsLoader : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class PostsLoader : MonoBehaviour
 
     [SerializeField] protected string _jsonFilePath;
     [SerializeField] private int _maxPostsToSelect = 5;
+    [SerializeField] private Sprite[] _adSprites;
+    [SerializeField] private Image[] _adObjects;
+
 
     protected PostWrapper _postWrapper;
 
@@ -66,6 +70,11 @@ public class PostsLoader : MonoBehaviour
             {
                 postUI.SetPostData(post.nickname, post.content, post.date);
             }
+        }
+
+        for (int i = 0; i < _adObjects.Length; i++)
+        {
+            _adObjects[i].sprite = _adSprites[Random.Range(0, _adSprites.Length)];
         }
 
         _isLoaded = true;
