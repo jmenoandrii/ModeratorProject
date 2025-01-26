@@ -38,7 +38,7 @@ public class GlobalEventManager : MonoBehaviour
 
     // ***** Mail *****
     public static event Action<Mail> OnAddNewMail;
-    public static event Action<Mail> OnShowFullMail;
+    public static event Action<Mail, GameObject> OnShowFullMail;
     public static event Action OnHideFullMail;
 
     // ***** Saper *****
@@ -147,9 +147,9 @@ public class GlobalEventManager : MonoBehaviour
         OnAddNewMail?.Invoke(mail);
     }
 
-    public static void CallOnShowFullMail(Mail mail)
+    public static void CallOnShowFullMail(Mail mail, GameObject shortMailObj)
     {
-        OnShowFullMail?.Invoke(mail);
+        OnShowFullMail?.Invoke(mail, shortMailObj);
     }
 
     public static void CallOnHideFullMail()

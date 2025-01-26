@@ -20,6 +20,6 @@ public class MailUI : MonoBehaviour
     {
         _newEmailBadge?.SetActive(false);
 
-        GlobalEventManager.CallOnShowFullMail(_mail);
+        GlobalEventManager.CallOnShowFullMail(_mail, gameObject);
     }
 }

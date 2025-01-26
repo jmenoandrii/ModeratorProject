@@ -63,15 +63,15 @@ public class MailManager : MonoBehaviour
         _popUpApp.Show();
     }
 
-    private void ShowFullMail(Mail mail)
+    private void ShowFullMail(Mail mail, GameObject shortMailObj)
     {
-        _fullMailUI.SetData(mail);
+        _fullMailUI.SetData(mail, shortMailObj);
 
         _mailLists.SetActive(false);
         _fullMailUI.gameObject.SetActive(true);
     }
 
-    private void HideFullMail()
+    public void HideFullMail()
     {
         _mailLists.SetActive(true);
         _fullMailUI.gameObject.SetActive(false);
