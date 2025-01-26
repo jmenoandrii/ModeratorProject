@@ -9,8 +9,8 @@ public class SaperScore : MonoBehaviour
     public int BombCount { get; private set; }
     public bool IsAbleToDecrease { get => Score != 0; }
     public bool IsAbleToIncrease { get => Score != BombCount; }
-
-    private void Start()
+    
+    private void Awake()
     {
         BombCount = 1;
 
