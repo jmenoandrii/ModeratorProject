@@ -1,8 +1,5 @@
 using UnityEngine;
 using System.Linq;
-using UnityEngine.Rendering;
-using UnityEngine.UIElements;
-using static UnityEditor.Rendering.FilterWindow;
 
 public class TabBar : MonoBehaviour
 {
