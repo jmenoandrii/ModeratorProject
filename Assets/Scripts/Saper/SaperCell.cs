@@ -90,7 +90,7 @@ public class SaperCell : MonoBehaviour, IPointerClickHandler
 
     private void ToggleFlag()
     {
-        if ((_isFlag && !SaperScore.instance.IsAbleToIncrease) ||
+        if (IsOpened || (_isFlag && !SaperScore.instance.IsAbleToIncrease) ||
             (!_isFlag && !SaperScore.instance.IsAbleToDecrease))
             return;
 
