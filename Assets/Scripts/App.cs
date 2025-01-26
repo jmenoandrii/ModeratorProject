@@ -54,7 +54,7 @@ public class App : MonoBehaviour
     }
 
     //When we first open app
-    public void OpenApp()
+    public virtual void OpenApp()
     {
         _appWindow.transform.SetAsLastSibling();
         
@@ -74,14 +74,14 @@ public class App : MonoBehaviour
         ShowApp();
     }
 
-    public void HideApp()
+    public virtual void HideApp()
     {
         if (!IsContainerActive) return;
 
         _appContainer.SetActive(false);
     }
 
-    public void ShowApp()
+    public virtual void ShowApp()
     {
         if (IsContainerActive) return;
 
