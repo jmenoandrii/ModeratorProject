@@ -118,7 +118,7 @@
                 "victims": 0
             },
             "denyImpact": {
-                "conspiracyToScienceValue": -3,
+                "conspiracyToScienceValue": 3,
                 "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 0,
@@ -208,7 +208,7 @@
             "date": "2002-09-07",
             "acceptImpact": {
                 "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 1,
+                "conservatismToProgressValue": 2,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": -3,
                 "pacifismToMilitarismValue": 0,
@@ -282,7 +282,7 @@
             "content": "People living with AIDS are just like us. They need support, not condemnation. #AIDS #Support #Tolerance",
             "date": "2002-09-01",
             "acceptImpact": {
-                "conspiracyToScienceValue": 1,
+                "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 2,
                 "authoritarianismToDemocracyValue": 0,
@@ -291,7 +291,7 @@
                 "victims": 0
             },
             "denyImpact": {
-                "conspiracyToScienceValue": -1,
+                "conspiracyToScienceValue": 4,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": -2,
                 "authoritarianismToDemocracyValue": 0,
@@ -351,7 +351,7 @@
             "content": "The elites are already set with their <color=red>'golden parachutes,'</color> sipping cappuccinos. Meanwhile, regular people are told to 'tighten their belts.' Well, I'm tightening mine — but you can't get far on just buckwheat and water... #Crisis #Banks",            
             "date": "2002-09-15",
             "acceptImpact": {
-                "conspiracyToScienceValue": 1,
+                "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": 1,
                 "communismToCapitalismValue": -2,
                 "authoritarianismToDemocracyValue": 1,
@@ -360,7 +360,7 @@
                 "victims": 0
             },
             "denyImpact": {
-                "conspiracyToScienceValue": -1,
+                "conspiracyToScienceValue": 1,
                 "conservatismToProgressValue": -1,
                 "communismToCapitalismValue": 2,
                 "authoritarianismToDemocracyValue": -1,
@@ -583,7 +583,7 @@
             "date": "2002-09-12",
             "acceptImpact": {
                 "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 0,
+                "conservatismToProgressValue": -3,
                 "communismToCapitalismValue": -2,
                 "authoritarianismToDemocracyValue": 3,
                 "pacifismToMilitarismValue": 0,

@@ -80,7 +80,7 @@
             "content": "Well, Tyson bit an ear - it happens. At least it will be remembered for a long time. #Tyson #Boxing #Scandal",
             "date": "1999-01-22",
             "acceptImpact": {
-                "conspiracyToScienceValue": 2,
+                "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 2,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 1,
@@ -201,7 +201,7 @@
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": 1,
                 "profit": 0,
-                "victims": 70
+                "victims": 0
             },
             "denyImpact": {
                 "conspiracyToScienceValue": -2,
@@ -210,7 +210,7 @@
                 "authoritarianismToDemocracyValue": 2,
                 "pacifismToMilitarismValue": -2,
                 "profit": 120,
-                "victims": 0
+                "victims": 70
             },
             "mail": {
                 "nickname": "@anonym",
@@ -247,18 +247,18 @@
             "content": "The Hale-Bopp comet is a sign from the <b>heavens</b>! This is the end of the world, as written in the prophecies! <color=red>Prepare for Judgment Day!</color> #Comet #Apocalypse #DivineSign",
             "date": "1999-01-19",
             "acceptImpact": {
-                "conspiracyToScienceValue": 2,
+                "conspiracyToScienceValue": -2,
                 "conservatismToProgressValue": -2,
-                "communismToCapitalismValue": 1,
+                "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 3,
+                "pacifismToMilitarismValue": 0,
                 "profit": 100,
                 "victims": 0
             },
             "denyImpact": {
-                "conspiracyToScienceValue": -2,
+                "conspiracyToScienceValue": 2,
                 "conservatismToProgressValue": 2,
-                "communismToCapitalismValue": -1,
+                "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": -3,
                 "profit": 0,
@@ -324,16 +324,16 @@
             "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": -3,
-                "authoritarianismToDemocracyValue": 0,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 2,
                 "pacifismToMilitarismValue": 0,
                 "profit": 0,
                 "victims": 0
             },
             "denyImpact": {
                 "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": 3,
+                "conservatismToProgressValue": 2,
+                "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": 0,
                 "profit": 0,
@@ -368,20 +368,20 @@
             "content": "Let's sit in a cave and light torches, because light bulbs probably make your hair fall out too. <color=red>Maybe we should ban all technology</color>, so nothing emits anything? I've always wanted to feel like a caveman. #MobilePhones #Scaremongering #Funny",
             "date": "1999-01-23",
             "acceptImpact": {
-                "conspiracyToScienceValue": 2,
-                "conservatismToProgressValue": 2,
+                "conspiracyToScienceValue": -2,
+                "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 1,
-                "pacifismToMilitarismValue": 1,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 0,
                 "profit": 0,
                 "victims": 0
             },
             "denyImpact": {
-                "conspiracyToScienceValue": -2,
-                "conservatismToProgressValue": -2,
+                "conspiracyToScienceValue": 2,
+                "conservatismToProgressValue": 2,
                 "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": -1,
-                "pacifismToMilitarismValue": -1,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 0,
                 "profit": 0,
                 "victims": 0
             }
@@ -420,19 +420,19 @@
             "content": "Y2K? Seriously? Computers will go crazy, and <color=red>the world will collapse</color>? I hope my old 'NES' survives this 'catastrophe.' Stocking up on popcorn! #Y2K #ComputerApocalypse #Pastafarianism #Funny",
             "date": "1999-01-21",
             "acceptImpact": {
-                "conspiracyToScienceValue": 1,
-                "conservatismToProgressValue": 2,
-                "communismToCapitalismValue": -1,
+                "conspiracyToScienceValue": -1,
+                "conservatismToProgressValue": -2,
+                "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 1,
                 "pacifismToMilitarismValue": 0,
                 "profit": 0,
                 "victims": 0
             },
             "denyImpact": {
-                "conspiracyToScienceValue": -1,
-                "conservatismToProgressValue": -2,
-                "communismToCapitalismValue": 1,
-                "authoritarianismToDemocracyValue": -1,
+                "conspiracyToScienceValue": 1,
+                "conservatismToProgressValue": 2,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": 0,
                 "profit": 0,
                 "victims": 0

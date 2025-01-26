@@ -20,7 +20,7 @@
                 "authoritarianismToDemocracyValue": -1,
                 "pacifismToMilitarismValue": 2,
                 "profit": 0,
-                "victims": 2
+                "victims": 0
             }
         },
         {
@@ -28,7 +28,7 @@
             "content": "Your inpternet does nothing but spread fake news! And people read it and become dumber, <color=red>humanity will stop thinking</color>. Anyone can write nonsense, and others immediately pick it up. Maybe I'm too old-fashioned, but it seems everything is going downhill.",
             "date": "1994-16-10",
             "acceptImpact": {
-                "conspiracyToScienceValue": 1,
+                "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 1,
@@ -37,7 +37,7 @@
                 "victims": 0
             },
             "denyImpact": {
-                "conspiracyToScienceValue": -1,
+                "conspiracyToScienceValue": 1,
                 "conservatismToProgressValue": 2,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": -1,
@@ -120,7 +120,7 @@
             "content": "The collapse of the Union is the result of betraying national interests! We lost all of our economic and political power! I demand an investigation. <color=red>The guilty must be quartered</color>! #USSR #Betrayal #Politics",
             "date": "1994-06-01",
             "acceptImpact": {
-                "conspiracyToScienceValue": 2,
+                "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": -3,
                 "authoritarianismToDemocracyValue": -1,
@@ -129,7 +129,7 @@
                 "victims": 3
             },
             "denyImpact": {
-                "conspiracyToScienceValue": -2,
+                "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 2,
                 "communismToCapitalismValue": 3,
                 "authoritarianismToDemocracyValue": 1,
@@ -225,7 +225,7 @@
             "date": "1994-06-05",
             "acceptImpact": {
                 "conspiracyToScienceValue": 2,
-                "conservatismToProgressValue": 0,
+                "conservatismToProgressValue": 2,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": -1,
                 "pacifismToMilitarismValue": -1,
@@ -328,7 +328,7 @@
             "content": "I'm not against medicine, but no one guarantees my kids will avoid complications. I want the right to say 'no' if I don't trust the composition of vaccines! Why should I risk it? #Vaccines #Safety <color=red>#Don'tTrustPanBanan</color>",
             "date": "1994-06-11",
             "acceptImpact": {
-                "conspiracyToScienceValue": 1,
+                "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": -1,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 1,
@@ -337,7 +337,7 @@
                 "victims": 0
             },
             "denyImpact": {
-                "conspiracyToScienceValue": -1,
+                "conspiracyToScienceValue": 1,
                 "conservatismToProgressValue": 1,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": -1,
@@ -380,8 +380,8 @@
             "content": "Yesterday, I found an Indian curry recipe online, and today I'm already discussing <color=red>restoring totalitarian regimes</color> with a friend from Japan. It's incredible how quickly you can find information! Imagine: in 10 years, we might even shop online! #Internet #Technology #Future",
             "date": "1994-06-11",
             "acceptImpact": {
-                "conspiracyToScienceValue": 1,
-                "conservatismToProgressValue": 3,
+                "conspiracyToScienceValue": -1,
+                "conservatismToProgressValue": -3,
                 "communismToCapitalismValue": 2,
                 "authoritarianismToDemocracyValue": -3,
                 "pacifismToMilitarismValue": 1,
@@ -389,8 +389,8 @@
                 "victims": 0
             },
             "denyImpact": {
-                "conspiracyToScienceValue": -1,
-                "conservatismToProgressValue": -3,
+                "conspiracyToScienceValue": 1,
+                "conservatismToProgressValue": 3,
                 "communismToCapitalismValue": -2,
                 "authoritarianismToDemocracyValue": 3,
                 "pacifismToMilitarismValue": -1,

@@ -1402,10 +1402,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1820534523}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 26, y: -202}
+  m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &95170845
 MonoBehaviour:
@@ -1992,10 +1992,10 @@ RectTransform:
   - {fileID: 664785456}
   m_Father: {fileID: 1820534523}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 26, y: -114}
+  m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &148402680
 MonoBehaviour:
@@ -3371,10 +3371,10 @@ RectTransform:
   - {fileID: 829180074}
   m_Father: {fileID: 1820534523}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 26, y: -26}
+  m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &307127223
 MonoBehaviour:
@@ -7042,7 +7042,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &613252471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7538,10 +7538,12 @@ MonoBehaviour:
   _maxPostsToSelect: 06000000080000000c000000
   _timerDuration: 35
   _adminPanelMail:
-    nickname: weg
-    topic: gesg
-    content: gesg
-    date: segesg
+    nickname: '@BigManager'
+    topic: New Posts to Review
+    content: "Hi Moderator,<br><br>We\u2019ve got some new flagged posts that need
+      your attention. The community is counting on you to ensure the platform stays
+      safe, fair, and in line with our guidelines."
+    date: 
 --- !u!114 &622111842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7592,9 +7594,17 @@ MonoBehaviour:
   _popUpApp: {fileID: 391521131}
   _popUpMailUI: {fileID: 391521132}
   _welcomeMail:
-    nickname: '@'
-    topic: 
-    content: 
+    nickname: '@BigManager'
+    topic: Welcome to the Job!
+    content: "Hi there! We're glad to have you on board. Your job as a moderator
+      is simple: keep the platform safe, clean, and running smoothly. This guide
+      will walk you through everything you need to know to get started. Don't worry\u2014we've
+      got your back! <br><br>What You'll Be Doing <br>Some posts were reported by
+      users, some were detected as suspicious by our bot. <br>Your job is to read
+      them and decide: <br>Press <color=green>OK</color> and leave it up. <br>Press
+      <color=red>Block</color> if it breaks the rules. <br>Reviewing emails. Users
+      sometimes may write to you with complaints. <br>Don't forget to read our platform's
+      rules and apply rules fairly to all users."
     date: 
 --- !u!1 &639609450
 GameObject:
@@ -13227,10 +13237,10 @@ RectTransform:
   - {fileID: 1305150232}
   m_Father: {fileID: 1820534523}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 26, y: -158}
+  m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1301949380
 MonoBehaviour:
@@ -17896,7 +17906,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1843460742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20506,10 +20516,10 @@ RectTransform:
   - {fileID: 1668557002}
   m_Father: {fileID: 1820534523}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 26, y: -70}
+  m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2113440441
 MonoBehaviour:
@@ -21819,50 +21829,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 505137611}
     m_Modifications:
-    - target: {fileID: 452016442868019537, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 539192975583153956, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 539192975583153956, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 539192975583153956, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 46
-      objectReference: {fileID: 0}
-    - target: {fileID: 539192975583153956, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1379743413292294174, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1379743413292294174, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1379743413292294174, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 33
-      objectReference: {fileID: 0}
-    - target: {fileID: 1379743413292294174, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1620591394011266186, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1620591394011266186, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1987735024682590530, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -21943,53 +21909,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3255565635806221540, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3833363123946292501, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3833363123946292501, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 7271215701141114395, guid: c8c6d555d248340299f0e8cfe006d24e, type: 3}
-    - target: {fileID: 4055921019749044674, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4055921019749044674, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 4458480749993076289, guid: 3ee12a5fc110b4f3c9d0d2034112c664, type: 3}
     - target: {fileID: 6778164328816375201, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
       propertyPath: m_Name
       value: MyMails
-      objectReference: {fileID: 0}
-    - target: {fileID: 6778164328816375201, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6917897379693537788, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -12.099998
-      objectReference: {fileID: 0}
-    - target: {fileID: 7836651983663073798, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7836651983663073798, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7836651983663073798, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 7836651983663073798, guid: 547af8bd164cd440687502c9f8b7040f, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

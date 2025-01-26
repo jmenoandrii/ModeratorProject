@@ -12,6 +12,8 @@ public class MailManager : MonoBehaviour
 
     [SerializeField] private Mail _welcomeMail;
 
+    private bool _isWelcomedUser = false;
+
     private void Awake()
     {
         GlobalEventManager.OnAddNewMail += AddNewMail;
@@ -28,11 +30,15 @@ public class MailManager : MonoBehaviour
 
     public void WelcomeMail()
     {
+        _isWelcomedUser = true;
         AddNewMail(_welcomeMail);
     }
 
     private void AddNewMail(Mail mail)
     {
+        if (!_isWelcomedUser)
+            return;
+
         // Spawn new mail obj
         GameObject newMail = Instantiate(_mailPrefab);
 
