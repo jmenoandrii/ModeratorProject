@@ -44,6 +44,7 @@ public class TaskBarElement : BarElement
     {
         if (_app != null && _app == app)
         {
+            TaskBar.instance.DecreaseActiveAppCount();
             Hide();
         }
     }

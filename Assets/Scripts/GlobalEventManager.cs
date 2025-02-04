@@ -41,11 +41,6 @@ public class GlobalEventManager : MonoBehaviour
     public static event Action<Mail, GameObject> OnShowFullMail;
     public static event Action OnHideFullMail;
 
-    // ***** Saper *****
-    public static event Action<int, int> OnOpenEnptySaperCell;
-    public static event Action OnSaperGameOver;
-    public static event Action<int, int> OnInitSaperField;
-
     // ***** Game events *****
     public static event Action<EndingSummary> OnEndGame;
     public static event Action OnEndInitiate;
@@ -157,21 +152,6 @@ public class GlobalEventManager : MonoBehaviour
     public static void CallOnHideFullMail()
     {
         OnHideFullMail?.Invoke();
-    }
-
-    public static void CallOnOpenEnptySaperCell(int x, int y)
-    {
-        OnOpenEnptySaperCell?.Invoke(x, y);
-    }
-
-    public static void CallOnSaperGameOver()
-    {
-        OnSaperGameOver?.Invoke();
-    }
-
-    public static void CallOnInitSaperField(int x, int y)
-    {
-        OnInitSaperField?.Invoke(x, y);
     }
 
     public static void CallOnChangeAxis(int _conspiracyToScienceValue, int _conservatismToProgressValue, int _communismToCapitalismValue, int _authoritarianismToDemocracyValue, int _pacifismToMilitarismValue)
