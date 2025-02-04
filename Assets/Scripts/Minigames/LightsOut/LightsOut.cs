@@ -16,14 +16,18 @@ public class LightsOut : App
     [Header("LightsOut Input Data")]
     [SerializeField] private int _col = 5;
     [SerializeField] private int _row = 5;
+    [SerializeField] private Color _offColor = new Color(0.231f, 0.231f, 0.231f, 1f);
+    [SerializeField] private Color _onColor = new Color(0.207f, 0.69f, 0.325f, 1f);
+    [SerializeField] private int _fixedOnCellCount;
+    [SerializeField] private bool _isFixedOnCellCount = false;
     [SerializeField] private int _minOnCellCount = 1;
     [SerializeField] private int _maxOnCellCount = 10;
     [SerializeField] private bool _isAutoCalcOnCell = true; // _minOnCellCount = (_col * _row * 1 / 5) , _maxOnCellCount = (_col * _row * 4 / 5)
-    [SerializeField] private Color _offColor = new Color(0.231f, 0.231f, 0.231f, 1f);
-    [SerializeField] private Color _onColor = new Color(0.207f, 0.69f, 0.325f, 1f);
+    private int _onCellCount;
     // ***** init *****
     public static LightsOut instance { get; private set; }
     private LightCell[,] _field;
+    public bool IsEndGame { get; private set; }
 
     private void Start()
     {
@@ -48,11 +52,8 @@ public class LightsOut : App
             _minOnCellCount = _col * _row / 5;
             _maxOnCellCount = _col * _row * 4 / 5;
         }
-    }
 
-    private void Awake()
-    {
-        // init field
+        // initial settings
         Restart();
     }
     // ***** ***** *****
@@ -102,9 +103,14 @@ public class LightsOut : App
 
     public void HandleClick(int x, int y)
     {
+        // protection
+        if (IsEndGame) return;
+
         _counter.Increment();
 
         ToggleCell(x, y);
+
+        // toggle cells around [i, j] cell
         if (x > 0) ToggleCell(x - 1, y);
         if (y > 0) ToggleCell(x, y - 1);
         if (x < _col - 1) ToggleCell(x + 1, y);
@@ -133,7 +139,8 @@ public class LightsOut : App
         }
 
         // victory processing
-        _fieldBox.SetActive(false);
+        IsEndGame = true;
+        ////_fieldBox.SetActive(false);////
         ////_victoryBox.SetActive(true);////
         _emoji.sprite = _winSprite;
 
@@ -142,14 +149,57 @@ public class LightsOut : App
 
     public void Restart()
     {
-        _counter.Refresh();
-        _stopwatch.Refresh();
-        _stopwatch.Play();
+        IsEndGame = false;
 
+        // Stopwatch
+        _stopwatch.Begin();
+
+        // Counter
+        _counter.Refresh();
+
+        // Emoji
+        _emoji.sprite = _neutralSprite;
+
+        // Calc OnCellCount
+        _onCellCount = _isFixedOnCellCount ? _fixedOnCellCount : Random.Range(_minOnCellCount, _maxOnCellCount);
+
+        // Create field
         CreateField();
 
-        _fieldBox.SetActive(true);
         ////_victoryBox.SetActive(false);////
-        _emoji.sprite = _neutralSprite;
+        ////_fieldBox.SetActive(true);////
     }
+
+    // ***** override app process *****
+    public override void OpenApp()
+    {
+        if (!IsAppActive)
+            _stopwatch.Begin();
+
+        base.OpenApp();
+    }
+
+    public override void CloseApp()
+    {
+        Restart();
+
+        _stopwatch.Refresh();
+
+        base.CloseApp();
+    }
+
+    public override void HideApp()
+    {
+        _stopwatch.Stop();
+
+        base.HideApp();
+    }
+
+    public override void ShowApp()
+    {
+        _stopwatch.Play();
+
+        base.ShowApp();
+    }
+    // ***** ***** *****
 }
