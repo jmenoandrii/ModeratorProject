@@ -225,7 +225,7 @@ GameObject:
   - component: {fileID: 8047732236760369643}
   - component: {fileID: 4588526685002446131}
   m_Layer: 5
-  m_Name: SaperCell
+  m_Name: MinesweeperCell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -343,8 +343,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3347653597643952049}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6db5f8e2d099d464a8d5ed7476030155, type: 3}
+  m_Script: {fileID: 11500000, guid: dc3209340fc132a45bc937b98b89faf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _number: {fileID: 7459842701536481591}
   _img: {fileID: 4350274547959966310}
+  value: 0
