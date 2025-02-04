@@ -197,7 +197,8 @@ public class LightsOut : App
 
     public override void ShowApp()
     {
-        _stopwatch.Play();
+        if (!IsEndGame)
+            _stopwatch.Play();
 
         base.ShowApp();
     }
