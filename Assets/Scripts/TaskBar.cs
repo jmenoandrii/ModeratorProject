@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class TaskBar : MonoBehaviour
 {
+    [SerializeField] private PopUp popUp;
     [SerializeField] private TaskBarElement[] _elementList;
     public static TaskBar instance;
     private int _activeAppCount;
-    private bool IsAbleToAddBarElement { get => _activeAppCount < _elementList.Length; }
+    public bool IsAbleToAddBarElement { get => _activeAppCount < _elementList.Length; }
 
     private void Start()
     {
@@ -30,7 +31,7 @@ public class TaskBar : MonoBehaviour
 
     protected void AddBarElement(App app)
     {
-        if (IsAbleToAddBarElement) return;
+        if (!IsAbleToAddBarElement) return;
 
         foreach (TaskBarElement element in _elementList)
         {
@@ -48,14 +49,16 @@ public class TaskBar : MonoBehaviour
     {
         if (IsAbleToAddBarElement)
             _activeAppCount++;
-        else
-        {
-
-        }
     }
 
     public void DecreaseActiveAppCount()
     {
+        if (_activeAppCount > 0)
+            _activeAppCount--;
+    }
 
+    public void CallOverflowPopUp() 
+    { 
+        popUp.Show(); 
     }
 }

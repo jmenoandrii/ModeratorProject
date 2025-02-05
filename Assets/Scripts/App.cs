@@ -66,12 +66,19 @@ public class App : MonoBehaviour
             return;
         }
 
+
+        if (!TaskBar.instance.IsAbleToAddBarElement)
+        {
+            TaskBar.instance.CallOverflowPopUp();
+            return;
+        }
+
         _appWindow.SetActive(true);
 
         _appWindow.transform.SetLocalPositionAndRotation(_initialPosition, _initialRotation);
 
-        GlobalEventManager.CallOnAppOpen(this);
         ShowApp();
+        GlobalEventManager.CallOnAppOpen(this);
     }
 
     public virtual void HideApp()
