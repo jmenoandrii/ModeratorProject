@@ -1,11 +1,16 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Image))]
 public class Province : MonoBehaviour
 {
-    [Header("Components")]
-    [SerializeField] private Image _fill;
+    private Image _fill;
     public MapManager.Ideology Ideology { get; private set; }
+
+    private void Awake()
+    {
+        _fill = GetComponent<Image>();
+    }
 
     public void SetIdeology(MapManager.Ideology ideology)
     {
@@ -28,18 +33,3 @@ public class Province : MonoBehaviour
         }
     }
 }
-
-/*[SerializeField] private string _name;
-    [SerializeField] private Continent _continent;*/
-/*private Vector2 _axisState;
-    private Color _currentColor;*/
-/*public enum Continent
-    {
-        Asia,
-        Africa,
-        Europe,
-        NorthAmerica,
-        SouthAmerica,
-        Australia,
-        Antarctica
-    }*/

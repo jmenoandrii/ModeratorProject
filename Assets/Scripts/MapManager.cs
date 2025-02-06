@@ -56,25 +56,16 @@ public class MapManager : MonoBehaviour
             return;
         }
 
-        List<IdeologyCounter> provinceIdeologyList = new List<IdeologyCounter>(){
-            new IdeologyCounter(Ideology.Authoritarianism, _provinces.Count / 4),
-            new IdeologyCounter(Ideology.Democracy, _provinces.Count / 4),
-            new IdeologyCounter(Ideology.Conspiracy, _provinces.Count / 4),
-            new IdeologyCounter(Ideology.Science, _provinces.Count - (int)(_provinces.Count / 4) * 3),
-        };
-        _maxAuToDemProvinceCount = provinceIdeologyList[0].count + provinceIdeologyList[1].count;
-        _maxConToSciProvinceCount = provinceIdeologyList[2].count + provinceIdeologyList[3].count;
-        Debug.Log($"{_provinces.Count} = {provinceIdeologyList[0].count} + {provinceIdeologyList[1].count} + {provinceIdeologyList[2].count} + {provinceIdeologyList[3].count} = {_maxAuToDemProvinceCount + _maxConToSciProvinceCount}");
+        _provinces = _provinces.OrderBy(x => Random.value).ToList();
 
-        for (int i = 0, randIdeologyIndex; i < _provinces.Count; i++)
+        Ideology[] ideologies = { Ideology.Authoritarianism, Ideology.Democracy, Ideology.Conspiracy, Ideology.Science };
+
+        for (int i = 0, k = 0; i < _provinces.Count; i++, k++)
         {
-            randIdeologyIndex = Random.Range(0, provinceIdeologyList.Count);
+            if (k == ideologies.Length)
+                k = 0;
 
-            _provinces[i].SetIdeology(provinceIdeologyList[randIdeologyIndex].ideology);
-            provinceIdeologyList[randIdeologyIndex].Decrease();
-
-            if (provinceIdeologyList[randIdeologyIndex].count == 0)
-                provinceIdeologyList.RemoveAt(randIdeologyIndex);
+            _provinces[i].SetIdeology(ideologies[k]);
         }
     }
 
@@ -193,19 +184,5 @@ public class MapManager : MonoBehaviour
         Democracy,
         Conspiracy,
         Science
-    }
-    
-    private struct IdeologyCounter
-    {
-        public Ideology ideology;
-        public int count;
-
-        public void Decrease() { count--; }
-
-        public IdeologyCounter(Ideology ideology, int count)
-        {
-            this.ideology = ideology;
-            this.count = count;
-        }
     }
 }
