@@ -42,8 +42,8 @@ public class MapManager : MonoBehaviour
         ScienceColor = _scienceColor;
 
         InitDistribution();
-        _currentTendence = Vector2Int.zero;
-        DistributeColorsOnMap(_currentTendence);
+        int zeroValue = InterpolateValue(0, _minAxisValue, _maxAxisValue, 0, _maxAuToDemProvinceCount);
+        _currentTendence.Set(zeroValue, zeroValue);
     }
     // ***** ***** *****
 
@@ -67,6 +67,12 @@ public class MapManager : MonoBehaviour
 
             _provinces[i].SetIdeology(ideologies[k]);
         }
+
+        int provincesPerIdeology = _provinces.Count / 4;
+        _maxAuToDemProvinceCount = provincesPerIdeology * 2; // Авторитаризм + Демократія
+        _maxConToSciProvinceCount = provincesPerIdeology * 2; // Конспірологія + Наука
+
+        Debug.Log($"{_maxAuToDemProvinceCount + _maxConToSciProvinceCount} | Max AuToDem: {_maxAuToDemProvinceCount}, Max ConToSci: {_maxConToSciProvinceCount}");
     }
 
     private void ChangeAxisHandler(int _conspiracyToScienceValue, int _conservatismToProgressValue, int _communismToCapitalismValue, int _authoritarianismToDemocracyValue, int _pacifismToMilitarismValue)
@@ -140,41 +146,48 @@ public class MapManager : MonoBehaviour
         int newAuProvinceCount = InterpolateValue(tendence.x - _currentTendence.x, _minAxisValue, _maxAxisValue, 0, _maxAuToDemProvinceCount);
         int newConProvinceCount = InterpolateValue(tendence.y - _currentTendence.y, _minAxisValue, _maxAxisValue, 0, _maxConToSciProvinceCount);
 
+
         // process new tendence
-        int dif = newAuProvinceCount - _curAuProvinceCount;
-        if (dif > 0)
+        int difAuToDem = newAuProvinceCount - _curAuProvinceCount;
+        if (difAuToDem > 0)
         {
             // add Authoritarianism 
-            ChangeIdeology(Ideology.Democracy, Ideology.Authoritarianism, dif);
+            ChangeIdeology(Ideology.Democracy, Ideology.Authoritarianism, difAuToDem);
         }
         else
         {
             // add Democracy
-            ChangeIdeology(Ideology.Authoritarianism, Ideology.Democracy, -dif);
+            ChangeIdeology(Ideology.Authoritarianism, Ideology.Democracy, -difAuToDem);
         }
 
-        dif = newConProvinceCount - _curConProvinceCount;
-        if (dif > 0)
+        int difConToSci = newConProvinceCount - _curConProvinceCount;
+        if (difConToSci > 0)
         {
             // add Conspiracy 
-            ChangeIdeology(Ideology.Science, Ideology.Conspiracy, dif);
+            ChangeIdeology(Ideology.Science, Ideology.Conspiracy, difConToSci);
         }
-        else if (dif < 0)
+        else if (difConToSci < 0)
         {
             // add Science
-            ChangeIdeology(Ideology.Conspiracy, Ideology.Science, -dif);
+            ChangeIdeology(Ideology.Conspiracy, Ideology.Science, -difConToSci);
         }
 
         // make map more dynamic
-        if (Random.value > 0.5f)
-            SwapIdeology(Ideology.Authoritarianism, Ideology.Conspiracy);
-        else
-            SwapIdeology(Ideology.Authoritarianism, Ideology.Science);
+        if (difAuToDem != 0 || difConToSci != 0)
+        {
+            if (Random.value > 0.5f)
+                SwapIdeology(Ideology.Authoritarianism, Ideology.Conspiracy);
+            else
+                SwapIdeology(Ideology.Authoritarianism, Ideology.Science);
 
-        if (Random.value > 0.5f)
-            SwapIdeology(Ideology.Democracy, Ideology.Conspiracy);
-        else
-            SwapIdeology(Ideology.Democracy, Ideology.Science);
+            if (Random.value > 0.5f)
+                SwapIdeology(Ideology.Democracy, Ideology.Conspiracy);
+            else
+                SwapIdeology(Ideology.Democracy, Ideology.Science);
+        }
+
+        _curAuProvinceCount = newAuProvinceCount;
+        _curConProvinceCount = newConProvinceCount;
     }
 
     public enum Ideology
