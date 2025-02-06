@@ -4,13 +4,9 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Image))]
 public class Province : MonoBehaviour
 {
+    [SerializeField]
     private Image _fill;
     public MapManager.Ideology Ideology { get; private set; }
-
-    private void Awake()
-    {
-        _fill = GetComponent<Image>();
-    }
 
     public void SetIdeology(MapManager.Ideology ideology)
     {
