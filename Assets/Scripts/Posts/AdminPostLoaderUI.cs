@@ -11,9 +11,7 @@ public class AdminPostLoaderUI : MonoBehaviour
     [SerializeField] private GameObject _buttons;
     [SerializeField] private GameObject _noFoundPosts;
     [SerializeField] private TMP_Text _counter;
-    [SerializeField] private RectTransform _valueContainer;
-    [SerializeField] private RectTransform _acceptPosition;
-    [SerializeField] private RectTransform _denyPosition;
+
     private bool _isBooted = false;
     [Header("Timer")]
     [SerializeField] private Slider _progressSlider;
@@ -94,7 +92,6 @@ public class AdminPostLoaderUI : MonoBehaviour
 
         GlobalEventManager.CallOnSendImpact(impact);
 
-        _valueContainer.position = isAccept ? _acceptPosition.position : _denyPosition.position;
         ShowIconsValue(impact);
 
         GlobalEventManager.CallOnLoadNextPost();

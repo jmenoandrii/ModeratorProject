@@ -4,26 +4,18 @@ using UnityEngine;
 
 public class MapManager : MonoBehaviour
 {
-    [Header("Colors")]
-    [SerializeField] private Color _authoritarianismColor;
-    [SerializeField] private Color _democracyColor;
-    [SerializeField] private Color _conspiracyColor;
-    [SerializeField] private Color _scienceColor;
     [Header("Components")]
     [SerializeField, Range(2, 10)] private int _provinceSwapCoef;
     [SerializeField] private int _minAxisValue;
     [SerializeField] private int _maxAxisValue;
-    private int _maxAuToDemProvinceCount;    // _authoritarianismToDemocracy provinces
-    private int _maxConToSciProvinceCount;   // _conspiracyToScience provinces
-    private int _curAuProvinceCount;
-    private int _curConProvinceCount;
     [SerializeField] private List<Province> _provinces;
-    private Vector2Int _currentTendence;
-    // ***** ***** *****
-    public static Color AuthoritarianismColor { get; private set; }
-    public static Color DemocracyColor { get; private set; }
-    public static Color ConspiracyColor { get; private set; }
-    public static Color ScienceColor { get; private set; }
+    private int _totalProvinces;
+    [SerializeField] private List<Ideology> _ideologies;
+
+    [SerializeField] private GameObject _ideologyPanelPrefab;
+    [SerializeField] private Transform _ideologyPanelParent;
+
+    private HashSet<Province> _selectedProvinces = new HashSet<Province>();
 
     private void Awake()
     {
@@ -34,18 +26,17 @@ public class MapManager : MonoBehaviour
     {
         GlobalEventManager.OnChangeAxis -= ChangeAxisHandler;
     }
+
+    private void OnEnable()
+    {
+        GlobalEventManager.CallOnInitWorldIndex();
+    }
+
     private void Start()
     {
-        AuthoritarianismColor = _authoritarianismColor;
-        DemocracyColor = _democracyColor;
-        ConspiracyColor = _conspiracyColor;
-        ScienceColor = _scienceColor;
-
+        _totalProvinces = _provinces.Count;
         InitDistribution();
-        int zeroValue = InterpolateValue(0, _minAxisValue, _maxAxisValue, 0, _maxAuToDemProvinceCount);
-        _currentTendence.Set(zeroValue, zeroValue);
     }
-    // ***** ***** *****
 
     private void InitDistribution()
     {
@@ -55,145 +46,164 @@ public class MapManager : MonoBehaviour
             Debug.LogError($"ERR[{gameObject.name}]: _provinces lsit is empty");
             return;
         }
-
-        _provinces = _provinces.OrderBy(x => Random.value).ToList();
-
-        Ideology[] ideologies = { Ideology.Authoritarianism, Ideology.Democracy, Ideology.Conspiracy, Ideology.Science };
-
-        for (int i = 0, k = 0; i < _provinces.Count; i++, k++)
-        {
-            if (k == ideologies.Length)
-                k = 0;
-
-            _provinces[i].SetIdeology(ideologies[k]);
-        }
-
-        int provincesPerIdeology = _provinces.Count / 4;
-        _maxAuToDemProvinceCount = provincesPerIdeology * 2; // Авторитаризм + Демократія
-        _maxConToSciProvinceCount = provincesPerIdeology * 2; // Конспірологія + Наука
     }
 
     private void ChangeAxisHandler(int _conspiracyToScienceValue, int _conservatismToProgressValue, int _communismToCapitalismValue, int _authoritarianismToDemocracyValue, int _pacifismToMilitarismValue)
     {
-        DistributeColorsOnMap(new Vector2Int(_authoritarianismToDemocracyValue, _conspiracyToScienceValue));
+        List<int> tendence = new() {_conspiracyToScienceValue, _conservatismToProgressValue, _communismToCapitalismValue, _authoritarianismToDemocracyValue, _pacifismToMilitarismValue};
+        DistributeColorsOnMap(tendence);
     }
 
-    private int InterpolateValue(int value, int initMin, int initMax, int newMin, int newMax)
+    private void CreateIdeologyPanel(Ideology ideology)
     {
-        return Mathf.RoundToInt((value - initMin) * (newMax - newMin) / (float)(initMax - initMin) + newMin);
+        ideology.panel = Instantiate(_ideologyPanelPrefab, _ideologyPanelParent).GetComponent<MapIdeologyPanel>();
+        ideology.panel.Initialize(ideology.name, ideology.countOfProvince, ideology.icon);
     }
 
-    private void ChangeIdeology(Ideology _old, Ideology _new, int count)
+    private void DistributeColorsOnMap(List<int> tendence)
     {
-        var targetIndexes = _provinces
-            .Select((p, i) => new { Province = p, Index = i })
-            .Where(x => x.Province.Ideology == _old)
-            .Select(x => x.Index)
-            .ToList();
+        int sumIdeologies = tendence.Sum(x => Mathf.Abs(x));
 
-        if (targetIndexes.Count == 0)
+        if (sumIdeologies == 0)
             return;
 
-        HashSet<int> usedIndexes = new HashSet<int>();
-
-        for (int i = 0, index; i < count; i++)
+        int i = 0;
+        foreach (int impact in tendence)
         {
-            do { index = targetIndexes[Random.Range(0, targetIndexes.Count)]; }
-            while (!usedIndexes.Add(index));
+            if (i + 1 >= _ideologies.Count) 
+                break;
 
-            _provinces[index].SetIdeology(_new);
+            int nPopularity = GetNegativeValue(impact);
+            int pPopularity = GetPositiveValue(impact);
+
+            Ideology leftIdeology = _ideologies[i], rightIdeology = _ideologies[i + 1];
+
+            leftIdeology.popularity = nPopularity;
+            rightIdeology.popularity = pPopularity;
+
+            leftIdeology.percent = (float)nPopularity / (float)sumIdeologies * ((float)nPopularity / (float)_maxAxisValue);
+            rightIdeology.percent = (float)pPopularity / (float)sumIdeologies * ((float)pPopularity / (float)_maxAxisValue);
+
+            int leftCountOfProvince = leftIdeology.countOfProvince;
+            int rightCountOfProvince = rightIdeology.countOfProvince;
+
+            leftIdeology.countOfProvince = (int)(_totalProvinces * leftIdeology.percent);
+            rightIdeology.countOfProvince = (int)(_totalProvinces * rightIdeology.percent);
+
+            leftIdeology.diffOfProvince = leftIdeology.countOfProvince - leftCountOfProvince;
+            rightIdeology.diffOfProvince = rightIdeology.countOfProvince - rightCountOfProvince;
+
+            if (leftIdeology.panel == null)
+            {
+                if (leftIdeology.diffOfProvince > 0)
+                {
+                    CreateIdeologyPanel(leftIdeology);
+                }
+            }
+            else
+            {
+                leftIdeology.panel.UpdateCounterText(leftIdeology.countOfProvince);
+            }
+
+            if (rightIdeology.panel == null)
+            {
+                if (rightIdeology.diffOfProvince > 0)
+                {
+                    CreateIdeologyPanel(rightIdeology);
+                }
+            }
+            else
+            {
+                rightIdeology.panel.UpdateCounterText(rightIdeology.countOfProvince);
+            }
+
+            i += 2;
+        }
+
+        foreach (Ideology ideology in _ideologies)
+        {
+            if (ideology.diffOfProvince >= 0)
+                continue;
+
+            SetRandomEmptyProvinces(ideology.id, Mathf.Abs(ideology.diffOfProvince));
+        }
+
+        foreach (Ideology ideology in _ideologies)
+        {
+            if (ideology.diffOfProvince <= 0)
+                continue;
+
+            List<Province> provinces = GetRandomEmptyProvinces(ideology.diffOfProvince);
+
+            foreach (var province in provinces)
+            {
+                province.SetIdeology(ideology);
+            }
         }
     }
 
-    private void SwapIdeology(Ideology _first, Ideology _second)
+    public List<Province> GetRandomEmptyProvinces(int count)
     {
-        var targetFirstIndexes = _provinces
-            .Select((p, i) => new { Province = p, Index = i })
-            .Where(x => x.Province.Ideology == _first)
-            .Select(x => x.Index)
+        // Filter the list to include only empty and unselected provinces
+        List<Province> availableProvinces = _provinces
+            .Where(province => province.IsEmpty() && !_selectedProvinces.Contains(province))
             .ToList();
 
-        var targetSecondIndexes = _provinces
-            .Select((p, i) => new { Province = p, Index = i })
-            .Where(x => x.Province.Ideology == _second)
-            .Select(x => x.Index)
+        // Ensure we don't request more provinces than available
+        if (availableProvinces.Count < count)
+        {
+            Debug.LogWarning("Not enough available provinces!");
+            count = availableProvinces.Count; // Adjust count to the available number
+        }
+
+        // Shuffle the list and select the required number of provinces
+        List<Province> randomProvinces = availableProvinces
+            .OrderBy(p => Random.value)
+            .Take(count)
             .ToList();
 
-        if (targetFirstIndexes.Count == 0 || targetSecondIndexes.Count == 0)
-            return;
+        // Add selected provinces to the set to prevent future duplicates
+        _selectedProvinces.UnionWith(randomProvinces);
 
-        int count = Mathf.Max(1, Mathf.Min(targetFirstIndexes.Count, targetSecondIndexes.Count) / _provinceSwapCoef);
+        return randomProvinces;
+    }
 
-        HashSet<int> usedIndexes = new HashSet<int>();
+    public void SetRandomEmptyProvinces(int owner, int count)
+    {
+        List<Province> provincesOwned = _provinces.FindAll(p => p.GetOwner() == owner);
 
-        for (int i = 0, firstIndex, secondIndex; i < count; i++)
+        int numToEmpty = Mathf.Min(count+1, provincesOwned.Count);
+
+        for (int i = 0; i < numToEmpty; i++)
         {
-            do { firstIndex = targetFirstIndexes[Random.Range(0, targetFirstIndexes.Count)]; }
-            while (!usedIndexes.Add(firstIndex));
+            int randomIndex = Random.Range(0, provincesOwned.Count);
+            provincesOwned[randomIndex].SetIdeology(null);
 
-            do { secondIndex = targetSecondIndexes[Random.Range(0, targetSecondIndexes.Count)]; }
-            while (!usedIndexes.Add(secondIndex));
-
-            _provinces[firstIndex].SetIdeology(_second);
-            _provinces[secondIndex].SetIdeology(_first);
+            provincesOwned.RemoveAt(randomIndex);
         }
     }
 
-    private void DistributeColorsOnMap(Vector2Int tendence)
+    private int GetNegativeValue(int value)
     {
-        int newAuProvinceCount = InterpolateValue(tendence.x - _currentTendence.x, _minAxisValue, _maxAxisValue, 0, _maxAuToDemProvinceCount);
-        int newConProvinceCount = InterpolateValue(tendence.y - _currentTendence.y, _minAxisValue, _maxAxisValue, 0, _maxConToSciProvinceCount);
-
-
-        // process new tendence
-        int difAuToDem = newAuProvinceCount - _curAuProvinceCount;
-        if (difAuToDem > 0)
-        {
-            // add Authoritarianism 
-            ChangeIdeology(Ideology.Democracy, Ideology.Authoritarianism, difAuToDem);
-        }
-        else
-        {
-            // add Democracy
-            ChangeIdeology(Ideology.Authoritarianism, Ideology.Democracy, -difAuToDem);
-        }
-
-        int difConToSci = newConProvinceCount - _curConProvinceCount;
-        if (difConToSci > 0)
-        {
-            // add Conspiracy 
-            ChangeIdeology(Ideology.Science, Ideology.Conspiracy, difConToSci);
-        }
-        else if (difConToSci < 0)
-        {
-            // add Science
-            ChangeIdeology(Ideology.Conspiracy, Ideology.Science, -difConToSci);
-        }
-
-        // make map more dynamic
-        if (difAuToDem != 0 || difConToSci != 0)
-        {
-            if (Random.value > 0.5f)
-                SwapIdeology(Ideology.Authoritarianism, Ideology.Conspiracy);
-            else
-                SwapIdeology(Ideology.Authoritarianism, Ideology.Science);
-
-            if (Random.value > 0.5f)
-                SwapIdeology(Ideology.Democracy, Ideology.Conspiracy);
-            else
-                SwapIdeology(Ideology.Democracy, Ideology.Science);
-        }
-
-        _curAuProvinceCount = newAuProvinceCount;
-        _curConProvinceCount = newConProvinceCount;
+        return Mathf.Max(-value, 0);
     }
 
-    public enum Ideology
+    private int GetPositiveValue(int value)
     {
-        Neutral,
-        Authoritarianism,
-        Democracy,
-        Conspiracy,
-        Science
+        return Mathf.Max(value, 0);
+    }
+
+    [System.Serializable]
+    public class Ideology
+    {
+        public int id;
+        public string name;
+        public Sprite icon;
+        public Color color;
+        public float percent;
+        public int popularity;
+        public int countOfProvince;
+        public int diffOfProvince;
+        public MapIdeologyPanel panel = null;
     }
 }

@@ -6,26 +6,32 @@ public class Province : MonoBehaviour
 {
     [SerializeField]
     private Image _fill;
-    public MapManager.Ideology Ideology { get; private set; }
+    private int _ideologyId;
+    private bool _isEmpty = true;
+
+    public bool IsEmpty()
+    {
+        return _isEmpty;
+    }
+
+    public int GetOwner()
+    {
+        return _ideologyId;
+    }
 
     public void SetIdeology(MapManager.Ideology ideology)
     {
-        Ideology = ideology;
-
-        switch (ideology)
+        if (ideology == null)
         {
-            case MapManager.Ideology.Authoritarianism:
-                _fill.color = MapManager.AuthoritarianismColor;
-                break;
-            case MapManager.Ideology.Democracy:
-                _fill.color = MapManager.DemocracyColor;
-                break;
-            case MapManager.Ideology.Conspiracy:
-                _fill.color = MapManager.ConspiracyColor;
-                break;
-            case MapManager.Ideology.Science:
-                _fill.color = MapManager.ScienceColor;
-                break;
+            _fill.color = new Color(0,0,0,0);
+            _isEmpty = true;
+            return;
         }
+
+        _isEmpty = false;
+
+        _ideologyId = ideology.id;
+
+        _fill.color = ideology.color;
     }
 }
