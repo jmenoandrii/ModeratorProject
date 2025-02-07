@@ -71,8 +71,6 @@ public class MapManager : MonoBehaviour
         int provincesPerIdeology = _provinces.Count / 4;
         _maxAuToDemProvinceCount = provincesPerIdeology * 2; // Авторитаризм + Демократія
         _maxConToSciProvinceCount = provincesPerIdeology * 2; // Конспірологія + Наука
-
-        Debug.Log($"{_maxAuToDemProvinceCount + _maxConToSciProvinceCount} | Max AuToDem: {_maxAuToDemProvinceCount}, Max ConToSci: {_maxConToSciProvinceCount}");
     }
 
     private void ChangeAxisHandler(int _conspiracyToScienceValue, int _conservatismToProgressValue, int _communismToCapitalismValue, int _authoritarianismToDemocracyValue, int _pacifismToMilitarismValue)
