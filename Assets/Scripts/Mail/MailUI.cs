@@ -7,6 +7,8 @@ public class MailUI : MonoBehaviour
     [SerializeField] private TMP_Text _topic;
     [SerializeField] private GameObject _newEmailBadge;
 
+    public bool IsRead { get => !_newEmailBadge.activeSelf; }
+    
     private Mail _mail;
 
     public void SetData(Mail mail)

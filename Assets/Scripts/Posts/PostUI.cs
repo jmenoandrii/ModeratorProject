@@ -11,6 +11,7 @@ public class PostUI : MonoBehaviour
     [SerializeField] private TMP_Text dateText;
     public AdminPostsLoader.Impact acceptImpact;
     public AdminPostsLoader.Impact denyImpact;
+    public bool isMail;
 
     public void SetPostData(string nickname, string content, string date)
     {

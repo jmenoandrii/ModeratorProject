@@ -35,9 +35,10 @@ public class GlobalEventManager : MonoBehaviour
     public static event Action<AdminPostsLoader.Impact> OnSendImpact;
     public static event Action<int> OnSendLeftPostCount;
     public static event Action<float> OnUpdateTimerOfLoadPosts;
+    public static event Action<MailUI> OnAdminPostMailAdded;
 
     // ***** Mail *****
-    public static event Action<Mail> OnAddNewMail;
+    public static event Action<Mail, bool> OnAddNewMail;
     public static event Action<Mail, GameObject> OnShowFullMail;
     public static event Action OnHideFullMail;
 
@@ -140,9 +141,14 @@ public class GlobalEventManager : MonoBehaviour
         OnUpdateTimerOfLoadPosts?.Invoke(time);
     }
 
-    public static void CallOnAddNewMail(Mail mail)
+    public static void CallOnAdminPostMailAdded(MailUI mailUI)
     {
-        OnAddNewMail?.Invoke(mail);
+        OnAdminPostMailAdded?.Invoke(mailUI);
+    }
+
+    public static void CallOnAddNewMail(Mail mail, bool isAdminPostMail = false)
+    {
+        OnAddNewMail?.Invoke(mail, isAdminPostMail);
     }
 
     public static void CallOnShowFullMail(Mail mail, GameObject shortMailObj)

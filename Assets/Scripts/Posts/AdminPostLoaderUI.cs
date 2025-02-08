@@ -77,6 +77,7 @@ public class AdminPostLoaderUI : MonoBehaviour
         _postUI.SetPostData(post.nickname, post.content, post.date);
         _postUI.acceptImpact = post.acceptImpact;
         _postUI.denyImpact = post.denyImpact;
+        _postUI.isMail = !post.mail.IsVoid;
 
         if (!_isBooted && _currentCoroutine == null)
         {
@@ -89,6 +90,9 @@ public class AdminPostLoaderUI : MonoBehaviour
         _isBooted = false;
         
         AdminPostsLoader.Impact impact = isAccept ? _postUI.acceptImpact : _postUI.denyImpact;
+
+        if (_postUI.isMail && !AdminPostsLoader.PostMailUI.IsRead)
+            impact.profit = 0;
 
         GlobalEventManager.CallOnSendImpact(impact);
 

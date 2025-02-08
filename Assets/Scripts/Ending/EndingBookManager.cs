@@ -7,18 +7,12 @@ public class EndingBookManager : MonoBehaviour
     [SerializeField] private PopUp _popUp;
     private EndingCurtain[] _endingCurtains;
     public static EndingBookManager instance;
-    public int EndingCount
-    {  
-        get { return _endingCount; }
-    }
+    public int EndingCount { get { return _endingCount; } }
 
     private void Awake()
     {
         GlobalEventManager.OnEndingReset += CallResetPopUp;
-    }
 
-    private void Start()
-    {
         Debug.Log($"INFO[EndingBookManager]: PlayerPrefs = {PlayerPrefs.GetInt("Endings", 0)}");
         // singleton initialization
         if (instance == null)

@@ -13,6 +13,8 @@ public class AdminPostsLoader : MonoBehaviour
     private int _currentIdPost = 0;
     private int _maxIdPost = 0;
 
+    public static MailUI PostMailUI { get; private set; }
+
     [System.Serializable]
     public class Impact
     {
@@ -46,12 +48,14 @@ public class AdminPostsLoader : MonoBehaviour
     {
         GlobalEventManager.OnInitAdminPost += SendCurrentPost;
         GlobalEventManager.OnLoadNextPost += TryLoadNextPost;
+        GlobalEventManager.OnAdminPostMailAdded += SetMailUI;
     }
 
     private void OnDestroy()
     {
         GlobalEventManager.OnInitAdminPost -= SendCurrentPost;
         GlobalEventManager.OnLoadNextPost -= TryLoadNextPost;
+        GlobalEventManager.OnAdminPostMailAdded -= SetMailUI;
     }
 
     protected PostWrapper LoadPostsFromFile(string jsonFilePath)
@@ -155,7 +159,7 @@ public class AdminPostsLoader : MonoBehaviour
 
         if (post != null && !post.mail.IsVoid && !_isSentEmail)
         {
-            GlobalEventManager.CallOnAddNewMail(post.mail);
+            GlobalEventManager.CallOnAddNewMail(post.mail, true);
             _isSentEmail = true;
         }
     }
@@ -166,4 +170,8 @@ public class AdminPostsLoader : MonoBehaviour
         SendLeftPostCount();
     }
 
+    private void SetMailUI(MailUI mailUI)
+    {
+        PostMailUI = mailUI;
+    }
 }
