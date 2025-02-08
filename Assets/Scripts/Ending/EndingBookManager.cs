@@ -11,7 +11,7 @@ public class EndingBookManager : MonoBehaviour
 
     private void Awake()
     {
-        GlobalEventManager.OnEndingReset += CallResetPopUp;
+        //GlobalEventManager.OnEndingReset += CallResetPopUp;
 
         Debug.Log($"INFO[EndingBookManager]: PlayerPrefs = {PlayerPrefs.GetInt("Endings", 0)}");
         // singleton initialization
@@ -78,22 +78,22 @@ public class EndingBookManager : MonoBehaviour
     }
 
 
-    private void CallResetPopUp(EndingCurtain[] endingCurtains)
+    /*private void CallResetPopUp(EndingCurtain[] endingCurtains)
     {
         _endingCurtains = endingCurtains;
 
         _popUp.Show();
-    }
+    }*/
 
     public void ResetEndings()
     {
         PlayerPrefs.SetInt("Endings", 0);
         PlayerPrefs.Save();
 
-        foreach (EndingCurtain ending in _endingCurtains)
+        /*foreach (EndingCurtain ending in _endingCurtains)
         {
             ending.Hide();
-        }
+        }*/
 
         Debug.Log($"INFO[EndingBookManager|RESET]: PlayerPrefs = {PlayerPrefs.GetInt("Endings", 0)}");
     }

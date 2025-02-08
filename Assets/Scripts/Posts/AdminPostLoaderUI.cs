@@ -91,7 +91,7 @@ public class AdminPostLoaderUI : MonoBehaviour
         
         AdminPostsLoader.Impact impact = isAccept ? _postUI.acceptImpact : _postUI.denyImpact;
 
-        if (_postUI.isMail && !AdminPostsLoader.PostMailUI.IsRead)
+        if (_postUI.isMail && (AdminPostsLoader.PostMailUI != null && !AdminPostsLoader.PostMailUI.IsRead))
             impact.profit = 0;
 
         GlobalEventManager.CallOnSendImpact(impact);

@@ -72,7 +72,8 @@ public class MailManager : MonoBehaviour
 
     public void ShowFullNewMail()
     {
-        _newMailUI.ShowFull();
+        if (_newMailUI != null && _newMailUI.gameObject != null)
+            _newMailUI.ShowFull();
     }
 
     public void HideFullMail()
