@@ -13,6 +13,7 @@ public class MailManager : MonoBehaviour
     [SerializeField] private Mail _welcomeMail;
 
     private bool _isWelcomedUser = false;
+    private MailUI _newMailUI;
 
     private void Awake()
     {
@@ -40,9 +41,9 @@ public class MailManager : MonoBehaviour
             return;
 
         // Spawn new mail obj
-        GameObject newMail = Instantiate(_mailPrefab);
+        GameObject _newMailObj = Instantiate(_mailPrefab);
 
-        RectTransform rectTransform = newMail.GetComponent<RectTransform>();
+        RectTransform rectTransform = _newMailObj.GetComponent<RectTransform>();
 
         rectTransform.SetParent(_mailListsContainer, false);
 
@@ -51,12 +52,12 @@ public class MailManager : MonoBehaviour
         rectTransform.localRotation = Quaternion.identity;
         rectTransform.localScale = Vector3.one;*/
 
-        newMail.transform.SetAsFirstSibling();
+        _newMailObj.transform.SetAsFirstSibling();
 
         // Set mail data
-        MailUI mailUI = newMail.GetComponent<MailUI>();
+        _newMailUI = _newMailObj.GetComponent<MailUI>();
 
-        mailUI.SetData(mail);
+        _newMailUI.SetData(mail);
 
         // PopUp
         _popUpMailUI.SetData(mail);
@@ -69,6 +70,11 @@ public class MailManager : MonoBehaviour
 
         _mailLists.SetActive(false);
         _fullMailUI.gameObject.SetActive(true);
+    }
+
+    public void ShowFullNewMail()
+    {
+        _newMailUI.ShowFull();
     }
 
     public void HideFullMail()
