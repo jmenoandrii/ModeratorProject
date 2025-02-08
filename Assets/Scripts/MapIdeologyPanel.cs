@@ -35,10 +35,10 @@ public class MapIdeologyPanel : MonoBehaviour
     {
         if (count == 0 || count == 1)
         {
-            _provinceCounter.SetText(count.ToString() + " province");
+            _provinceCounter.SetText(count.ToString() + " region");
         }
         else if (count > 1) {
-            _provinceCounter.SetText(count.ToString() + " provinces");
+            _provinceCounter.SetText(count.ToString() + " regions");
         }
     }
 }

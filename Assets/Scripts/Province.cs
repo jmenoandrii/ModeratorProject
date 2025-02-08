@@ -25,6 +25,7 @@ public class Province : MonoBehaviour
         {
             _fill.color = new Color(0,0,0,0);
             _isEmpty = true;
+            _ideologyId = 99;
             return;
         }
 

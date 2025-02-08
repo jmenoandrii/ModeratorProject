@@ -144,6 +144,8 @@ public class MapManager : MonoBehaviour
 
     public List<Province> GetRandomEmptyProvinces(int count)
     {
+        _selectedProvinces = new();
+
         // Filter the list to include only empty and unselected provinces
         List<Province> availableProvinces = _provinces
             .Where(province => province.IsEmpty() && !_selectedProvinces.Contains(province))
@@ -168,18 +170,25 @@ public class MapManager : MonoBehaviour
         return randomProvinces;
     }
 
-    public void SetRandomEmptyProvinces(int owner, int count)
+    public void SetRandomEmptyProvinces(int owner, int countToRemove)
     {
-        List<Province> provincesOwned = _provinces.FindAll(p => p.GetOwner() == owner);
+        List<Province> provincesOwned = _provinces.FindAll(p => p.GetOwner() == owner && !p.IsEmpty());
 
-        int numToEmpty = Mathf.Min(count+1, provincesOwned.Count);
-
-        for (int i = 0; i < numToEmpty; i++)
+        if (provincesOwned.Count <= countToRemove)
         {
-            int randomIndex = Random.Range(0, provincesOwned.Count);
-            provincesOwned[randomIndex].SetIdeology(null);
+            foreach (Province province in provincesOwned)
+            {
+                province.SetIdeology(null);
+            }
+        }
+        else {
+            for (int i = 0; i < countToRemove; i++)
+            {
+                int randomIndex = Random.Range(0, provincesOwned.Count);
+                provincesOwned[randomIndex].SetIdeology(null);
 
-            provincesOwned.RemoveAt(randomIndex);
+                provincesOwned.RemoveAt(randomIndex);
+            }
         }
     }
 
