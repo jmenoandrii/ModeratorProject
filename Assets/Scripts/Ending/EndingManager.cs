@@ -19,13 +19,14 @@ public class EndingManager : MonoBehaviour
         }
     }
 
-    [SerializeField] private List<Ending> _endings;
 
     [SerializeField, Range(-50, 50)] private int _conspiracyToScienceValue;
     [SerializeField, Range(-50, 50)] private int _conservatismToProgressValue;
     [SerializeField, Range(-50, 50)] private int _communismToCapitalismValue;
     [SerializeField, Range(-50, 50)] private int _authoritarianismToDemocracyValue;
     [SerializeField, Range(-50, 50)] private int _pacifismToMilitarismValue;
+
+    [SerializeField] private List<Ending> _endings;
 
     [Header("Standart Endings")]
     [SerializeField] private int _limitValue = 35;
@@ -40,6 +41,46 @@ public class EndingManager : MonoBehaviour
     [SerializeField] private StandartEnding _pacifismEnding;
     [SerializeField] private StandartEnding _militarismEnding;
 
+    void Start()
+    {
+        // !protection! : ending ids
+        ValidateEndings(_endings, new List<StandartEnding> {
+            _conspiracyEnding, _scienceEnding, _conservatismEnding, _progressEnding, _communismEnding,
+            _capitalismEnding, _authoritarianismEnding, _democracyEnding, _pacifismEnding, _militarismEnding
+        });
+    }
+
+    void ValidateEndings(List<Ending> endings, List<StandartEnding> standardEndings)
+    {
+        var allEndings = endings.Select(e => e.id).ToList();
+        allEndings.AddRange(standardEndings.Where(se => se != null).Select(se => se.id));
+
+        // Check for unique
+        if (allEndings.Distinct().Count() != allEndings.Count)
+        {
+            Debug.LogError("ERR[EndingManager]: IDs aren't unique!");
+            return;
+        }
+
+        // Check for gaps
+        var sortedIds = allEndings.OrderBy(id => id).ToList();
+        for (int i = 0; i < sortedIds.Count; i++)
+        {
+            if (sortedIds[i] != i)
+            {
+                Debug.LogError($"ERR[EndingManager]: Missing id: {i}");
+                return;
+            }
+        }
+
+        // Calc count
+        if (EndingBookManager.instance.EndingCount != endings.Count + standardEndings.Count(se => se != null))
+        {
+            Debug.LogError($"ERR[EndingManager]: EndingBookManager.EndingCount != calc count in EndingManager");
+        }
+
+        /*Debug.Log($"INFO[EndingManager]: IDs are correct! Ending count: {endings.Count + standardEndings.Count(se => se != null)}");*/
+    }
 
     private void Awake()
     {
@@ -116,6 +157,7 @@ public class EndingManager : MonoBehaviour
                 VictimsCount = GameStats.Instance.VictimsCount
             };
 
+            EndingBookManager.instance.UnlockEnding(selectedStandartEnding.id);
             GlobalEventManager.CallOnEndGame(summary);
             return;
         }
@@ -148,6 +190,7 @@ public class EndingManager : MonoBehaviour
                 VictimsCount = GameStats.Instance.VictimsCount
             };
 
+            EndingBookManager.instance.UnlockEnding(selectedEnding.id);
             GlobalEventManager.CallOnEndGame(summary);
         }
     }

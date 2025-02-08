@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67bd974215ede1468674f6aa9ca2fd7, type: 3}
   m_Name: Capitalism
   m_EditorClassIdentifier: 
+  id: 5
   endingName: Capitalism. Ending 6/11
   description: "In 2004, Ukraine\u2019s election of a Jewish president symbolized
     openness and capitalism\u2019s rising influence. In 2009, the global economy

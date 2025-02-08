@@ -1232,7 +1232,7 @@ MonoBehaviour:
   _acceptPosition: {fileID: 5980101673786926421}
   _denyPosition: {fileID: 8594636015308175131}
   _progressSlider: {fileID: 4585520464990950466}
-  _postLoadingTime: 3
+  _postLoadingTime: 0.1
   _iconShownTime: 0.7
   _noPostsFindAudio: {fileID: 7526470756185998886}
   _valueIcons:

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67bd974215ede1468674f6aa9ca2fd7, type: 3}
   m_Name: Science
   m_EditorClassIdentifier: 
+  id: 1
   endingName: Science. Ending 2/11
   description: "In 2004, humanity learned to control computers with chips, and by
     2009, people were replacing body parts with cybernetic implants. This was the

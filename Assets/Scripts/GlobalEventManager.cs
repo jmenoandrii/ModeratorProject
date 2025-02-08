@@ -47,6 +47,7 @@ public class GlobalEventManager : MonoBehaviour
     public static event Action<int> OnChangeCryptoWallet; 
     public static event Action<int, int, int, int, int> OnChangeAxis; 
     public static event Action OnInitWorldIndex; 
+    public static event Action<EndingCurtain[]> OnEndingReset;
 
     public static void CallOnPageOpen(PageParameter pageParameter)
     {
@@ -162,5 +163,10 @@ public class GlobalEventManager : MonoBehaviour
     public static void CallOnInitWorldIndex()
     {
         OnInitWorldIndex?.Invoke();
+    }
+
+    public static void CallOnEndingReset(EndingCurtain[] endingCurtains)
+    {
+        OnEndingReset?.Invoke(endingCurtains);
     }
 }
