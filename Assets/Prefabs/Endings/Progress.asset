@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67bd974215ede1468674f6aa9ca2fd7, type: 3}
   m_Name: Progress
   m_EditorClassIdentifier: 
+  id: 3
   endingName: Progress. Ending 4/11
   description: "In 2004 almost the whole world was captivated by a new science fiction
     book \u201CNew Dark Ages. Colony\u201D. A new space race has begun. In 2008 after

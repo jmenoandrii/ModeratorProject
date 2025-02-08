@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67bd974215ede1468674f6aa9ca2fd7, type: 3}
   m_Name: Democracy
   m_EditorClassIdentifier: 
+  id: 7
   endingName: Democracy. Ending 8/11
   description: "Somewhere, I\u2019ve heard this before..."
   image: {fileID: -7546220971003174884, guid: 7f5758f818edb4573a4ef7c74a73044a, type: 3}

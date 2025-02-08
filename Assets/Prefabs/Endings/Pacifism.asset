@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67bd974215ede1468674f6aa9ca2fd7, type: 3}
   m_Name: Pacifism
   m_EditorClassIdentifier: 
+  id: 8
   endingName: Pacifism. Ending 9/11
   description: "In 2004, the world achieved unprecedented peace. By 2007, nearly
     all weapons were destroyed, and humanity embraced pacifism. But in 2012, an alien

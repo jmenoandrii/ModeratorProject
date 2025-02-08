@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67bd974215ede1468674f6aa9ca2fd7, type: 3}
   m_Name: Militarism
   m_EditorClassIdentifier: 
+  id: 9
   endingName: Militarism. Ending 10/11
   description: "In 2004, the assassination of the British king by a Chinese agent
     ignited global conflict. By 2006, World War III was in full swing, involving

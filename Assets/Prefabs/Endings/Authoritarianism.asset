@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67bd974215ede1468674f6aa9ca2fd7, type: 3}
   m_Name: Authoritarianism
   m_EditorClassIdentifier: 
+  id: 6
   endingName: Authoritarianism. Ending 7/11
   description: "In 2004, a new leader in North Korea consolidated power and expanded
     influence beyond the nation. Using total surveillance ideology, a system emerged

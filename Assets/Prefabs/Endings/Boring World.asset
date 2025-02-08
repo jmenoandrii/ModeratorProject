@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 682a1afa0dac842dc84c3030f9c87394, type: 3}
   m_Name: Boring World
   m_EditorClassIdentifier: 
+  id: 10
   endingName: Boring World. Ending 11/11
   description: Your world is so boring!
+  image: {fileID: -6631695563982442019, guid: 57888514cd6f343769469dc2d93071b1, type: 3}
+  timeline: "#In 2004 \u2014 Nothing happened<br>#In 2006 \u2014 Nothing happened<br>#In
+    2014 \u2014 Nothing happened"
   axisConspiracyToScience:
     min: -9
     max: 9
@@ -29,6 +33,3 @@ MonoBehaviour:
   axisPacifismToMilitarism:
     min: -9
     max: 9
-  image: {fileID: -6631695563982442019, guid: 57888514cd6f343769469dc2d93071b1, type: 3}
-  timeline: "#In 2004 \u2014 Nothing happened<br>#In 2006 \u2014 Nothing happened<br>#In
-    2014 \u2014 Nothing happened"

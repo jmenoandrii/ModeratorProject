@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67bd974215ede1468674f6aa9ca2fd7, type: 3}
   m_Name: Communism
   m_EditorClassIdentifier: 
+  id: 4
   endingName: Communism. Ending 5/11
   description: "The rise of the Chinese Communist Party\u2019s influence was coupled
     with a decline in the value of human labor due to automation and the availability
