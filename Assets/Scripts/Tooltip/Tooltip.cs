@@ -37,4 +37,6 @@ public class Tooltip : MonoBehaviour
         );
         _rectTransform.anchoredPosition = anchoredPos;
     }
+
+
 }

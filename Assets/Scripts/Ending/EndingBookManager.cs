@@ -69,6 +69,21 @@ public class EndingBookManager : MonoBehaviour
         return PlayerPrefs.GetInt("Endings", 0) != 0;
     }
 
+    public bool AreAllEndingsUnlocked()
+    {
+        if (_endingCount <= 0)
+        {
+            Debug.LogError($"ERR[EndingBookManager|AreAllEndingsUnlocked()]: _endingCount isn't set");
+            return false;
+        }
+
+        int endings = PlayerPrefs.GetInt("Endings", 0);
+        int allEndingsMask = (1 << _endingCount) - 1; // Бітова маска для всіх кінцівок
+
+        return (endings & allEndingsMask) == allEndingsMask;
+    }
+
+
     private void CallResetPopUp(EndingCurtain[] endingCurtains)
     {
         _endingCurtains = endingCurtains;
