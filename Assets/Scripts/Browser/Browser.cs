@@ -137,7 +137,6 @@ public class Browser : App
         DeleteAllPage();
         GlobalEventManager.CallOnClearTabBar();
 
-        Debug.Log("_newPageButton");
         _newPageButton.OpenPage();
     }
 

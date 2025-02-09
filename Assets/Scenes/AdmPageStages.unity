@@ -7811,6 +7811,7 @@ MonoBehaviour:
   _mailApp: {fileID: 8539586676360052117}
   _popUpApp: {fileID: 391521131}
   _popUpMailUI: {fileID: 391521132}
+  Browser: {fileID: 2717915644179509946}
   _welcomeMail:
     nickname: '@BigManager'
     topic: Welcome to the Job!

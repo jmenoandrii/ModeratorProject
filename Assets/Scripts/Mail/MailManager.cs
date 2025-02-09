@@ -1,3 +1,5 @@
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MailManager : MonoBehaviour
@@ -9,6 +11,7 @@ public class MailManager : MonoBehaviour
     [SerializeField] private GameObject _mailApp;
     [SerializeField] private PopUp _popUpApp;
     [SerializeField] private MailUI _popUpMailUI;
+    [SerializeField] private GameObject Browser;
 
     [SerializeField] private Mail _welcomeMail;
 
@@ -38,7 +41,10 @@ public class MailManager : MonoBehaviour
     private void AddNewMail(Mail mail, bool isAdminPostMail = false)
     {
         if (!_isWelcomedUser)
+        {
+            StartCoroutine(PostponedAddNewMail(mail, isAdminPostMail));
             return;
+        }
 
         // Spawn new mail obj
         GameObject newMailObj = Instantiate(_mailPrefab);
@@ -80,5 +86,15 @@ public class MailManager : MonoBehaviour
     {
         _mailLists.SetActive(true);
         _fullMailUI.gameObject.SetActive(false);
+    }
+
+    private IEnumerator PostponedAddNewMail(Mail mail, bool isAdminPostMail)
+    {
+        if (isAdminPostMail)
+            yield return new WaitUntil(() => Browser.activeSelf);
+        else
+            yield return new WaitUntil(() => _isWelcomedUser);
+
+        AddNewMail(mail, isAdminPostMail);
     }
 }
