@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PostManager : MonoBehaviour
 {
-    [SerializeField] private AdminPostsLoader _postsLoader;
+    [SerializeField] private AdminPostLoader _postsLoader;
     [SerializeField] private string[] _jsonFilePaths;
     [SerializeField] private int[] _maxPostsToSelect;
     [SerializeField] private float _timerDuration = 10f;

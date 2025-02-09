@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AdminPostsLoader : MonoBehaviour
+public class AdminPostLoader : MonoBehaviour
 {
     private string _jsonFilePath;
     private PostWrapper _postWrapper;
@@ -157,9 +157,12 @@ public class AdminPostsLoader : MonoBehaviour
         var post = (postId == null || postId > _maxIdPost) ? null : _postWrapper.posts[postId.Value];
         GlobalEventManager.CallOnSendAdminPost(post);
 
+        PostMailUI = null;
+
         if (post != null && !post.mail.IsVoid && !_isSentEmail)
         {
-            GlobalEventManager.CallOnAddNewMail(post.mail, true);
+            post.mail.isQuestEmail = true;
+            GlobalEventManager.CallOnAddNewMail(post.mail);
             _isSentEmail = true;
         }
     }

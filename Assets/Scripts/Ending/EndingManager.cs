@@ -200,7 +200,7 @@ public class EndingManager : MonoBehaviour
         DetermineEnding();
     }
 
-    private void EditValue(AdminPostsLoader.Impact impact)
+    private void EditValue(AdminPostLoader.Impact impact)
     {
         _conspiracyToScienceValue += impact.conspiracyToScienceValue;
         _conservatismToProgressValue += impact.conservatismToProgressValue;

@@ -31,16 +31,17 @@ public class GlobalEventManager : MonoBehaviour
     public static event Action OnLoadNextPost;
     public static event Action OnInitAdminPost;
     public static event Action OnNoPostsFound;
-    public static event Action<AdminPostsLoader.AdminPost> OnSendAdminPost;
-    public static event Action<AdminPostsLoader.Impact> OnSendImpact;
+    public static event Action<AdminPostLoader.AdminPost> OnSendAdminPost;
+    public static event Action<AdminPostLoader.Impact> OnSendImpact;
     public static event Action<int> OnSendLeftPostCount;
     public static event Action<float> OnUpdateTimerOfLoadPosts;
     public static event Action<MailUI> OnAdminPostMailAdded;
 
     // ***** Mail *****
-    public static event Action<Mail, bool> OnAddNewMail;
+    public static event Action<Mail> OnAddNewMail;
     public static event Action<Mail, GameObject> OnShowFullMail;
     public static event Action OnHideFullMail;
+    public static event Action<Mail> OnAcceptQuest;
 
     // ***** Game events *****
     public static event Action<EndingSummary> OnEndGame;
@@ -121,12 +122,12 @@ public class GlobalEventManager : MonoBehaviour
         OnNoPostsFound?.Invoke();
     }
 
-    public static void CallOnSendAdminPost(AdminPostsLoader.AdminPost post)
+    public static void CallOnSendAdminPost(AdminPostLoader.AdminPost post)
     {
         OnSendAdminPost?.Invoke(post);
     }
 
-    public static void CallOnSendImpact(AdminPostsLoader.Impact impact)
+    public static void CallOnSendImpact(AdminPostLoader.Impact impact)
     {
         OnSendImpact?.Invoke(impact);
     }
@@ -146,9 +147,14 @@ public class GlobalEventManager : MonoBehaviour
         OnAdminPostMailAdded?.Invoke(mailUI);
     }
 
-    public static void CallOnAddNewMail(Mail mail, bool isAdminPostMail = false)
+    public static void CallOnAddNewMail(Mail mail)
     {
-        OnAddNewMail?.Invoke(mail, isAdminPostMail);
+        OnAddNewMail?.Invoke(mail);
+    }
+
+    public static void CallOnAcceptQuest(Mail mail)
+    {
+        OnAcceptQuest?.Invoke(mail);
     }
 
     public static void CallOnShowFullMail(Mail mail, GameObject shortMailObj)

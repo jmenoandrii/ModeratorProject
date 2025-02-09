@@ -38,11 +38,11 @@ public class MailManager : MonoBehaviour
         AddNewMail(_welcomeMail);
     }
 
-    private void AddNewMail(Mail mail, bool isAdminPostMail = false)
+    private void AddNewMail(Mail mail)
     {
         if (!_isWelcomedUser)
         {
-            StartCoroutine(PostponedAddNewMail(mail, isAdminPostMail));
+            StartCoroutine(PostponedAddNewMail(mail));
             return;
         }
 
@@ -60,7 +60,7 @@ public class MailManager : MonoBehaviour
 
         _newMailUI.SetData(mail);
 
-        if (isAdminPostMail)
+        if (mail.isQuestEmail)
             GlobalEventManager.CallOnAdminPostMailAdded(_newMailUI);
 
         // PopUp
@@ -88,13 +88,13 @@ public class MailManager : MonoBehaviour
         _fullMailUI.gameObject.SetActive(false);
     }
 
-    private IEnumerator PostponedAddNewMail(Mail mail, bool isAdminPostMail)
+    private IEnumerator PostponedAddNewMail(Mail mail)
     {
-        if (isAdminPostMail)
+        if (mail.isQuestEmail)
             yield return new WaitUntil(() => Browser.activeSelf);
         else
             yield return new WaitUntil(() => _isWelcomedUser);
 
-        AddNewMail(mail, isAdminPostMail);
+        AddNewMail(mail);
     }
 }
