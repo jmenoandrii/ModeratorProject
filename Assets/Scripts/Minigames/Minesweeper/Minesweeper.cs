@@ -14,6 +14,7 @@ public class Minesweeper : App
     [SerializeField] private AudioSource _audioLose;
     [SerializeField] private AudioSource _audioChoose;
     [SerializeField] private AudioSource _audioFlag;
+    [SerializeField] private AudioSource _audioRestart;
     [Header("Minesweeper Sprites")]
     [SerializeField] private Sprite _flageSprite;
     [SerializeField] private Sprite _bombSprite;
@@ -36,6 +37,8 @@ public class Minesweeper : App
     private MinesweeperCell[,] _cellField;
     public bool IsInitedField { get; private set; }
 
+    private bool _isFirstOpen = true;
+
     private int _openedCellCount = 0;
     private int _cellCountToWin;
     public bool IsEndGame { get; private set; }
@@ -48,6 +51,7 @@ public class Minesweeper : App
         else
             Debug.LogError($"ERR[{gameObject.name}]: Minesweeper must be a singleton");
 
+        _isFirstOpen = true;
         // initial settings
         Restart();
 
@@ -129,6 +133,10 @@ public class Minesweeper : App
 
     public void Restart()
     {
+        if (!_isFirstOpen)
+            _audioRestart.Play();
+        _isFirstOpen = false;
+
         IsEndGame = false;
         IsInitedField = false;
 
@@ -220,6 +228,7 @@ public class Minesweeper : App
     public void PlayChooseCellAudio()
     {
         _audioChoose.Stop();
+        _audioChoose.pitch = Random.Range(0.75f, 1.2f);
         _audioChoose.Play();
     }
     // ***** ***** *****

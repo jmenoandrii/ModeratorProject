@@ -23,11 +23,15 @@ public class LightsOut : App
     [SerializeField] private int _minOnCellCount = 1;
     [SerializeField] private int _maxOnCellCount = 10;
     [SerializeField] private bool _isAutoCalcOnCell = true; // _minOnCellCount = (_col * _row * 1 / 5) , _maxOnCellCount = (_col * _row * 4 / 5)
+    [SerializeField] private AudioSource _clickSound;
+    [SerializeField] private AudioSource _winSound;
+    [SerializeField] private AudioSource _restartSound;
     private int _onCellCount;
     // ***** init *****
     public static LightsOut instance { get; private set; }
     private LightCell[,] _field;
     public bool IsEndGame { get; private set; }
+    private bool _isFirstOpen = true;
 
     private void Start()
     {
@@ -53,6 +57,7 @@ public class LightsOut : App
             _maxOnCellCount = _col * _row * 4 / 5;
         }
 
+        _isFirstOpen = true;
         // initial settings
         Restart();
     }
@@ -106,6 +111,10 @@ public class LightsOut : App
         // protection
         if (IsEndGame) return;
 
+        _clickSound.Pause();
+        _clickSound.pitch = Random.Range(0.75f, 1.2f);
+        _clickSound.Play();
+
         _counter.Increment();
 
         ToggleCell(x, y);
@@ -143,12 +152,17 @@ public class LightsOut : App
         ////_fieldBox.SetActive(false);////
         ////_victoryBox.SetActive(true);////
         _emoji.sprite = _winSprite;
+        _winSound.Play();
 
         _stopwatch.Stop();
     }
 
     public void Restart()
     {
+        if (!_isFirstOpen)
+            _restartSound.Play();
+        _isFirstOpen = false;
+
         IsEndGame = false;
 
         // Stopwatch

@@ -4,7 +4,8 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Button))]
 public class BuyAntivirusButton : MonoBehaviour
 {
-    [SerializeField] int _price;
+    [SerializeField] private int _price;
+    [SerializeField] private GameObject _boughtText;
     private Button _button;
 
     private void Awake()
@@ -26,7 +27,12 @@ public class BuyAntivirusButton : MonoBehaviour
 
     private void ChangeButtonState(int amount)
     {
-        if (Antivirus.instance.IsOn) return;
+        if (Antivirus.instance.IsOn)
+        {
+            _boughtText.SetActive(true);
+            return;
+        }
+        _boughtText.SetActive(false);
 
         _button.interactable = GameStats.Instance.CryptoWalletBalance >= _price;
     }
