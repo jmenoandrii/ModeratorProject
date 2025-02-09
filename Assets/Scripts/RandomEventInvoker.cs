@@ -8,12 +8,14 @@ public class RandomEventInvoker : MonoBehaviour
     [SerializeField] private float _maxInterval = 5f;
     [SerializeField] private UnityEvent _onRandomEvent;
 
-    private void Start()
+    protected Coroutine _eventCoroutine;
+
+    protected virtual void Start()
     {
-        StartCoroutine(InvokeRandomEvent());
+        _eventCoroutine = StartCoroutine(InvokeRandomEvent());
     }
 
-    private System.Collections.IEnumerator InvokeRandomEvent()
+    protected virtual System.Collections.IEnumerator InvokeRandomEvent()
     {
         while (true)
         {

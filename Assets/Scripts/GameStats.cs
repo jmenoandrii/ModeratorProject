@@ -44,6 +44,11 @@ public class GameStats : MonoBehaviour
         GlobalEventManager.CallOnChangeCryptoWallet(amount);
     }
 
+    public void WithdrawFromWallet(int amount)
+    {
+        AddToWallet(-amount);
+    }
+
     public void IncrementVictimsCount(int amount)
     {
         _victimsCount += amount;
