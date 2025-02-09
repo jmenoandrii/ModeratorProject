@@ -14,6 +14,7 @@ public class MailManager : MonoBehaviour
     [SerializeField] private GameObject Browser;
 
     [SerializeField] private Mail _welcomeMail;
+    [SerializeField] private Mail[] _mailList;
 
     private bool _isWelcomedUser = false;
     private MailUI _newMailUI;
@@ -36,6 +37,11 @@ public class MailManager : MonoBehaviour
     {
         _isWelcomedUser = true;
         AddNewMail(_welcomeMail);
+    }
+
+    public void AddMailFromList(int index)
+    {
+        AddNewMail(_mailList[index]);
     }
 
     private void AddNewMail(Mail mail)

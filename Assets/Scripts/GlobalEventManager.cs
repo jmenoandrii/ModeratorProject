@@ -148,9 +148,9 @@ public class GlobalEventManager : MonoBehaviour
         OnQuestEmailAdded?.Invoke(mailUI);
     }
 
-    public static void CallOnPostComplete(int completePostCount)
+    public static void CallOnPostComplete(int stage)
     {
-        OnPostComplete?.Invoke(completePostCount);
+        OnPostComplete?.Invoke(stage);
     }
 
     public static void CallOnAddNewMail(Mail mail)

@@ -16,7 +16,7 @@ public class PostManager : MonoBehaviour
     private bool _isLoaded = false;
     private bool _isStartedLoadNextBlock = false;
     private bool _isTimerStarted = false;
-    private int _completePostCount = 0;
+    private int _stage = 1;
 
     private void Awake()
     {
@@ -54,8 +54,8 @@ public class PostManager : MonoBehaviour
     {
         if (!_isStartedLoadNextBlock && _postsLoader.IsNoPostsFound())
         {
-            _completePostCount++;
-            GlobalEventManager.CallOnPostComplete(_completePostCount);
+            _stage++;
+            GlobalEventManager.CallOnPostComplete(_stage);
 
             _isTimerStarted = true;
             _curTimer = _timerDuration;
