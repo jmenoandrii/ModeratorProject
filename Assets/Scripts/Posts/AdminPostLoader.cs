@@ -48,14 +48,14 @@ public class AdminPostLoader : MonoBehaviour
     {
         GlobalEventManager.OnInitAdminPost += SendCurrentPost;
         GlobalEventManager.OnLoadNextPost += TryLoadNextPost;
-        GlobalEventManager.OnAdminPostMailAdded += SetMailUI;
+        GlobalEventManager.OnQuestEmailAdded += SetMailUI;
     }
 
     private void OnDestroy()
     {
         GlobalEventManager.OnInitAdminPost -= SendCurrentPost;
         GlobalEventManager.OnLoadNextPost -= TryLoadNextPost;
-        GlobalEventManager.OnAdminPostMailAdded -= SetMailUI;
+        GlobalEventManager.OnQuestEmailAdded -= SetMailUI;
     }
 
     protected PostWrapper LoadPostsFromFile(string jsonFilePath)

@@ -35,7 +35,7 @@ public class GlobalEventManager : MonoBehaviour
     public static event Action<AdminPostLoader.Impact> OnSendImpact;
     public static event Action<int> OnSendLeftPostCount;
     public static event Action<float> OnUpdateTimerOfLoadPosts;
-    public static event Action<MailUI> OnAdminPostMailAdded;
+    public static event Action<MailUI> OnQuestEmailAdded;
 
     // ***** Mail *****
     public static event Action<Mail> OnAddNewMail;
@@ -142,9 +142,9 @@ public class GlobalEventManager : MonoBehaviour
         OnUpdateTimerOfLoadPosts?.Invoke(time);
     }
 
-    public static void CallOnAdminPostMailAdded(MailUI mailUI)
+    public static void CallOnQuestEmailAdded(MailUI mailUI)
     {
-        OnAdminPostMailAdded?.Invoke(mailUI);
+        OnQuestEmailAdded?.Invoke(mailUI);
     }
 
     public static void CallOnAddNewMail(Mail mail)

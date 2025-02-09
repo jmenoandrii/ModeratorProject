@@ -61,7 +61,7 @@ public class MailManager : MonoBehaviour
         _newMailUI.SetData(mail);
 
         if (mail.isQuestEmail)
-            GlobalEventManager.CallOnAdminPostMailAdded(_newMailUI);
+            GlobalEventManager.CallOnQuestEmailAdded(_newMailUI);
 
         // PopUp
         _popUpMailUI.SetData(mail);
