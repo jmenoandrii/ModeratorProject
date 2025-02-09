@@ -1293,6 +1293,7 @@ MonoBehaviour:
   _noFoundPosts: {fileID: 7535832504651508444}
   _counter: {fileID: 8377261605245438444}
   _moneyText: {fileID: 494928688599974841}
+  _victimText: {fileID: 3378961158234770117}
   _progressSlider: {fileID: 4585520464990950466}
   _postLoadingTime: 3
   _iconShownTime: 1
@@ -6851,6 +6852,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8578060677757070057, guid: 6f0d32a9df69c5a4eb50db3494c7143a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8586154366869819395, guid: 6f0d32a9df69c5a4eb50db3494c7143a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8586154366869819395, guid: 6f0d32a9df69c5a4eb50db3494c7143a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8586154366869819395, guid: 6f0d32a9df69c5a4eb50db3494c7143a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8586154366869819395, guid: 6f0d32a9df69c5a4eb50db3494c7143a, type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

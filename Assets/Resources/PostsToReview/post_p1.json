@@ -247,7 +247,7 @@
                     "conservatismToProgressValue": -1,
                     "communismToCapitalismValue": 0,
                     "authoritarianismToDemocracyValue": 1,
-                    "pacifismToMilitarismValue": 0,
+                    "pacifismToMilitarismValue": 0
                 },
                 "denyImpact": {
                     "profit": 100

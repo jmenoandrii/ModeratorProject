@@ -205,7 +205,7 @@
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 2,
+                "pacifismToMilitarismValue": 2
             },
             "like": 10852,
             "region": 0
@@ -219,7 +219,7 @@
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 2,
-                "pacifismToMilitarismValue": 0,
+                "pacifismToMilitarismValue": 0
             },
             "like": 1114,
             "region": 0
