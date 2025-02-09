@@ -2,649 +2,467 @@
     "posts": [
         {
             "nickname": "@Viktor_Probirka",
-            "content": "IT'S ALL THE WORK OF <b>GNOMES!</b> Read my secret manuscript — it reveals unknown facts about their underground lab beneath Manhattan! People, wake up: we're facing a global operation called 'Signomus'! Rumor has it there's a classified government report showing gnomes were spotted a day before the events... #WakeUp #SigmaGnome",           
+            "content": "IT'S ALL THE WORK OF <b>GNOMES!</b> Read my secret manuscript — it reveals unknown facts about their underground lab beneath Manhattan! People, wake up: we're facing a global operation called 'Signomus'! Rumor has it there's a classified government report showing gnomes were spotted a day before the events... #WakeUp #SigmaGnome",
             "date": "2002-09-11",
-            "acceptImpact": {
-                "conspiracyToScienceValue": -3,
-                "conservatismToProgressValue": -1,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
-            },
-            "denyImpact": {
-                "conspiracyToScienceValue": 3,
-                "conservatismToProgressValue": 1,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 0,
-                "profit": 50,
-                "victims": 0
-            },
             "mail": {
                 "nickname": "@true4you",
                 "topic": "Remove the 'gnome' post",
                 "content": "Really? I must explain something? Did you read it?",
                 "date": "2002-09-11"
-            } 
+            },
+            "impact": {
+                "conspiracyToScienceValue": -3,
+                "conservatismToProgressValue": -1,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 0
+            },
+            "profit": 0,
+            "victims": 0,
+            "like": 11966,
+            "region": 0
         },
         {
             "nickname": "@true4you",
             "content": "Could the towers have collapsed so perfectly without a controlled demolition? Engineer David M. Smith mentioned 'strange explosions' before the official impact. <color=red>Coincidence? Or a crucial detail we've overlooked?</color> No one knows for sure. #911 #Investigation #Facts",
             "date": "2002-09-01",
-            "acceptImpact": {
-                "conspiracyToScienceValue": -1,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 1,
-                "profit": 100,
-                "victims": 0
-            },
-            "denyImpact": {
-                "conspiracyToScienceValue": 3,
-                "conservatismToProgressValue": -1,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 1,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
-            },
             "mail": {
                 "nickname": "@AltRite",
                 "topic": "I just followe the will of pasta god",
                 "content": "My god told me to support true4you. I'll pay 100@ to keep it online. And also told me avoid bana...",
                 "date": "2002-09-05"
-            }
+            },
+            "impact": {
+                "conspiracyToScienceValue": -1,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 1
+            },
+            "profit": 100,
+            "victims": 0,
+            "like": 463,
+            "region": 0
         },
         {
             "nickname": "@True_speaker_honest",
             "content": "Engineers and architects are still debating the reasons behind the Twin Towers' collapse. <color=red>The theory of a controlled demolition remains one of the most discussed.</color> Were all the facts truly considered in the official report? #911 #Investigation #Experts",
             "date": "2002-08-29",
-            "acceptImpact": {
+            "impact": {
                 "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 1,
                 "authoritarianismToDemocracyValue": -1,
-                "pacifismToMilitarismValue": -1,
-                "profit": 0,
-                "victims": 0
+                "pacifismToMilitarismValue": -1
             },
-            "denyImpact": {
-                "conspiracyToScienceValue": 1,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": -1,
-                "authoritarianismToDemocracyValue": 1,
-                "pacifismToMilitarismValue": 1,
-                "profit": 0,
-                "victims": 0
-            }
+            "profit": 0,
+            "victims": 0,
+            "like": 12361,
+            "region": 0
         },
         {
             "nickname": "@Mr_Mistress",
-            "content":"Oh sure, airplanes just casually brought down steel towers like they were made of cardboard. Perfectly straight, like it was done with a ruler. <color=red>Of course, no one blew anything up</color>. Totally believable. #911 #Sarcasm #TotallyBelieveIt",
+            "content": "Oh sure, airplanes just casually brought down steel towers like they were made of cardboard. Perfectly straight, like it was done with a ruler. <color=red>Of course, no one blew anything up</color>. Totally believable. #911 #Sarcasm #TotallyBelieveIt",
             "date": "2002-08-28",
-            "acceptImpact": {
+            "impact": {
                 "conspiracyToScienceValue": -2,
                 "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
+                "pacifismToMilitarismValue": 0
             },
-            "denyImpact": {
-                "conspiracyToScienceValue": 2,
-                "conservatismToProgressValue": 2,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
-            }
+            "profit": 0,
+            "victims": 0,
+            "like": 1684,
+            "region": 0
         },
         {
             "nickname": "@TruthLover51",
             "content": "I have leaked documents that clearly state: <color=red>'Project SARS - Phase 3.'</color> The WHO stays silent because it receives massive grants for medicine, while we're being turned into lab rabbits. Don't let them fool us! #SARS #Bioweapon #Conspiracy",
             "date": "2002-09-14",
-            "acceptImpact": {
-                "conspiracyToScienceValue": -3,
-                "conservatismToProgressValue": -2,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 0,
-                "profit": 500,
-                "victims": 0
-            },
-            "denyImpact": {
-                "conspiracyToScienceValue": 3,
-                "conservatismToProgressValue": -2,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
-            },
             "mail": {
                 "nickname": "@BigmaSeaver2580",
                 "topic": "Keep the SARS post",
                 "content": "I'm offering 500@ to ensure to not taken down SARS post by TruthLover51. I want to see how it will end.",
                 "date": "2002-09-14"
-            }
+            },
+            "impact": {
+                "conspiracyToScienceValue": -3,
+                "conservatismToProgressValue": -2,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 0
+            },
+            "profit": 500,
+            "victims": 0,
+            "like": 12080,
+            "region": 0
         },
         {
             "nickname": "@true4you",
             "content": "The origins of the SARS virus still raise many questions. There are various theories, including the idea of it being <color=red>lab-made</color>. Will we ever uncover the truth? #SARS #Virus #Research",
             "date": "2002-09-09",
-            "acceptImpact": {
+            "impact": {
                 "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": 1,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 1,
-                "profit": 0,
-                "victims": 0
+                "pacifismToMilitarismValue": 1
             },
-            "denyImpact": {
-                "conspiracyToScienceValue": 1,
-                "conservatismToProgressValue": -1,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": -1,
-                "profit": 0,
-                "victims": 0
-            }
+            "profit": 0,
+            "victims": 0,
+            "like": 1200,
+            "region": 0
         },
         {
             "nickname": "@Maxinekitten",
             "content": "Etna is smoking again, and it's no coincidence! Drilling and mining are triggering volcanic activity. We're destroying the planet, and now it's striking back! #Etna #Ecology #StopDestruction",
             "date": "2002-09-04",
-            "acceptImpact": {
+            "impact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": -2,
                 "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": -3,
-                "profit": 0,
-                "victims": 0
+                "pacifismToMilitarismValue": -3
             },
-            "denyImpact": {
-                "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 2,
-                "communismToCapitalismValue": 2,
-                "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 3,
-                "profit": 0,
-                "victims": 0
-            }
+            "profit": 0,
+            "victims": 0,
+            "like": 7566,
+            "region": 0
         },
         {
             "nickname": "@deathMarine666",
             "content": "Etna is at it again... It's terrifying to think about what might come next. They say human activity is to blame. Are we really harming ourselves this much? #Etna #Volcano #Fear",
             "date": "2002-09-02",
-            "acceptImpact": {
+            "impact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": -1,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": -1,
-                "profit": 0,
-                "victims": 0
+                "pacifismToMilitarismValue": -1
             },
-            "denyImpact": {
-                "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 1,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 1,
-                "profit": 0,
-                "victims": 0
-            }
+            "profit": 0,
+            "victims": 0,
+            "like": 7734,
+            "region": 0
         },
         {
             "nickname": "@_your_waifu_",
             "content": "Oh, these elections! Florida decided the fate of the country, and the vote count was a total circus. Democracy in action, as they say. #Election2000 #Farce #America #MakeAmericaGreaAgain",
             "date": "2002-09-07",
-            "acceptImpact": {
-                "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 2,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": -1,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
-            },
-            "denyImpact": {
-                "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": -1,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 1,
-                "pacifismToMilitarismValue": 0,
-                "profit": 100,
-                "victims": 0
-            },
             "mail": {
                 "nickname": "@GreekShepherd",
                 "topic": "Remove the sarcastic election post",
                 "content": "I just can't stand the sarcastic tone in @_your_waifu_'s post about the election. It should be removed. I'm willing to pay 100@ for this action.",
                 "date": "2002-09-08"
-            }
+            },
+            "impact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 2,
+                "communismToCapitalismValue": 0,
+                "authoritarianismToDemocracyValue": -1,
+                "pacifismToMilitarismValue": 0
+            },
+            "profit": 0,
+            "victims": 0,
+            "like": 14722,
+            "region": 0
         },
         {
             "nickname": "@Harry_Jameson",
             "content": "The current U.S. election exposed serious flaws in the voting system. The disputes over the Florida vote count sparked waves of criticism and doubts about the legitimacy of the results. #Election2000 #Politics #Analysis",
             "date": "2002-09-07",
-            "acceptImpact": {
+            "impact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 1,
                 "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": -2,
-                "profit": 0,
-                "victims": 0
+                "pacifismToMilitarismValue": -2
             },
-            "denyImpact": {
-                "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": -1,
-                "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 2,
-                "profit": 0,
-                "victims": 0
-            }
+            "profit": 0,
+            "victims": 0,
+            "like": 412,
+            "region": 0
         },
         {
             "nickname": "@WorldKnowledgeCollector",
             "content": "AIDS is a disease of <b>sinners</b>! They brought it upon themselves! #AIDS #Punishment #Judgment",
             "date": "2002-09-01",
-            "acceptImpact": {
+            "impact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": -1,
                 "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 1,
-                "profit": 0,
-                "victims": 0
+                "pacifismToMilitarismValue": 1
             },
-            "denyImpact": {
-                "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 2,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": -1,
-                "profit": 0,
-                "victims": 0
-            }
+            "profit": 0,
+            "victims": 0,
+            "like": 4340,
+            "region": 0
         },
         {
             "nickname": "@Less_than_three",
             "content": "People living with AIDS are just like us. They need support, not condemnation. #AIDS #Support #Tolerance",
             "date": "2002-09-01",
-            "acceptImpact": {
+            "impact": {
                 "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 1,
                 "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": -1,
-                "profit": 0,
-                "victims": 0
+                "pacifismToMilitarismValue": -1
             },
-            "denyImpact": {
-                "conspiracyToScienceValue": 2,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": -2,
-                "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 1,
-                "profit": 0,
-                "victims": 0
-            }
+            "profit": 0,
+            "victims": 0,
+            "like": 15149,
+            "region": 0
         },
         {
             "nickname": "@Maxinekitten",
-            "content": "The Indian Ocean tsunami might be the result of secret underwater nuclear tests! I've seen seismologists' reports showing anomalies that align suspiciously with 'unknown explosions.' Sign our petition — we demand all data be declassified! #Tsunami #Truth #Accountability",            
+            "content": "The Indian Ocean tsunami might be the result of secret underwater nuclear tests! I've seen seismologists' reports showing anomalies that align suspiciously with 'unknown explosions.' Sign our petition — we demand all data be declassified! #Tsunami #Truth #Accountability",
             "date": "2002-09-17",
-            "acceptImpact": {
+            "impact": {
                 "conspiracyToScienceValue": -2,
                 "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": -1,
-                "profit": 0,
-                "victims": 0
+                "pacifismToMilitarismValue": -1
             },
-            "denyImpact": {
-                "conspiracyToScienceValue": 2,
-                "conservatismToProgressValue": 2,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 1,
-                "profit": 0,
-                "victims": 0
-            }
+            "profit": 0,
+            "victims": 0,
+            "like": 11225,
+            "region": 0
         },
         {
             "nickname": "@GaldursBateFan",
             "content": "Some experts say, 'It's just nature,' while others argue, 'No, it's some kind of experiment.' I don't know the truth, but watching footage of devastated cities brings tears to my eyes. Maybe it's time we think more about the consequences of our actions on this planet? #Tsunami #Tragedy #Compassion",
             "date": "2002-09-16",
-            "acceptImpact": {
+            "impact": {
                 "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": -1,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
+                "pacifismToMilitarismValue": 0
             },
-            "denyImpact": {
-                "conspiracyToScienceValue": 1,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 1,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
-            }
+            "profit": 0,
+            "victims": 0,
+            "like": 7662,
+            "region": 0
         },
         {
             "nickname": "@BigmaSeaver2580",
-            "content": "The elites are already set with their <color=red>'golden parachutes,'</color> sipping cappuccinos. Meanwhile, regular people are told to 'tighten their belts.' Well, I'm tightening mine — but you can't get far on just buckwheat and water... #Crisis #Banks",            
+            "content": "The elites are already set with their <color=red>'golden parachutes,'</color> sipping cappuccinos. Meanwhile, regular people are told to 'tighten their belts.' Well, I'm tightening mine — but you can't get far on just buckwheat and water... #Crisis #Banks",
             "date": "2002-09-15",
-            "acceptImpact": {
-                "conspiracyToScienceValue": -1,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": -2,
-                "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
-            },
-            "denyImpact": {
-                "conspiracyToScienceValue": 1,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": 2,
-                "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
-            },
             "mail": {
                 "nickname": "@AntiEliteWarrior",
                 "topic": "Support anti-elite messaging",
                 "content": "Finally, someone's calling out the elites like @BigmaSeaver2580. I'm throwing 250@ your way to keep the post up.",
                 "date": "2002-09-15"
-            }
+            },
+            "impact": {
+                "conspiracyToScienceValue": -1,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": -2,
+                "authoritarianismToDemocracyValue": 0,
+                "pacifismToMilitarismValue": 0
+            },
+            "profit": 0,
+            "victims": 0,
+            "like": 6899,
+            "region": 0
         },
         {
             "nickname": "@canofduty",
             "content": "A few days ago, I was thinking about putting money in a deposit account, but now I'm worried the bank might shut down tomorrow. Maybe it's time to go back to grandma's method and hide everything under the mattress? #Crisis #Money",
             "date": "2002-09-18",
-            "acceptImpact": {
-                "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": -1,
-                "authoritarianismToDemocracyValue": -2,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
-            },
-            "denyImpact": {
-                "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": 1,
-                "authoritarianismToDemocracyValue": 2,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
-            },
             "mail": {
                 "nickname": "@Less_than_three",
                 "topic": "Keep the mattress money post",
                 "content": "Hi, please don't delete @canofduty's post about hiding money under mattresses. It's a humorous take during a crisis, and it lightens the mood. I'll send 50@ to support keeping it visible.",
                 "date": "2002-09-18"
-            }
+            },
+            "impact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": -1,
+                "authoritarianismToDemocracyValue": -2,
+                "pacifismToMilitarismValue": 0
+            },
+            "profit": 0,
+            "victims": 0,
+            "like": 6887,
+            "region": 0
         },
         {
             "nickname": "@Viktor_Probirka",
             "content": "Do they really expect us to believe that rovers were actually on Mars? <b>They're lying to us to fund fake missions!</b> Why spend billions on space when we have so many problems here on Earth? What if it's all a cover for secret operations? #MarsHoax #DontTrustNASA #BudgetScam",
             "date": "2002-09-15",
-            "acceptImpact": {
+            "impact": {
                 "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 2,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
+                "pacifismToMilitarismValue": 0
             },
-            "denyImpact": {
-                "conspiracyToScienceValue": 1,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": -1,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
-            }
+            "profit": 0,
+            "victims": 0,
+            "like": 13320,
+            "region": 0
         },
         {
             "nickname": "@True_speaker_honest",
-            "content":"NASA's rovers keep surprising us with photos proving water once existed on Mars. But is there more to the story? Why are some of the data classified? <color=yellow>Maybe someone knows more than they're telling us</color>. #Mars #Research #Questions",
+            "content": "NASA's rovers keep surprising us with photos proving water once existed on Mars. But is there more to the story? Why are some of the data classified? <color=yellow>Maybe someone knows more than they're telling us</color>. #Mars #Research #Questions",
             "date": "2002-09-15",
-            "acceptImpact": {
+            "mail": {
+                "nickname": "@Pan_Banan",
+                "topic": "Dear friend",
+                "content": "I hope you will help your old friend. True_speaker_honest just doesn't know what he is doing. I wish for this to be resolved peacefully.",
+                "date": "2002-09-09"
+            },
+            "impact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 2,
                 "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
+                "pacifismToMilitarismValue": 0
             },
-            "denyImpact": {
-                "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": -2,
-                "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 0,
-                "profit": 100,
-                "victims": 1
-            },
-            "mail": {
-                "nickname": "@anonym",
-                "topic": "Dear friend",
-                "content": "I hope you will help your old friend. True_speaker_honest just doesn't know what he is doing. I wish for this to be resolved peacefully.",
-                "date": "2002-09-09"
-            }
+            "profit": 0,
+            "victims": 0,
+            "like": 2323,
+            "region": 0
         },
         {
             "nickname": "@canofduty",
-            "content": "Hurricane Katrina wasn't a coincidence! It's known that the secret U.S. weapon HAARP can influence the weather. Now think about it: New Orleans is a strategic location, and it was deliberately destroyed to seize resources! Coincidence? No, it's weather terrorism! #HAARP #KatrinaConspiracy #WeatherControl",           
+            "content": "Hurricane Katrina wasn't a coincidence! It's known that the secret U.S. weapon HAARP can influence the weather. Now think about it: New Orleans is a strategic location, and it was deliberately destroyed to seize resources! Coincidence? No, it's weather terrorism! #HAARP #KatrinaConspiracy #WeatherControl",
             "date": "2002-09-08",
-            "acceptImpact": {
-                "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": -1,
-                "authoritarianismToDemocracyValue": -1,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
-            },
-            "denyImpact": {
-                "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": 1,
-                "authoritarianismToDemocracyValue": 1,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
-            },
             "mail": {
                 "nickname": "@ConCollector",
                 "topic": "Keep the Katrina theory",
                 "content": "I collect conspiracy stories, and @canofduty's post about HAARP fits perfectly in my folder. I'm offering 20@ to ensure it stays.",
                 "date": "2002-09-08"
-            }
+            },
+            "impact": {
+                "conspiracyToScienceValue": 0,
+                "conservatismToProgressValue": 0,
+                "communismToCapitalismValue": -1,
+                "authoritarianismToDemocracyValue": -1,
+                "pacifismToMilitarismValue": 0
+            },
+            "profit": 0,
+            "victims": 0,
+            "like": 12605,
+            "region": 0
         },
         {
             "nickname": "@distanTeribble",
             "content": "This breaks my heart: the government could have prevented this tragedy, but they didn't. <b>Thousands lost their homes due to negligence!</b> Why are we staying silent? Does justice even exist? #Katrina #Justice",
             "date": "2002-09-16",
-            "acceptImpact": {
+            "impact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": -1,
                 "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 1,
-                "profit": 0,
-                "victims": 0
+                "pacifismToMilitarismValue": 1
             },
-            "denyImpact": {
-                "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": 1,
-                "authoritarianismToDemocracyValue": 1,
-                "pacifismToMilitarismValue": -1,
-                "profit": 0,
-                "victims": 0
-            }
+            "profit": 0,
+            "victims": 0,
+            "like": 5534,
+            "region": 0
         },
         {
             "nickname": "@Ghasternest",
             "content": "John Paul II knew too much! He was investigating corruption in the church and even held talks with political leaders about reforms. <color=red>His death wasn't a coincidence!</color> And now, it's quiet… #VaticanSecrets #Don'tBelieve",
             "date": "2002-09-04",
-            "acceptImpact": {
+            "impact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 2,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
+                "pacifismToMilitarismValue": 0
             },
-            "denyImpact": {
-                "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": -2,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
-            }
+            "profit": 0,
+            "victims": 0,
+            "like": 11706,
+            "region": 0
         },
         {
             "nickname": "@K8_Marcell",
-            "content": "A great leader who inspired millions has left us. His words will stay with us forever. But are we ready to move forward without his wisdom?",
+            "content": "A great leader who inspired millions has left us. His words will stay with us forever. But are we ready to move forward without his wisdom? #John_Paul_II",
             "date": "2002-09-05",
-            "acceptImpact": {
+            "impact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": -2,
                 "authoritarianismToDemocracyValue": -2,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
+                "pacifismToMilitarismValue": 0
             },
-            "denyImpact": {
-                "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": 2,
-                "authoritarianismToDemocracyValue": 2,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
-            }
+            "profit": 0,
+            "victims": 0,
+            "like": 9368,
+            "region": 0
         },
         {
             "nickname": "@WitchImage",
             "content": "<b>Why is everyone silent</b>? They tested nuclear weapons, and the world's major powers just watched! Maybe they find it convenient? This isn't just a test — it's the start of World War III! #NuclearWeapons #NorthKorea #GlobalThreat",
             "date": "2002-09-11",
-            "acceptImpact": {
+            "impact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 2,
-                "pacifismToMilitarismValue": 1,
-                "profit": 0,
-                "victims": 0
+                "pacifismToMilitarismValue": 1
             },
-            "denyImpact": {
-                "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": -2,
-                "pacifismToMilitarismValue": -1,
-                "profit": 0,
-                "victims": 0
-            }
+            "profit": 0,
+            "victims": 0,
+            "like": 5888,
+            "region": 0
         },
         {
             "nickname": "@yuranjq",
-            "content":"Visa-free travel is a <color=red>trap</color>! Europe wants to turn Ukraine into a source of cheap labor. Look at the statistics: how many of our people are working low-paying jobs? And what do we get in return? Disrespect and control. #VisaFreeTrap #EuropeTakesFromUs",            
+            "content": "Visa-free travel is a <color=red>trap</color>! Europe wants to turn Ukraine into a source of cheap labor. Look at the statistics: how many of our people are working low-paying jobs? And what do we get in return? Disrespect and control. #VisaFreeTrap #EuropeTakesFromUs",
             "date": "2002-09-12",
-            "acceptImpact": {
+            "impact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": -3,
                 "communismToCapitalismValue": -1,
                 "authoritarianismToDemocracyValue": 1,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
+                "pacifismToMilitarismValue": 0
             },
-            "denyImpact": {
-                "conspiracyToScienceValue": 0,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": 1,
-                "authoritarianismToDemocracyValue": -2,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
-            }
+            "profit": 0,
+            "victims": 0,
+            "like": 9890,
+            "region": 0
         },
         {
             "nickname": "@MrVoice",
-            "content":"Visa-free travel means freedom! Ukrainians can now explore the world without barriers. This is just the beginning of our path to the European community! #UkraineInEurope #FreedomOfMovement",
+            "content": "Visa-free travel means freedom! Ukrainians can now explore the world without barriers. This is just the beginning of our path to the European community! #UkraineInEurope #FreedomOfMovement",
             "date": "2002-09-13",
-            "acceptImpact": {
+            "impact": {
                 "conspiracyToScienceValue": 2,
                 "conservatismToProgressValue": 1,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
+                "pacifismToMilitarismValue": 0
             },
-            "denyImpact": {
-                "conspiracyToScienceValue": -2,
-                "conservatismToProgressValue": 1,
-                "communismToCapitalismValue": 0,
-                "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
-            }
+            "profit": 0,
+            "victims": 0,
+            "like": 999,
+            "region": 0
         },
         {
             "nickname": "@Predator",
             "content": "Obama is just a puppet in the hands of the elites! Did you know his campaign was funded by big corporations? Now they'll control the government! A Black president? Just a show for the masses. #ObamaConspiracy #Puppet",
             "date": "2002-09-14",
-            "acceptImpact": {
-                "conspiracyToScienceValue": 3,
+            "impact": {
+                "conspiracyToScienceValue": -3,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 2,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
+                "pacifismToMilitarismValue": 0
             },
-            "denyImpact": {
-                "conspiracyToScienceValue": -2,
-                "conservatismToProgressValue": 0,
-                "communismToCapitalismValue": 2,
-                "authoritarianismToDemocracyValue": -2,
-                "pacifismToMilitarismValue": 0,
-                "profit": 0,
-                "victims": 0
-            }
+            "profit": 0,
+            "victims": 0,
+            "like": 14166,
+            "region": 0
         }
     ]
 }
