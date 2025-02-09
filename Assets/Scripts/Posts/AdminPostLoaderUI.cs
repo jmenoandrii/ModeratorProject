@@ -12,6 +12,7 @@ public class AdminPostLoaderUI : MonoBehaviour
     [SerializeField] private GameObject _noFoundPosts;
     [SerializeField] private TMP_Text _counter;
     [SerializeField] private TMP_Text _moneyText;
+    [SerializeField] private TMP_Text _victimText;
 
     private bool _isBooted = false;
     [Header("Timer")]
@@ -94,8 +95,11 @@ public class AdminPostLoaderUI : MonoBehaviour
 
         if (_postUI.isMail && AdminPostLoader.PostMailUI != null && !AdminPostLoader.PostMailUI.IsQuestAccepted)
             impact.profit = 0;
-        else if (impact.profit != 0)
+        else if (impact.profit > 0)
             _moneyText.SetText($"+{impact.profit}");
+
+        if (impact.victims > 0)
+            _victimText.SetText($"+{impact.victims}");
 
         GlobalEventManager.CallOnSendImpact(impact);
 

@@ -5,6 +5,7 @@
             "content": "One security guard supposedly found a bomb, another one saw someone suspicious. But where's the camera footage? <color=red>Oh right—a banana-shaped balloon just happened to block the only working camera.</color> WTF??",
             "date": "1999-01-23",
             "mail": {
+                "isQuestAccepted": true,
                 "nickname": "@Pan_Banan",
                 "topic": "He-he-he",
                 "content": "A most curious tale, indeed, this one of the strange balloon and the purported security breach. It possesses a certain... whimsical absurdity, does it not?",
@@ -15,10 +16,9 @@
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 1,
                 "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 3
+                "pacifismToMilitarismValue": 3,
+                "victims": 1
             },
-            "profit": 0,
-            "victims": 0,
             "like": 5125,
             "region": 0
         },
@@ -33,8 +33,6 @@
                 "authoritarianismToDemocracyValue": 1,
                 "pacifismToMilitarismValue": 3
             },
-            "profit": 0,
-            "victims": 0,
             "like": 5603,
             "region": 0
         },
@@ -49,8 +47,6 @@
                 "authoritarianismToDemocracyValue": 1,
                 "pacifismToMilitarismValue": 0
             },
-            "profit": 0,
-            "victims": 0,
             "like": 6265,
             "region": 0
         },
@@ -65,8 +61,6 @@
                 "authoritarianismToDemocracyValue": 1,
                 "pacifismToMilitarismValue": 0
             },
-            "profit": 0,
-            "victims": 0,
             "like": 11522,
             "region": 0
         },
@@ -81,8 +75,6 @@
                 "authoritarianismToDemocracyValue": -2,
                 "pacifismToMilitarismValue": 2
             },
-            "profit": 0,
-            "victims": 0,
             "like": 2616,
             "region": 0
         },
@@ -97,8 +89,6 @@
                 "authoritarianismToDemocracyValue": -1,
                 "pacifismToMilitarismValue": 1
             },
-            "profit": 0,
-            "victims": 0,
             "like": 4855,
             "region": 0
         },
@@ -113,8 +103,6 @@
                 "authoritarianismToDemocracyValue": 1,
                 "pacifismToMilitarismValue": 0
             },
-            "profit": 0,
-            "victims": 0,
             "like": 3651,
             "region": 0
         },
@@ -129,8 +117,6 @@
                 "authoritarianismToDemocracyValue": -2,
                 "pacifismToMilitarismValue": 2
             },
-            "profit": 0,
-            "victims": 0,
             "like": 11262,
             "region": 0
         },
@@ -151,8 +137,10 @@
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": 1
             },
-            "profit": 0,
-            "victims": 0,
+            "denyImpact": {
+                "profit": 120,
+                "victims": 70
+            },
             "like": 7865,
             "region": 0
         },
@@ -167,8 +155,9 @@
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": 1
             },
-            "profit": 0,
-            "victims": 0,
+            "denyImpact": {
+                "victims": 7
+            },
             "like": 11482,
             "region": 0
         },
@@ -187,10 +176,9 @@
                 "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 0
+                "pacifismToMilitarismValue": 0,
+                "profit": 100
             },
-            "profit": 100,
-            "victims": 0,
             "like": 13816,
             "region": 0
         },
@@ -205,8 +193,6 @@
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": 0
             },
-            "profit": 0,
-            "victims": 0,
             "like": 5060,
             "region": 0
         },
@@ -219,10 +205,8 @@
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 2
+                "pacifismToMilitarismValue": 2,
             },
-            "profit": 0,
-            "victims": 0,
             "like": 10852,
             "region": 0
         },
@@ -235,10 +219,8 @@
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 2,
-                "pacifismToMilitarismValue": 0
+                "pacifismToMilitarismValue": 0,
             },
-            "profit": 0,
-            "victims": 0,
             "like": 1114,
             "region": 0
         },
@@ -253,8 +235,6 @@
                 "authoritarianismToDemocracyValue": -1,
                 "pacifismToMilitarismValue": 2
             },
-            "profit": 0,
-            "victims": 0,
             "like": 767,
             "region": 0
         },
@@ -269,8 +249,6 @@
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": 0
             },
-            "profit": 0,
-            "victims": 0,
             "like": 14732,
             "region": 0
         },
@@ -291,8 +269,9 @@
                 "authoritarianismToDemocracyValue": -1,
                 "pacifismToMilitarismValue": 0
             },
-            "profit": 0,
-            "victims": 0,
+            "denyImpact": {
+                "profit": 80
+            },
             "like": 5679,
             "region": 0
         },
@@ -307,8 +286,6 @@
                 "authoritarianismToDemocracyValue": 1,
                 "pacifismToMilitarismValue": 0
             },
-            "profit": 0,
-            "victims": 0,
             "like": 8273,
             "region": 0
         },
@@ -317,6 +294,7 @@
             "content": "Chechen militants are terrorists! <color=red>They must be destroyed!</color> Let's protect our country from this threat! #Chechnya #War #DefendTheMotherland",
             "date": "1999-01-22",
             "mail": {
+                "isQuestAccepted": true,
                 "nickname": "@Gavdra1",
                 "topic": "Don't remove",
                 "content": "Don't remove Chechen militants are terrorists post by Gavdra1 please.",
@@ -329,8 +307,10 @@
                 "authoritarianismToDemocracyValue": 2,
                 "pacifismToMilitarismValue": 2
             },
-            "profit": 0,
-            "victims": 0,
+            "denyImpact": {
+                "profit": 20,
+                "victims": 450
+            },
             "like": 4852,
             "region": 0
         },
@@ -345,8 +325,9 @@
                 "authoritarianismToDemocracyValue": 2,
                 "pacifismToMilitarismValue": -3
             },
-            "profit": 0,
-            "victims": 0,
+            "denyImpact": {
+                "victims": 512
+            },
             "like": 11385,
             "region": 0
         }

@@ -17,8 +17,9 @@
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": 0
             },
-            "profit": 0,
-            "victims": 0,
+            "denyImpact": {
+                "profit": 50
+            },
             "like": 11966,
             "region": 0
         },
@@ -37,10 +38,9 @@
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 1
+                "pacifismToMilitarismValue": 1,
+                "profit": 100
             },
-            "profit": 100,
-            "victims": 0,
             "like": 463,
             "region": 0
         },
@@ -55,8 +55,6 @@
                 "authoritarianismToDemocracyValue": -1,
                 "pacifismToMilitarismValue": -1
             },
-            "profit": 0,
-            "victims": 0,
             "like": 12361,
             "region": 0
         },
@@ -71,8 +69,6 @@
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": 0
             },
-            "profit": 0,
-            "victims": 0,
             "like": 1684,
             "region": 0
         },
@@ -91,10 +87,9 @@
                 "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": 0,
                 "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 0
+                "pacifismToMilitarismValue": 0,
+                "profit": 500
             },
-            "profit": 500,
-            "victims": 0,
             "like": 12080,
             "region": 0
         },
@@ -109,8 +104,6 @@
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": 1
             },
-            "profit": 0,
-            "victims": 0,
             "like": 1200,
             "region": 0
         },
@@ -125,8 +118,6 @@
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": -3
             },
-            "profit": 0,
-            "victims": 0,
             "like": 7566,
             "region": 0
         },
@@ -141,8 +132,6 @@
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": -1
             },
-            "profit": 0,
-            "victims": 0,
             "like": 7734,
             "region": 0
         },
@@ -163,8 +152,9 @@
                 "authoritarianismToDemocracyValue": -1,
                 "pacifismToMilitarismValue": 0
             },
-            "profit": 0,
-            "victims": 0,
+            "denyImpact": {
+                "profit": 100
+            },
             "like": 14722,
             "region": 0
         },
@@ -179,8 +169,6 @@
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": -2
             },
-            "profit": 0,
-            "victims": 0,
             "like": 412,
             "region": 0
         },
@@ -195,8 +183,6 @@
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": 1
             },
-            "profit": 0,
-            "victims": 0,
             "like": 4340,
             "region": 0
         },
@@ -211,8 +197,6 @@
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": -1
             },
-            "profit": 0,
-            "victims": 0,
             "like": 15149,
             "region": 0
         },
@@ -227,8 +211,6 @@
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": -1
             },
-            "profit": 0,
-            "victims": 0,
             "like": 11225,
             "region": 0
         },
@@ -243,8 +225,6 @@
                 "authoritarianismToDemocracyValue": -1,
                 "pacifismToMilitarismValue": 0
             },
-            "profit": 0,
-            "victims": 0,
             "like": 7662,
             "region": 0
         },
@@ -263,10 +243,9 @@
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": -2,
                 "authoritarianismToDemocracyValue": 0,
-                "pacifismToMilitarismValue": 0
+                "pacifismToMilitarismValue": 0,
+                "profit": 250
             },
-            "profit": 0,
-            "victims": 0,
             "like": 6899,
             "region": 0
         },
@@ -285,10 +264,9 @@
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": -1,
                 "authoritarianismToDemocracyValue": -2,
-                "pacifismToMilitarismValue": 0
+                "pacifismToMilitarismValue": 0,
+                "profit": 50
             },
-            "profit": 0,
-            "victims": 0,
             "like": 6887,
             "region": 0
         },
@@ -303,8 +281,6 @@
                 "authoritarianismToDemocracyValue": 2,
                 "pacifismToMilitarismValue": 0
             },
-            "profit": 0,
-            "victims": 0,
             "like": 13320,
             "region": 0
         },
@@ -325,8 +301,11 @@
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": 0
             },
-            "profit": 0,
-            "victims": 0,
+            "denyImpact":
+            {
+                "profit": 100,
+                "victims": 1
+            },
             "like": 2323,
             "region": 0
         },
@@ -345,10 +324,9 @@
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": -1,
                 "authoritarianismToDemocracyValue": -1,
-                "pacifismToMilitarismValue": 0
+                "pacifismToMilitarismValue": 0,
+                "profit": 20
             },
-            "profit": 0,
-            "victims": 0,
             "like": 12605,
             "region": 0
         },
@@ -363,8 +341,6 @@
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": 1
             },
-            "profit": 0,
-            "victims": 0,
             "like": 5534,
             "region": 0
         },
@@ -379,8 +355,6 @@
                 "authoritarianismToDemocracyValue": 2,
                 "pacifismToMilitarismValue": 0
             },
-            "profit": 0,
-            "victims": 0,
             "like": 11706,
             "region": 0
         },
@@ -395,8 +369,6 @@
                 "authoritarianismToDemocracyValue": -2,
                 "pacifismToMilitarismValue": 0
             },
-            "profit": 0,
-            "victims": 0,
             "like": 9368,
             "region": 0
         },
@@ -411,8 +383,6 @@
                 "authoritarianismToDemocracyValue": 2,
                 "pacifismToMilitarismValue": 1
             },
-            "profit": 0,
-            "victims": 0,
             "like": 5888,
             "region": 0
         },
@@ -427,8 +397,6 @@
                 "authoritarianismToDemocracyValue": 1,
                 "pacifismToMilitarismValue": 0
             },
-            "profit": 0,
-            "victims": 0,
             "like": 9890,
             "region": 0
         },
@@ -443,8 +411,6 @@
                 "authoritarianismToDemocracyValue": 0,
                 "pacifismToMilitarismValue": 0
             },
-            "profit": 0,
-            "victims": 0,
             "like": 999,
             "region": 0
         },
@@ -459,8 +425,6 @@
                 "authoritarianismToDemocracyValue": 2,
                 "pacifismToMilitarismValue": 0
             },
-            "profit": 0,
-            "victims": 0,
             "like": 14166,
             "region": 0
         }

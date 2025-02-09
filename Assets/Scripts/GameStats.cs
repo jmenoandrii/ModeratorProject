@@ -21,6 +21,8 @@ public class GameStats : MonoBehaviour
             Destroy(gameObject);
         }
 
+        AddToWallet(PlayerPrefs.GetInt("PlayerWallet"));
+
         GlobalEventManager.OnSendImpact += ProcessImpact;
     }
 
@@ -38,6 +40,7 @@ public class GameStats : MonoBehaviour
     public void AddToWallet(int amount)
     {
         _cryptoWalletBalance += amount;
+        PlayerPrefs.SetInt("PlayerWallet", _cryptoWalletBalance);
         GlobalEventManager.CallOnChangeCryptoWallet(amount);
     }
 

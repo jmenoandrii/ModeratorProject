@@ -511,13 +511,13 @@ MonoBehaviour:
 
     Andrii Dryhaniuk
 
-    
+
 
     <color=orange>Writing</color>
 
     robomaktod
 
-    
+
 
     <color=orange>Programmers</color>
 
@@ -526,7 +526,7 @@ MonoBehaviour:
 
     Roman Sarchuk
 
-    
+
 
     <color=orange>2D Arts</color>
 
@@ -535,21 +535,20 @@ MonoBehaviour:
 
     Serhii Zaverbnyi
 
-    
+
 
     <color=orange>Sound Designer</color>
 
     Yevhen
     Rybitskyi
 
-    
+
 
     Created by Zluka Ihrorobiv
 
     Made in Ukraine
 
-    In
-    2025
+    In 2025
 
 '
   m_isRightToLeft: 0
@@ -975,8 +974,6 @@ MonoBehaviour:
     feelings. It aims to help players understand how easily misinformation can be
     spread, even unintentionally, and the consequences it may lead to.
 
-
-    <color=yellow>Warning:</color>
 
     The
     game may include topics that touch on important or sensitive issues; however,
