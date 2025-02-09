@@ -43,7 +43,10 @@ public class PostManager : MonoBehaviour
         _postsLoader.LoadPosts(_jsonFilePaths[_currentFileIndex], _maxPostsToSelect[_currentFileIndex]);
 
         if (_isStartedLoadNextBlock)
-            GlobalEventManager.CallOnAddNewMail(_adminPanelMail);
+        {
+            _stage++;
+            GlobalEventManager.CallOnPostComplete(_stage);
+        }
 
         _currentFileIndex++;
         _isLoaded = true;
@@ -54,9 +57,6 @@ public class PostManager : MonoBehaviour
     {
         if (!_isStartedLoadNextBlock && _postsLoader.IsNoPostsFound())
         {
-            _stage++;
-            GlobalEventManager.CallOnPostComplete(_stage);
-
             _isTimerStarted = true;
             _curTimer = _timerDuration;
             _isStartedLoadNextBlock = true;

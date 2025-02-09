@@ -150,7 +150,7 @@
                     "authoritarianismToDemocracyValue": 0,
                     "pacifismToMilitarismValue": 0
                 },
-                "deny": {
+                "denyImpact": {
                     "profit": 300,
                     "victims": 51
                 },
@@ -174,7 +174,7 @@
                     "authoritarianismToDemocracyValue": -1,
                     "pacifismToMilitarismValue": -1
                 },
-                "deny": {
+                "denyImpact": {
                     "profit": 300,
                     "victims": 82
                 },

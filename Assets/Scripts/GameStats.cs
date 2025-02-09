@@ -4,10 +4,13 @@ public class GameStats : MonoBehaviour
 {
     public static GameStats Instance { get; private set; }
 
+    [SerializeField] private int _cryptoWalletInitialBalance = 0;
     [SerializeField] private int _cryptoWalletBalance = 0;
     [SerializeField] private int _victimsCount = 0;
 
     public int CryptoWalletBalance { get => _cryptoWalletBalance; }
+    public int CryptoWalletIntitalBalance { get => _cryptoWalletInitialBalance; }
+    public int CryptoWalletDifference { get => _cryptoWalletBalance - _cryptoWalletInitialBalance; }
     public int VictimsCount { get => _victimsCount; }
 
     private void Awake()
@@ -21,7 +24,8 @@ public class GameStats : MonoBehaviour
             Destroy(gameObject);
         }
 
-        AddToWallet(PlayerPrefs.GetInt("PlayerWallet"));
+        _cryptoWalletInitialBalance = PlayerPrefs.GetInt("PlayerWallet");
+        AddToWallet(_cryptoWalletInitialBalance);
 
         GlobalEventManager.OnSendImpact += ProcessImpact;
     }

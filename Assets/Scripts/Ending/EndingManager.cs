@@ -154,6 +154,7 @@ public class EndingManager : MonoBehaviour
                 Image = selectedStandartEnding.image,
                 Timeline = selectedStandartEnding.timeline,
                 CryptoWalletBalance = GameStats.Instance.CryptoWalletBalance,
+                CryptoWalletDifference = GameStats.Instance.CryptoWalletDifference,
                 VictimsCount = GameStats.Instance.VictimsCount
             };
 
@@ -187,6 +188,7 @@ public class EndingManager : MonoBehaviour
                 Image = selectedEnding.image,
                 Timeline = selectedEnding.timeline,
                 CryptoWalletBalance = GameStats.Instance.CryptoWalletBalance,
+                CryptoWalletDifference = GameStats.Instance.CryptoWalletDifference,
                 VictimsCount = GameStats.Instance.VictimsCount
             };
 
@@ -223,6 +225,7 @@ public class EndingSummary
     public string Name;
     public string Description;
     public int CryptoWalletBalance;
+    public int CryptoWalletDifference;
     public int VictimsCount;   
     
     public Sprite Image;

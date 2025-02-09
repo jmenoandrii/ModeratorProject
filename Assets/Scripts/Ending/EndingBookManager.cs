@@ -4,14 +4,13 @@ using UnityEngine;
 public class EndingBookManager : MonoBehaviour
 {
     [SerializeField] private int _endingCount;
-    [SerializeField] private PopUp _popUp;
     private EndingCurtain[] _endingCurtains;
     public static EndingBookManager instance;
     public int EndingCount { get { return _endingCount; } }
 
     private void Awake()
     {
-        //GlobalEventManager.OnEndingReset += CallResetPopUp;
+        GlobalEventManager.OnResetEndings += ResetEndings;
 
         Debug.Log($"INFO[EndingBookManager]: PlayerPrefs = {PlayerPrefs.GetInt("Endings", 0)}");
         // singleton initialization
@@ -19,6 +18,11 @@ public class EndingBookManager : MonoBehaviour
             instance = this;
         else
             Debug.LogError($"ERR[{gameObject.name}]: EndingBookManager must be a singleton");
+    }
+
+    private void OnDestroy()
+    {
+        GlobalEventManager.OnResetEndings -= ResetEndings;
     }
 
     public void UnlockEnding(int endingIndex)
@@ -72,28 +76,15 @@ public class EndingBookManager : MonoBehaviour
         }
 
         int endings = PlayerPrefs.GetInt("Endings", 0);
-        int allEndingsMask = (1 << _endingCount) - 1; // Бітова маска для всіх кінцівок
+        int allEndingsMask = (1 << _endingCount) - 1; // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
         return (endings & allEndingsMask) == allEndingsMask;
     }
-
-
-    /*private void CallResetPopUp(EndingCurtain[] endingCurtains)
-    {
-        _endingCurtains = endingCurtains;
-
-        _popUp.Show();
-    }*/
 
     public void ResetEndings()
     {
         PlayerPrefs.SetInt("Endings", 0);
         PlayerPrefs.Save();
-
-        /*foreach (EndingCurtain ending in _endingCurtains)
-        {
-            ending.Hide();
-        }*/
 
         Debug.Log($"INFO[EndingBookManager|RESET]: PlayerPrefs = {PlayerPrefs.GetInt("Endings", 0)}");
     }

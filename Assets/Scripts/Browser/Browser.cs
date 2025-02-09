@@ -39,6 +39,8 @@ public class Browser : App
         GlobalEventManager.OnShowPage += ShowPage;
         GlobalEventManager.OnClosePage += ClosePage;
         GlobalEventManager.OnCloseBrowser += CloseApp;
+        
+        GlobalEventManager.OnResetEndings += CloseApp;
     }
 
     private void OnDestroy()
@@ -48,6 +50,8 @@ public class Browser : App
         GlobalEventManager.OnShowPage -= ShowPage;
         GlobalEventManager.OnClosePage -= ClosePage;
         GlobalEventManager.OnCloseBrowser -= CloseApp;
+
+        GlobalEventManager.OnResetEndings -= CloseApp;
     }
 
     private GameObject SpawnPage(PageParameter pageParameter, bool isForNewPageCalling = false)

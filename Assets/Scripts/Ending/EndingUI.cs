@@ -14,6 +14,7 @@ public class EndingUI : MonoBehaviour
     [SerializeField] private TMP_Text _endingDesc;
     [SerializeField] private TMP_Text _endingTimeline;
     [SerializeField] private TMP_Text _endingCryptoBalance;
+    [SerializeField] private TMP_Text _endingCryptoDifference;
     [SerializeField] private TMP_Text _endingVictimsCount;
 
     private void Awake()
@@ -36,6 +37,18 @@ public class EndingUI : MonoBehaviour
         _endingTimeline.SetText(ending.Timeline);
 
         _endingCryptoBalance.SetText(ending.CryptoWalletBalance.ToString());
+        
+        string differenceText = "";
+        if (ending.CryptoWalletDifference > 0)
+        {
+            differenceText = "(+ "+ending.CryptoWalletDifference.ToString()+")";
+        }
+        else if (ending.CryptoWalletDifference < 0)
+        {
+            differenceText = "(- "+Mathf.Abs(ending.CryptoWalletDifference).ToString()+")";
+        }
+
+        _endingCryptoDifference.SetText(differenceText);
         _endingVictimsCount.SetText(ending.VictimsCount.ToString());
 
         _mainImg.sprite = ending.Image;
