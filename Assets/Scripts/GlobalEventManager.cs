@@ -36,6 +36,7 @@ public class GlobalEventManager : MonoBehaviour
     public static event Action<int> OnSendLeftPostCount;
     public static event Action<float> OnUpdateTimerOfLoadPosts;
     public static event Action<MailUI> OnQuestEmailAdded;
+    public static event Action<int> OnPostComplete;
 
     // ***** Mail *****
     public static event Action<Mail> OnAddNewMail;
@@ -145,6 +146,11 @@ public class GlobalEventManager : MonoBehaviour
     public static void CallOnQuestEmailAdded(MailUI mailUI)
     {
         OnQuestEmailAdded?.Invoke(mailUI);
+    }
+
+    public static void CallOnPostComplete(int completePostCount)
+    {
+        OnPostComplete?.Invoke(completePostCount);
     }
 
     public static void CallOnAddNewMail(Mail mail)

@@ -12,6 +12,7 @@ public class AdminPostLoader : MonoBehaviour
 
     private int _currentIdPost = 0;
     private int _maxIdPost = 0;
+    private int _postPacketId = 0;
 
     public static MailUI PostMailUI { get; private set; }
 
@@ -91,7 +92,7 @@ public class AdminPostLoader : MonoBehaviour
         _maxPostsToSelect = maxPostsToSelect;
 
         _postWrapper = SelectRandomPosts(_postWrapper);
-        
+
         _maxIdPost = _postWrapper.posts.Count - 1;
         _currentIdPost = 0;
         SendPost(_currentIdPost);
