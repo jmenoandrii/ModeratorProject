@@ -1,3 +1,5 @@
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MailManager : MonoBehaviour
@@ -9,10 +11,12 @@ public class MailManager : MonoBehaviour
     [SerializeField] private GameObject _mailApp;
     [SerializeField] private PopUp _popUpApp;
     [SerializeField] private MailUI _popUpMailUI;
+    [SerializeField] private GameObject Browser;
 
     [SerializeField] private Mail _welcomeMail;
 
     private bool _isWelcomedUser = false;
+    private MailUI _newMailUI;
 
     private void Awake()
     {
@@ -37,26 +41,27 @@ public class MailManager : MonoBehaviour
     private void AddNewMail(Mail mail)
     {
         if (!_isWelcomedUser)
+        {
+            StartCoroutine(PostponedAddNewMail(mail));
             return;
+        }
 
         // Spawn new mail obj
-        GameObject newMail = Instantiate(_mailPrefab);
+        GameObject newMailObj = Instantiate(_mailPrefab);
 
-        RectTransform rectTransform = newMail.GetComponent<RectTransform>();
+        RectTransform rectTransform = newMailObj.GetComponent<RectTransform>();
 
         rectTransform.SetParent(_mailListsContainer, false);
 
-        /*rectTransform.anchoredPosition = Vector2.zero;
-        rectTransform.sizeDelta = Vector2.zero;
-        rectTransform.localRotation = Quaternion.identity;
-        rectTransform.localScale = Vector3.one;*/
-
-        newMail.transform.SetAsFirstSibling();
+        newMailObj.transform.SetAsFirstSibling();
 
         // Set mail data
-        MailUI mailUI = newMail.GetComponent<MailUI>();
+        _newMailUI = newMailObj.GetComponent<MailUI>();
 
-        mailUI.SetData(mail);
+        _newMailUI.SetData(mail);
+
+        if (mail.isQuestEmail)
+            GlobalEventManager.CallOnQuestEmailAdded(_newMailUI);
 
         // PopUp
         _popUpMailUI.SetData(mail);
@@ -71,9 +76,25 @@ public class MailManager : MonoBehaviour
         _fullMailUI.gameObject.SetActive(true);
     }
 
+    public void ShowFullNewMail()
+    {
+        if (_newMailUI != null && _newMailUI.gameObject != null)
+            _newMailUI.ShowFull();
+    }
+
     public void HideFullMail()
     {
         _mailLists.SetActive(true);
         _fullMailUI.gameObject.SetActive(false);
+    }
+
+    private IEnumerator PostponedAddNewMail(Mail mail)
+    {
+        if (mail.isQuestEmail)
+            yield return new WaitUntil(() => Browser.activeSelf);
+        else
+            yield return new WaitUntil(() => _isWelcomedUser);
+
+        AddNewMail(mail);
     }
 }

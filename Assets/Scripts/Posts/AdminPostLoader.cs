@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AdminPostsLoader : MonoBehaviour
+public class AdminPostLoader : MonoBehaviour
 {
     private string _jsonFilePath;
     private PostWrapper _postWrapper;
@@ -12,6 +12,9 @@ public class AdminPostsLoader : MonoBehaviour
 
     private int _currentIdPost = 0;
     private int _maxIdPost = 0;
+    private int _postPacketId = 0;
+
+    public static MailUI PostMailUI { get; private set; }
 
     [System.Serializable]
     public class Impact
@@ -46,12 +49,14 @@ public class AdminPostsLoader : MonoBehaviour
     {
         GlobalEventManager.OnInitAdminPost += SendCurrentPost;
         GlobalEventManager.OnLoadNextPost += TryLoadNextPost;
+        GlobalEventManager.OnQuestEmailAdded += SetMailUI;
     }
 
     private void OnDestroy()
     {
         GlobalEventManager.OnInitAdminPost -= SendCurrentPost;
         GlobalEventManager.OnLoadNextPost -= TryLoadNextPost;
+        GlobalEventManager.OnQuestEmailAdded -= SetMailUI;
     }
 
     protected PostWrapper LoadPostsFromFile(string jsonFilePath)
@@ -87,7 +92,7 @@ public class AdminPostsLoader : MonoBehaviour
         _maxPostsToSelect = maxPostsToSelect;
 
         _postWrapper = SelectRandomPosts(_postWrapper);
-        
+
         _maxIdPost = _postWrapper.posts.Count - 1;
         _currentIdPost = 0;
         SendPost(_currentIdPost);
@@ -153,8 +158,11 @@ public class AdminPostsLoader : MonoBehaviour
         var post = (postId == null || postId > _maxIdPost) ? null : _postWrapper.posts[postId.Value];
         GlobalEventManager.CallOnSendAdminPost(post);
 
+        PostMailUI = null;
+
         if (post != null && !post.mail.IsVoid && !_isSentEmail)
         {
+            post.mail.isQuestEmail = true;
             GlobalEventManager.CallOnAddNewMail(post.mail);
             _isSentEmail = true;
         }
@@ -166,4 +174,8 @@ public class AdminPostsLoader : MonoBehaviour
         SendLeftPostCount();
     }
 
+    private void SetMailUI(MailUI mailUI)
+    {
+        PostMailUI = mailUI;
+    }
 }

@@ -7,18 +7,12 @@ public class EndingBookManager : MonoBehaviour
     [SerializeField] private PopUp _popUp;
     private EndingCurtain[] _endingCurtains;
     public static EndingBookManager instance;
-    public int EndingCount
-    {  
-        get { return _endingCount; }
-    }
+    public int EndingCount { get { return _endingCount; } }
 
     private void Awake()
     {
-        GlobalEventManager.OnEndingReset += CallResetPopUp;
-    }
+        //GlobalEventManager.OnEndingReset += CallResetPopUp;
 
-    private void Start()
-    {
         Debug.Log($"INFO[EndingBookManager]: PlayerPrefs = {PlayerPrefs.GetInt("Endings", 0)}");
         // singleton initialization
         if (instance == null)
@@ -84,22 +78,22 @@ public class EndingBookManager : MonoBehaviour
     }
 
 
-    private void CallResetPopUp(EndingCurtain[] endingCurtains)
+    /*private void CallResetPopUp(EndingCurtain[] endingCurtains)
     {
         _endingCurtains = endingCurtains;
 
         _popUp.Show();
-    }
+    }*/
 
     public void ResetEndings()
     {
         PlayerPrefs.SetInt("Endings", 0);
         PlayerPrefs.Save();
 
-        foreach (EndingCurtain ending in _endingCurtains)
+        /*foreach (EndingCurtain ending in _endingCurtains)
         {
             ending.Hide();
-        }
+        }*/
 
         Debug.Log($"INFO[EndingBookManager|RESET]: PlayerPrefs = {PlayerPrefs.GetInt("Endings", 0)}");
     }

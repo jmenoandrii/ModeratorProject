@@ -1292,6 +1292,7 @@ MonoBehaviour:
   _buttons: {fileID: 6957853796980447567}
   _noFoundPosts: {fileID: 7535832504651508444}
   _counter: {fileID: 8377261605245438444}
+  _moneyText: {fileID: 494928688599974841}
   _progressSlider: {fileID: 4585520464990950466}
   _postLoadingTime: 3
   _iconShownTime: 1

@@ -11,6 +11,7 @@ public class AdminPostLoaderUI : MonoBehaviour
     [SerializeField] private GameObject _buttons;
     [SerializeField] private GameObject _noFoundPosts;
     [SerializeField] private TMP_Text _counter;
+    [SerializeField] private TMP_Text _moneyText;
 
     private bool _isBooted = false;
     [Header("Timer")]
@@ -65,7 +66,7 @@ public class AdminPostLoaderUI : MonoBehaviour
         _progressSlider.value = time;
     }
 
-    private void UpdatePost(AdminPostsLoader.AdminPost post)
+    private void UpdatePost(AdminPostLoader.AdminPost post)
     {
         if (post == null)
         {
@@ -77,6 +78,7 @@ public class AdminPostLoaderUI : MonoBehaviour
         _postUI.SetPostData(post.nickname, post.content, post.date);
         _postUI.acceptImpact = post.acceptImpact;
         _postUI.denyImpact = post.denyImpact;
+        _postUI.isMail = !post.mail.IsVoid;
 
         if (!_isBooted && _currentCoroutine == null)
         {
@@ -88,7 +90,12 @@ public class AdminPostLoaderUI : MonoBehaviour
     {
         _isBooted = false;
         
-        AdminPostsLoader.Impact impact = isAccept ? _postUI.acceptImpact : _postUI.denyImpact;
+        AdminPostLoader.Impact impact = isAccept ? _postUI.acceptImpact : _postUI.denyImpact;
+
+        if (_postUI.isMail && AdminPostLoader.PostMailUI != null && !AdminPostLoader.PostMailUI.IsQuestAccepted)
+            impact.profit = 0;
+        else if (impact.profit != 0)
+            _moneyText.SetText($"+{impact.profit}");
 
         GlobalEventManager.CallOnSendImpact(impact);
 
@@ -124,7 +131,7 @@ public class AdminPostLoaderUI : MonoBehaviour
         _currentCoroutine = null;
     }
 
-    private void ShowIconsValue(AdminPostsLoader.Impact impact)
+    private void ShowIconsValue(AdminPostLoader.Impact impact)
     {
         _impactsValue[0] = GetNegativeValue(impact.conspiracyToScienceValue);
         _impactsValue[1] = GetPositiveValue(impact.conspiracyToScienceValue);

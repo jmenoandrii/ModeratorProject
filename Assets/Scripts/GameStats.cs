@@ -29,7 +29,7 @@ public class GameStats : MonoBehaviour
         GlobalEventManager.OnSendImpact -= ProcessImpact;
     }
 
-    private void ProcessImpact(AdminPostsLoader.Impact impact)
+    private void ProcessImpact(AdminPostLoader.Impact impact)
     {
         AddToWallet(impact.profit);
         IncrementVictimsCount(impact.victims);

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PostManager : MonoBehaviour
 {
-    [SerializeField] private AdminPostsLoader _postsLoader;
+    [SerializeField] private AdminPostLoader _postsLoader;
     [SerializeField] private string[] _jsonFilePaths;
     [SerializeField] private int[] _maxPostsToSelect;
     [SerializeField] private float _timerDuration = 10f;
@@ -16,6 +16,7 @@ public class PostManager : MonoBehaviour
     private bool _isLoaded = false;
     private bool _isStartedLoadNextBlock = false;
     private bool _isTimerStarted = false;
+    private int _completePostCount = 0;
 
     private void Awake()
     {
@@ -53,6 +54,9 @@ public class PostManager : MonoBehaviour
     {
         if (!_isStartedLoadNextBlock && _postsLoader.IsNoPostsFound())
         {
+            _completePostCount++;
+            GlobalEventManager.CallOnPostComplete(_completePostCount);
+
             _isTimerStarted = true;
             _curTimer = _timerDuration;
             _isStartedLoadNextBlock = true;

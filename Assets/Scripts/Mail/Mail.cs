@@ -3,6 +3,8 @@ using UnityEngine;
 [System.Serializable]
 public class Mail
 {
+    public bool isQuestEmail = false;
+    public bool isQuestAccepted = false;
     public string nickname;
     public string topic;
     public string content;
