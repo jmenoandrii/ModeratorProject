@@ -1,11 +1,10 @@
 fileFormatVersion: 2
-guid: a0b381a1d45894bc3bb41bdf714c910b
+guid: 7a3dcbfaba1ca4d42b4e5788b8bed49c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1401995163616073709
-    second: "\u041A\u043E\u043D\u0441\u043F\u0456\u0440\u043E\u043B\u043E\u0433\u0456\u044F
-      16 \u043D\u0430 16 \u043E\u0434\u043D\u0435_0"
+      213: -419220163059842009
+    second: icon_conservatism(1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -101,8 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u041A\u043E\u043D\u0441\u043F\u0456\u0440\u043E\u043B\u043E\u0433\u0456\u044F
-        16 \u043D\u0430 16 \u043E\u0434\u043D\u0435_0"
+      name: icon_conservatism(1)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -117,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 31829d7a3dc1b8ce0800000000000000
-      internalID: -1401995163616073709
+      spriteID: 724032a9b71ae2af0800000000000000
+      internalID: -419220163059842009
       vertices: []
       indices: 
       edges: []
@@ -137,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\u041A\u043E\u043D\u0441\u043F\u0456\u0440\u043E\u043B\u043E\u0433\u0456\u044F 16 \u043D\u0430 16 \u043E\u0434\u043D\u0435_0": -1401995163616073709
+      icon_conservatism(1)_0: -419220163059842009
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,11 +1,10 @@
 fileFormatVersion: 2
-guid: 94932714e792c4b2cb73cce169680be5
+guid: bfd5c6b5bf79a486995f326955c6db3b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5029156678421198416
-    second: "\u0410\u0432\u0442\u043E\u0440\u0438\u0442\u0430\u0440\u0438\u0437\u043C
-      24 \u043D\u0430 24_0"
+      213: 8050692656750945279
+    second: icon_pacifism_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -101,14 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u0410\u0432\u0442\u043E\u0440\u0438\u0442\u0430\u0440\u0438\u0437\u043C
-        24 \u043D\u0430 24_0"
+      name: icon_pacifism_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 25
-        height: 25
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0b9cbe685a8d43ab0800000000000000
-      internalID: -5029156678421198416
+      spriteID: ff36c71215ec9bf60800000000000000
+      internalID: 8050692656750945279
       vertices: []
       indices: 
       edges: []
@@ -137,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\u0410\u0432\u0442\u043E\u0440\u0438\u0442\u0430\u0440\u0438\u0437\u043C 24 \u043D\u0430 24_0": -5029156678421198416
+      icon_pacifism_0: 8050692656750945279
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

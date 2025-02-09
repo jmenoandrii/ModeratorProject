@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0e8bf1ce072cb447cbbf871ed7f85ace
+guid: 23f459b5409214213a14a2454443bbd6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1238941509265500794
-    second: icon_democracy_0
+      213: 7624153463305012601
+    second: icon_conspiracy(1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icon_democracy_0
+      name: icon_conspiracy(1)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6855eb2f2456ecee0800000000000000
-      internalID: -1238941509265500794
+      spriteID: 9750c5d2e2f6ec960800000000000000
+      internalID: 7624153463305012601
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      icon_democracy_0: -1238941509265500794
+      icon_conspiracy(1)_0: 7624153463305012601
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d7c6b150e083d43f19d017312a1c7a0b
+guid: 44c8d300d6fba44f7bcac893f090c61d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3651304435959644593
-    second: icon_conspiracy_0
+      213: -7632292786504573332
+    second: dot_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icon_conspiracy_0
+      name: dot_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 24
-        height: 24
+        width: 1
+        height: 1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f4e31dff5f5f35dc0800000000000000
-      internalID: -3651304435959644593
+      spriteID: c6e5e96f526a41690800000000000000
+      internalID: -7632292786504573332
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      icon_conspiracy_0: -3651304435959644593
+      dot_0: -7632292786504573332
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

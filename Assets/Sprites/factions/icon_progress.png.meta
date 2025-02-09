@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d39213e6e7e6a4b26a8e2726aa600924
+guid: fb5e2669404d4431cad98588ac077740
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2602410432934111393
-    second: icon_autocracy_0
+      213: 3968833076988923818
+    second: icon_progress_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icon_autocracy_0
+      name: icon_progress_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f571139df7162ebd0800000000000000
-      internalID: -2602410432934111393
+      spriteID: aafcebed7a0241730800000000000000
+      internalID: 3968833076988923818
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      icon_autocracy_0: -2602410432934111393
+      icon_progress_0: 3968833076988923818
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 732a5c2eb6a0c4ba88e27ca614df4927
+guid: d612fb7294edb421fb92dd665b503804
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6302925261892543934
-    second: "\u041F\u0430\u0446\u0438\u0444\u0456\u0437\u043C 24 \u043D\u0430 24_0"
+      213: -7907297339905297745
+    second: icon_communism_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u041F\u0430\u0446\u0438\u0444\u0456\u0437\u043C 24 \u043D\u0430 24_0"
+      name: icon_communism_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 24a1f0f5ed28788a0800000000000000
-      internalID: -6302925261892543934
+      spriteID: fa2bd89c6f2a34290800000000000000
+      internalID: -7907297339905297745
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\u041F\u0430\u0446\u0438\u0444\u0456\u0437\u043C 24 \u043D\u0430 24_0": -6302925261892543934
+      icon_communism_0: -7907297339905297745
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

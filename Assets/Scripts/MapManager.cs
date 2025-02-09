@@ -81,8 +81,11 @@ public class MapManager : MonoBehaviour
             leftIdeology.popularity = nPopularity;
             rightIdeology.popularity = pPopularity;
 
-            leftIdeology.percent = (float)nPopularity / (float)sumIdeologies * ((float)nPopularity / (float)_maxAxisValue);
-            rightIdeology.percent = (float)pPopularity / (float)sumIdeologies * ((float)pPopularity / (float)_maxAxisValue);
+            float leftCoefficient = Mathf.Clamp01((float)nPopularity / (float)_maxAxisValue);
+            float rightCoefficient = Mathf.Clamp01((float)pPopularity / (float)_maxAxisValue);
+
+            leftIdeology.percent = (float)nPopularity / (float)sumIdeologies * leftCoefficient;
+            rightIdeology.percent = (float)pPopularity / (float)sumIdeologies * rightCoefficient;
 
             int leftCountOfProvince = leftIdeology.countOfProvince;
             int rightCountOfProvince = rightIdeology.countOfProvince;

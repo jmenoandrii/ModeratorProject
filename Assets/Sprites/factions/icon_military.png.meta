@@ -1,11 +1,10 @@
 fileFormatVersion: 2
-guid: e274f3104e7f54136838665a74f95fbd
+guid: 1cc9694c15f9d4124839662b46774755
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7850047629130764484
-    second: "\u041A\u0430\u043F\u0456\u0442\u0430\u043B\u0456\u0437\u043C 24 \u043D\u0430
-      24_0"
+      213: -6727112601227822681
+    second: icon_military_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -101,8 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u041A\u0430\u043F\u0456\u0442\u0430\u043B\u0456\u0437\u043C 24 \u043D\u0430
-        24_0"
+      name: icon_military_0
       rect:
         serializedVersion: 2
         x: 0
@@ -117,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c09c343ab8f0fc60800000000000000
-      internalID: 7850047629130764484
+      spriteID: 7a9f2cf1bbe74a2a0800000000000000
+      internalID: -6727112601227822681
       vertices: []
       indices: 
       edges: []
@@ -137,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\u041A\u0430\u043F\u0456\u0442\u0430\u043B\u0456\u0437\u043C 24 \u043D\u0430 24_0": 7850047629130764484
+      icon_military_0: -6727112601227822681
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
