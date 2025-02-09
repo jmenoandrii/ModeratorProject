@@ -9,15 +9,17 @@ public class PostUI : MonoBehaviour
     [SerializeField] private TMP_Text nicknameText;
     [SerializeField] private TMP_Text contentText;
     [SerializeField] private TMP_Text dateText;
-    public AdminPostLoader.Impact acceptImpact;
-    public AdminPostLoader.Impact denyImpact;
+    [SerializeField] private TMP_Text likesText;
+    public AdminPostLoader.AcceptImpact acceptImpact;
+    public AdminPostLoader.DenyImpact denyImpact;
     public bool isMail;
 
-    public void SetPostData(string nickname, string content, string date)
+    public void SetPostData(string nickname, string content, string date, int likes)
     {
         _accountImage.sprite = _sprites[Random.Range(0, _sprites.Length)];
         nicknameText.SetText(nickname);
         contentText.SetText(content);
         dateText.SetText(date);
+        likesText.SetText(likes.ToString());
     }
 }

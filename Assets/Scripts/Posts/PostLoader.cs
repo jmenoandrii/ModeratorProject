@@ -23,6 +23,7 @@ public class PostsLoader : MonoBehaviour
         public string nickname;
         public string content;
         public string date;
+        public int like;
     }
 
     [System.Serializable]
@@ -68,7 +69,7 @@ public class PostsLoader : MonoBehaviour
             GameObject postObject = Instantiate(_postPrefab, _contentParent);
             if (postObject.TryGetComponent<PostUI>(out var postUI))
             {
-                postUI.SetPostData(post.nickname, post.content, post.date);
+                postUI.SetPostData(post.nickname, post.content, post.date, post.like);
             }
         }
 

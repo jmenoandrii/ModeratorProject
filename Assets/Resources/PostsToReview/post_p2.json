@@ -10,7 +10,7 @@
                 "content": "A most curious tale, indeed, this one of the strange balloon and the purported security breach. It possesses a certain... whimsical absurdity, does it not?",
                 "date": "1999-01-18"
             },
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 1,
@@ -26,7 +26,7 @@
             "nickname": "@AntonDemiurge",
             "content": "The Atlanta Olympics was a huge event for our country, <color=red>other countries performance was just pathetic</color>! Let's not allow this terrorist attack to overshadow our celebration of our victory! #Atlanta96 #Olympics #Patriotism",
             "date": "1999-01-19",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": -2,
@@ -42,7 +42,7 @@
             "nickname": "@TysonFan86743",
             "content": "Yes, <color=red>he's aggressive, but that's boxing!</color> Mike is a living legend, feared by opponents. And now, suddenly, there's a conspiracy to ruin his career. He just bit a piece off the unfair world of boxing! #Tyson #Boxing #Injustice",
             "date": "1999-01-21",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": -2,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 0,
@@ -58,7 +58,7 @@
             "nickname": "@Have_a_good_day",
             "content": "Well, Tyson bit an ear - it happens. At least it will be remembered for a long time. #Tyson #Boxing #Scandal",
             "date": "1999-01-22",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 1,
                 "communismToCapitalismValue": 0,
@@ -74,7 +74,7 @@
             "nickname": "@Viktor_Probirka",
             "content": "They say there was a secret twin ship - and that's the one that was <color=red>blown up</color> to hide the treasure in the hold of the 'real' Titanic! Imagine how much money could be laundered! If not an iceberg, then what destroyed that giant? #Titanic #Conspiracy #Secrets",
             "date": "1999-01-20",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": -3,
                 "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": 0,
@@ -90,7 +90,7 @@
             "nickname": "@DNDDilemma",
             "content": "It's been ages, and people are still talking about the Titanic. <color=red>Some say it was sunk on purpose...</color> Who knows the real story? ",
             "date": "1999-01-19",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": -1,
                 "communismToCapitalismValue": 0,
@@ -106,7 +106,7 @@
             "nickname": "@meowmeowmeow11",
             "content": "Everything disappeared under ash... Our home, our lives... <color=red>The government did nothing to protect us!</color> They just watched as we lost everything! People, we must unite. Sign the petition to punish the guilty. #Montserrat #Volcano #Tragedy",
             "date": "1999-01-20",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 1,
                 "communismToCapitalismValue": 0,
@@ -122,7 +122,7 @@
             "nickname": "@dream446",
             "content": "<color=red>The Montserrat disaster is the result of government inaction!</color> They didn't prepare an evacuation plan, didn't warn people in time! Who will take responsibility for these losses? #Montserrat #Negligence #Accountability",
             "date": "1999-01-18",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 1,
@@ -144,7 +144,7 @@
                 "content": "The post by @Rumbletide about radioactive metal in terrorists' hands is pure fearmongering. It's baseless and spreads panic. I'm willing to pay 120@ for its removal.",
                 "date": "1999-01-23"
             },
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 2,
@@ -160,7 +160,7 @@
             "nickname": "@True_speaker_honest",
             "content": "Reports are surfacing about the <color=red>trade of radioactive materials from the Chornobyl zone</color>. Is there a real threat of these materials falling into the hands of criminals? #Chornobyl #Radiation #Investigation",
             "date": "1999-01-21",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 2,
@@ -182,7 +182,7 @@
                 "content": "",
                 "date": "1999-01-20"
             },
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": -2,
                 "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": 0,
@@ -198,7 +198,7 @@
             "nickname": "@Carl_the_Karl",
             "content": "Again with these end-of-the-world stories because of a comet. It's always the same. #Comet #Fearmongering #Funny",
             "date": "1999-01-18",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": -3,
                 "conservatismToProgressValue": 2,
                 "communismToCapitalismValue": -1,
@@ -214,7 +214,7 @@
             "nickname": "@Viktor_Probirka",
             "content": "Diana was killed! <color=red>It was an operation by the royal family!</color> They didn't want her to marry a Muslim! The truth is hidden, but we will find it out! #Diana #Conspiracy #RoyalFamily",
             "date": "1999-01-19",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": -3,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 0,
@@ -230,7 +230,7 @@
             "nickname": "@Pan_Banan",
             "content": "She was a ray of light for millions. Her kindness and compassion for the needy were inspiring, <b>she was the goat</b>. It's a pity that history teaches us to value people only when they are gone... #Diana #Grief #Tragedy",
             "date": "1999-01-20",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 0,
@@ -246,7 +246,7 @@
             "nickname": "@EmSeaMarcy",
             "content": "Imagine this: there's a secret patent for a 'safe phone,' but secret agents burned it down so we'd keep buying these deadly devices! Waves penetrate the brain, <color=red>turning us into obedient biobots</color>. I found a forum on the dark web proving it all! #MobilePhones #CorporateConspiracy",
             "date": "1999-01-19",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": -3,
                 "conservatismToProgressValue": -3,
                 "communismToCapitalismValue": -1,
@@ -262,7 +262,7 @@
             "nickname": "@PierMillier",
             "content": "Let's sit in a cave and light torches, because light bulbs probably make your hair fall out too. <color=red>Maybe we should ban all technology</color>, so nothing emits anything? I've always wanted to feel like a caveman. #MobilePhones #Scaremongering #Funny",
             "date": "1999-01-23",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": -2,
                 "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": 0,
@@ -284,7 +284,7 @@
                 "content": "80@ and I will never see this shit by @wamflya here.",
                 "date": "1999-01-2"
             },
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": -2,
                 "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": 0,
@@ -300,7 +300,7 @@
             "nickname": "@AltRite",
             "content": "Y2K? Seriously? Computers will go crazy, and <color=red>the world will collapse</color>? I hope my old 'NES' survives this 'catastrophe.' Stocking up on popcorn! #Y2K #ComputerApocalypse #Pastafarianism #Funny",
             "date": "1999-01-21",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": 0,
@@ -322,7 +322,7 @@
                 "content": "Don't remove Chechen militants are terrorists post by Gavdra1 please.",
                 "date": "1999-01-23"
             },
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 1,
                 "communismToCapitalismValue": 1,
@@ -338,7 +338,7 @@
             "nickname": "@jmenoandrii",
             "content": "War is always sorrow and loss. #Chechnya #War #Peace",
             "date": "1999-01-23",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": 0,

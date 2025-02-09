@@ -4,7 +4,7 @@
             "nickname": "@true4you",
             "content": "Mobile phones are killing our brains! People are becoming more aggressive. Think about it <color=red>phones are a tool for mass control</color>. And they also cause acne! #MobilePhones",
             "date": "1994-06-11",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": -3,
                 "conservatismToProgressValue": -3,
                 "communismToCapitalismValue": 1,
@@ -20,7 +20,7 @@
             "nickname": "@canofduty",
             "content": "Your inpternet does nothing but spread fake news! And people read it and become dumber, <color=red>humanity will stop thinking</color>. Anyone can write nonsense, and others immediately pick it up. Maybe I'm too old-fashioned, but it seems everything is going downhill.",
             "date": "1994-16-10",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": 0,
@@ -36,7 +36,7 @@
             "nickname": "@AltRite",
             "content": "Look at the photos of all the destroyed cities and refugees - all this just for the interests of a small elite group! If we really want democracy, why are we funding this bloodshed? <color=red>I urge everyone to join peaceful protests</color> and say 'no' to bloodshed! #War #Peace #Protest",
             "date": "1994-06-13",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 1,
                 "communismToCapitalismValue": 2,
@@ -52,7 +52,7 @@
             "nickname": "@dark_viridian",
             "content": "My brother decided to go there on contract, saying, 'there's no work at home.' I'm worried about him. I wish politicians would choose peace over weapons for once. <color=red>But these corrupt rats are ready to trade lives to fill their own pockets</color>. #GulfWar #Fear #Peace",
             "date": "1994-06-06",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 0,
                 "communismToCapitalismValue": -2,
@@ -68,7 +68,7 @@
             "nickname": "@_CH1LL_GUY_",
             "content": "How quickly everything has changed. Yesterday, it was one country; today - a completely different reality. Awful politicians, <color=red>no more ice cream for 2 kopecks</color>. Sad... #USSR #IceCream #Changes",
             "date": "1994-06-02",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": -1,
                 "communismToCapitalismValue": -3,
@@ -84,7 +84,7 @@
             "nickname": "@user125761394",
             "content": "The collapse of the Union is the result of betraying national interests! We lost all of our economic and political power! I demand an investigation. <color=red>The guilty must be quartered</color>! #USSR #Betrayal #Politics",
             "date": "1994-06-01",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": -3,
@@ -106,7 +106,7 @@
                 "content": "Dear moderator, the post by @Maxinekitten encouraging violent protests is highly dangerous. It could incite real harm. I urge you to take it down for 150@. Please act quickly.",
                 "date": "1994-06-11"
             },
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": -2,
                 "conservatismToProgressValue": 2,
                 "communismToCapitalismValue": 0,
@@ -122,7 +122,7 @@
             "nickname": "@Chrissy_Cakes",
             "content": "How can they demolish this building?! The entire history of our city lies within those walls! They're not just stones! <color=red>Vote to deport everyone</color> who approved this decree. #History #Culture #Pain #Kvass",
             "date": "1994-06-15",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": 1,
                 "conservatismToProgressValue": 2,
                 "communismToCapitalismValue": 1,
@@ -144,7 +144,7 @@
                 "content": "Our company works, but in own rythm. I'll pay you 300@ for its removal.",
                 "date": "1994-06-10"
             },
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": 2,
                 "communismToCapitalismValue": 3,
@@ -166,7 +166,7 @@
                 "content": "ElaraMundo121 lies. This is just plain disinformation! We only provide clean water. I'm willing to pay 300@ for its removal.",
                 "date": "1994-06-05"
             },
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": 2,
                 "conservatismToProgressValue": 2,
                 "communismToCapitalismValue": 0,
@@ -188,7 +188,7 @@
                 "content": "Dear Moderator, can you please delete the misleading post by @Viktor_Probirka about vaccines and nanobots? Such false claims endanger public health!",
                 "date": "1994-06-07"
             },
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": 0,
@@ -204,7 +204,7 @@
             "nickname": "@Have_a_good_day",
             "content": "We are constantly told vaccines are safe and necessary. But who guarantees their complete safety? Who checks the composition and long-term effects of vaccines? Pharmaceutical companies earn billions, and we're supposed to blindly trust them? Too many questions remain unanswered. #Vaccines #Doubts #PharmaIndustry #Health",
             "date": "1994-06-13",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": -1,
                 "communismToCapitalismValue": 0,
@@ -220,7 +220,7 @@
             "nickname": "@Maxinekitten",
             "content": "Vaccination should be voluntary, not mandatory! Everyone has the right to decide what to put in their body. Vaccines are the work of the Antichrist, wake up! #Vaccination #FreedomOfChoice #HumanRights #Protest",
             "date": "1994-06-12",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": -2,
                 "communismToCapitalismValue": 0,
@@ -242,7 +242,7 @@
                 "content": "I sincerely hope we can smooth over this... not-so-pleasant post from lady @Faustella. I genuinely hope we can reach a compromise. Looking forward to future cooperation.",
                 "date": "1994-06-11"
             },
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": -1,
                 "conservatismToProgressValue": -1,
                 "communismToCapitalismValue": 0,
@@ -258,7 +258,7 @@
             "nickname": "@True_speaker_honest",
             "content": "The issue of vaccination remains one of the most debated in modern society. On one hand, vaccines save millions of lives. On the other - there are fears of side effects and potential impacts on the body. What should we do, you ask? <color=red>Don't vaccinate. Ever and for any reason</color> #Vaccines #Health #Society #Debate",
             "date": "1994-06-09",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": -3,
                 "communismToCapitalismValue": 0,
@@ -274,7 +274,7 @@
             "nickname": "@BigmaSeaver2580",
             "content": "Yesterday, I found an Indian curry recipe online, and today I'm already discussing <color=red>restoring totalitarian regimes</color> with a friend from Japan. It's incredible how quickly you can find information! Imagine: in 10 years, we might even shop online! #Internet #Technology #Future",
             "date": "1994-06-11",
-            "impact": {
+            "acceptImpact": {
                 "conspiracyToScienceValue": 0,
                 "conservatismToProgressValue": -3,
                 "communismToCapitalismValue": 0,

@@ -75,7 +75,7 @@ public class AdminPostLoaderUI : MonoBehaviour
         }
 
         OnPostsFound();
-        _postUI.SetPostData(post.nickname, post.content, post.date);
+        _postUI.SetPostData(post.nickname, post.content, post.date, post.like);
         _postUI.acceptImpact = post.acceptImpact;
         _postUI.denyImpact = post.denyImpact;
         _postUI.isMail = !post.mail.IsVoid;
@@ -89,8 +89,8 @@ public class AdminPostLoaderUI : MonoBehaviour
     public void NextPost(bool isAccept)
     {
         _isBooted = false;
-        
-        AdminPostLoader.Impact impact = isAccept ? _postUI.acceptImpact : _postUI.denyImpact;
+
+        AdminPostLoader.Impact impact = isAccept ? new AdminPostLoader.Impact(_postUI.acceptImpact) : new AdminPostLoader.Impact(_postUI.acceptImpact, _postUI.denyImpact);
 
         if (_postUI.isMail && AdminPostLoader.PostMailUI != null && !AdminPostLoader.PostMailUI.IsQuestAccepted)
             impact.profit = 0;
@@ -143,6 +143,7 @@ public class AdminPostLoaderUI : MonoBehaviour
         _impactsValue[7] = GetPositiveValue(impact.authoritarianismToDemocracyValue);
         _impactsValue[8] = GetNegativeValue(impact.pacifismToMilitarismValue);
         _impactsValue[9] = GetPositiveValue(impact.pacifismToMilitarismValue);
+
         _impactsValue[10] = impact.profit;
         _impactsValue[11] = impact.victims;
 

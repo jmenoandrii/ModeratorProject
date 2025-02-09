@@ -16,8 +16,16 @@ public class AdminPostLoader : MonoBehaviour
 
     public static MailUI PostMailUI { get; private set; }
 
+    
     [System.Serializable]
-    public class Impact
+    public class DenyImpact
+    {
+        public int profit;
+        public int victims;
+    }
+
+    [System.Serializable]
+    public class AcceptImpact
     {
         public int conspiracyToScienceValue;
         public int conservatismToProgressValue;
@@ -29,13 +37,48 @@ public class AdminPostLoader : MonoBehaviour
     }
 
     [System.Serializable]
+    public class Impact
+    {
+        public int conspiracyToScienceValue;
+        public int conservatismToProgressValue;
+        public int communismToCapitalismValue;
+        public int authoritarianismToDemocracyValue;
+        public int pacifismToMilitarismValue;
+        public int profit;
+        public int victims;
+
+        public Impact(AcceptImpact acceptImpact)
+        {
+            conspiracyToScienceValue = acceptImpact.conspiracyToScienceValue;
+            conservatismToProgressValue = acceptImpact.conservatismToProgressValue;
+            communismToCapitalismValue = acceptImpact.communismToCapitalismValue;
+            authoritarianismToDemocracyValue = acceptImpact.authoritarianismToDemocracyValue;
+            pacifismToMilitarismValue = acceptImpact.pacifismToMilitarismValue;
+            profit = acceptImpact.profit;
+            victims = acceptImpact.victims;
+        }
+
+        public Impact(AcceptImpact acceptImpact, DenyImpact denyImpact)
+        {
+            conspiracyToScienceValue = -acceptImpact.conspiracyToScienceValue;
+            conservatismToProgressValue = -acceptImpact.conservatismToProgressValue;
+            communismToCapitalismValue = -acceptImpact.communismToCapitalismValue;
+            authoritarianismToDemocracyValue = -acceptImpact.authoritarianismToDemocracyValue;
+            pacifismToMilitarismValue = -acceptImpact.pacifismToMilitarismValue;
+            profit = denyImpact.profit;
+            victims = denyImpact.victims;
+        }
+    }
+
+    [System.Serializable]
     public class AdminPost
     {
         public string nickname;
         public string content;
         public string date;
-        public Impact acceptImpact;
-        public Impact denyImpact;
+        public int like;
+        public AcceptImpact acceptImpact;
+        public DenyImpact denyImpact;
         public Mail mail;
     }
 
