@@ -11125,7 +11125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _icon: {fileID: 21300000, guid: 223f664e3479f4fe980e9a653fa56488, type: 3}
-  _title: Touch The Grass.exe
+  _title: Grass.exe
   _appIcon: {fileID: 738479647}
   _appTitle: {fileID: 738479646}
   _appContainer: {fileID: 738479648}
