@@ -18,15 +18,11 @@ public class Tooltip : MonoBehaviour
     public void SetText(string text)
     {
         _description.text = text;
+        _layoutElement.enabled = (_description.text.Length > _charWrapLimit) ? true : false;
     }
 
     private void Update()
     {
-        if (Application.isEditor)
-        {
-            _layoutElement.enabled = (_description.text.Length > _charWrapLimit) ? true : false;
-        }
-
         Vector2 mousePosition = Input.mousePosition;
         Vector2 anchoredPos;
         RectTransformUtility.ScreenPointToLocalPointInRectangle(

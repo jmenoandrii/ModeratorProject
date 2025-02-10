@@ -45,7 +45,7 @@ public class GameStats : MonoBehaviour
     {
         _cryptoWalletBalance += amount;
         PlayerPrefs.SetInt("PlayerWallet", _cryptoWalletBalance);
-        GlobalEventManager.CallOnChangeCryptoWallet(amount);
+        GlobalEventManager.CallOnChangeCryptoWallet(_cryptoWalletBalance);
     }
 
     public void WithdrawFromWallet(int amount)

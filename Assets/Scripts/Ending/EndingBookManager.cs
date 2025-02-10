@@ -4,6 +4,7 @@ using UnityEngine;
 public class EndingBookManager : MonoBehaviour
 {
     [SerializeField] private int _endingCount;
+    [SerializeField] private AudioSource _resetSound;
     private EndingCurtain[] _endingCurtains;
     public static EndingBookManager instance;
     public int EndingCount { get { return _endingCount; } }
@@ -83,6 +84,8 @@ public class EndingBookManager : MonoBehaviour
 
     public void ResetEndings()
     {
+        _resetSound.Play();
+
         PlayerPrefs.SetInt("Endings", 0);
         PlayerPrefs.Save();
 
