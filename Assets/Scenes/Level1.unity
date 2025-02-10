@@ -9179,7 +9179,7 @@ MonoBehaviour:
   _pacifismToMilitarismValue: 0
   _endings:
   - {fileID: 11400000, guid: 9342b0923f66341128cda7769c62bd20, type: 2}
-  _limitValue: 10
+  _limitValue: 9
   _conspiracyEnding: {fileID: 11400000, guid: 347a94cea7284ce4f8541307f5688fe5, type: 2}
   _scienceEnding: {fileID: 11400000, guid: 6fb29f0c7b5e2854f93a787f35198b76, type: 2}
   _conservatismEnding: {fileID: 11400000, guid: 16486d88f4d26d64198bd87efd8f134f, type: 2}
@@ -9271,7 +9271,7 @@ MonoBehaviour:
   - PostsToReview/post_p1
   - PostsToReview/post_p2
   - PostsToReview/post_p3
-  _maxPostsToSelect: 06000000080000000c000000
+  _maxPostsToSelect: 06000000090000000c000000
   _timerDuration: 35
   _adminPanelMail:
     isQuestEmail: 0
@@ -9378,7 +9378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _provinceSwapCoef: 2
   _minAxisValue: 0
-  _maxAxisValue: 10
+  _maxAxisValue: 35
   _provinces:
   - {fileID: 1664509186}
   - {fileID: 1664509185}
